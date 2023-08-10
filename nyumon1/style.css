@@ -1,0 +1,177 @@
+/**
+ * 共通部品
+ *
+ * @format
+ */
+
+html {
+  font-family: Inter;
+  color: #333;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+
+h2 {
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: 0.8px;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.section-wrapper {
+  display: flex;
+  padding: 80px 100px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    padding: 40px 20px;
+    gap: 24px;
+  }
+}
+
+/* 個別部品 */
+.header {
+  display: flex;
+  padding: 16px 100px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+  }
+}
+
+.nav-ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .about-conteiner {
+    flex-direction: column;
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .about-text {
+    gap: 8px;
+    align-items: center;
+  }
+}
+
+.works-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+@media screen and (max-width: 768px) {
+  .works-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.works-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.works-item-text {
+  font-size: 24px;
+}
+
+.footer {
+  display: flex;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.copyright {
+  text-align: center;
+  font-family: Noto Sans JP;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
