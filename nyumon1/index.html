@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
     <meta charset="utf-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- ウェブページのタイトルに使用されます。 -->
     <title>Taro's Scenery</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
     <meta name="description" content="フォトグラファーの山田太郎です" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
     <meta name="format-detection" content="telephone=no" />
+    <!-- reset.cssは、destyleを使用しています。 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
     />
+    <!-- スタイルシート（css）を呼び出しています -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header wrapper">
       <h1 class="header__title">Taro's Scenery</h1>
       <nav>
@@ -22,11 +30,17 @@
         </ul>
       </nav>
     </header>
+    <!-- /header -->
     <main>
+      <!-- about -->
       <section class="about section__wrapper wrapper" id="about">
         <h2 class="section__title">ABOUT</h2>
         <div class="about__conteiner">
-          <img class="about-img img" src="image/about.png" alt="山田太郎の画像" />
+          <img
+            class="about-img img"
+            src="image/about.png"
+            alt="山田太郎の画像"
+          />
           <div class="about__textContainer">
             <h3 class="about__name">山田 太郎</h3>
             <p class="about__text section__text">
@@ -36,6 +50,8 @@
           </div>
         </div>
       </section>
+      <!-- /about -->
+      <!-- works -->
       <section class="works section__wrapper wrapper">
         <h2 class="section__title">WORKS</h2>
         <ul class="works__container">
@@ -53,9 +69,12 @@
           </li>
         </ul>
       </section>
+      <!-- /works -->
     </main>
+    <!-- footer -->
     <footer class="footer">
       <small class="footer__copyright">© 2023 Taro's Scenery</small>
     </footer>
+    <!-- /footer -->
   </body>
 </html>
