@@ -136,6 +136,7 @@ works
   justify-content: center;
   align-items: center;
   gap: 40px;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .works__container {
@@ -149,6 +150,7 @@ works
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 100%;
 }
 
 .works__img {
