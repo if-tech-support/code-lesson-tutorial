@@ -35,7 +35,7 @@ html {
 
 .section__wrapper {
   display: flex;
-  padding: 80px 100px;
+  padding: 80px 40px;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -149,6 +149,10 @@ works
   flex-direction: column;
   align-items: center;
   gap: 16px;
+}
+
+.works__img {
+  width: 100%;
 }
 
 .works__itemText {
