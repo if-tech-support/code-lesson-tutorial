@@ -172,7 +172,6 @@ shop
 ---------------------------------*/
 .shop {
 	display: flex;
-	width: 1280px;
 	padding: 80px 32px;
 	flex-direction: column;
 	align-items: center;
