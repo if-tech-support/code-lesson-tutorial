@@ -2,87 +2,89 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
-    <meta charset="utf-8" />
-    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <!-- ウェブページのタイトルに使用されます。 -->
-    <title>Flower Room</title>
-    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
-    <meta name="description" content="Flower Roomのショップサイトです。" />
-    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
-    <meta name="format-detection" content="telephone=no" />
-    <!-- reset.cssは、destyleを使用しています。 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
-    />
-    <!-- スタイルシート（css）を呼び出しています -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="header">
-      <h1 class="header__title">Flower Room</h1>
-      <nav>
-        <ul class="header__nav">
-          <li><a href="#pickup">PICK UP</a></li>
-          <li><a href="#shop">SHOP</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- /header -->
-    <main>
-      <!-- firstview -->
-      <section class="firstview">
-        <picture>
-          <source srcset="image/firstview-sp.png" media="(max-width: 768px)">
-          <img
-            class="firstview__img img"
-            src="image/firstview.png"
-            alt="花籠を持つ女性"
-          />
-        </picture>
-
-      </section>
-      <!-- /firstview -->
-      <!-- pickup -->
-      <section class="pickup" id="pickup">
-        <h2 class="pickup__title section__title">PICK UP</h2>
-        <ul class="pickup__container">
-          <li class="pickup__item">
-            <img class="pickup__img" src="image/pickup1.png" alt="pickup1" />
-            <div class="pickup__textWrapper">
-              <h3 class="pickup__subTitle">お花の定期便始めました</h3>
-              <p class="section__text">届いたら花瓶に入れるだけ。<br>お手軽に花のある生活を始めてみませんか？</p>
-              <a class="pickup__btn" href="#">Read More</a>
-            </div>
-          </li>
-          <li class="pickup__item">
-            <img class="pickup__img" src="image/pickup2.png" alt="pickup2" />
-            <div class="pickup__textWrapper">
-              <h3 class="pickup__subTitle">カフェのご案内</h3>
-              <p class="section__text">店舗横にカフェを併設しています。<br>季節のお花を眺めながらゆったりとしたお時間をお過ごしください。</p>
-              <a class="pickup__btn" href="#">Read More</a>
-            </div>
-          </li>
-
-        </ul>
-      </section>
-      <!-- /pickup -->
-      <!-- shop -->
-      <section class="shop" id="shop">
-        <h2 class="shop__title section__title">SHOP</h2>
-        <p>Flower Roomの店舗案内はこちらをご覧ください。</p>
-        <a class="shop__btn" href="#">View More</a>
-      </section>
-      <!-- /shop -->
-    </main>
-    <!-- footer -->
-    <footer class="footer">
-      <small class="footer__copyright">©Copy right</small>
-    </footer>
-    <!-- /footer -->
-  </body>
+	<head>
+		<!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+		<meta charset="utf-8" />
+		<!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<!-- ウェブページのタイトルに使用されます。 -->
+		<title>Flower Room</title>
+		<!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+		<meta name="description" content="Flower Roomのショップサイトです。" />
+		<!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+		<meta name="format-detection" content="telephone=no" />
+		<!-- reset.cssは、destyleを使用しています。 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+		/>
+		<!-- スタイルシート（css）を呼び出しています -->
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header">
+			<h1 class="header__title">Flower Room</h1>
+			<nav>
+				<ul class="header__nav">
+					<li><a href="#pickup">PICK UP</a></li>
+					<li><a href="#shop">SHOP</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /header -->
+		<main>
+			<!-- firstview -->
+			<section class="firstview">
+				<picture>
+					<source srcset="image/firstview-sp.png" media="(max-width: 768px)" />
+					<img
+						class="firstview__img img"
+						src="image/firstview.png"
+						alt="花籠を持つ女性"
+					/>
+				</picture>
+			</section>
+			<!-- /firstview -->
+			<!-- pickup -->
+			<section class="pickup" id="pickup">
+				<h2 class="pickup__title section__title">PICK UP</h2>
+				<ul class="pickup__container">
+					<li class="pickup__item">
+						<img class="pickup__img" src="image/pickup1.png" alt="pickup1" />
+						<div class="pickup__textWrapper">
+							<h3 class="pickup__subTitle">お花の定期便始めました</h3>
+							<p class="section__text">
+								届いたら花瓶に入れるだけ。<br />お手軽に花のある生活を始めてみませんか？
+							</p>
+							<a class="pickup__btn" href="#">Read More</a>
+						</div>
+					</li>
+					<li class="pickup__item">
+						<img class="pickup__img" src="image/pickup2.png" alt="pickup2" />
+						<div class="pickup__textWrapper">
+							<h3 class="pickup__subTitle">カフェのご案内</h3>
+							<p class="section__text">
+								店舗横にカフェを併設しています。<br />季節のお花を眺めながらゆったりとしたお時間をお過ごしください。
+							</p>
+							<a class="pickup__btn" href="#">Read More</a>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- /pickup -->
+			<!-- shop -->
+			<section class="shop" id="shop">
+				<h2 class="shop__title section__title">SHOP</h2>
+				<p>Flower Roomの店舗案内はこちらをご覧ください。</p>
+				<a class="shop__btn" href="#">View More</a>
+			</section>
+			<!-- /shop -->
+		</main>
+		<!-- footer -->
+		<footer class="footer">
+			<small class="footer__copyright">©Copy right</small>
+		</footer>
+		<!-- /footer -->
+	</body>
 </html>
