@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+    <meta charset="UTF-8">
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ウェブページのタイトルに使用されます。 -->
+    <title>Flower Room</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="フラワーショップのサイトです" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header u-wrapper">
+        <h1 class="header__title">Flower Room</h1>
+        <nav>
+            <ul class="header__nav">
+                <li><a href="#pickup">PICK UP</a></li>
+                <li><a href="#shop">SHOP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /header -->
+    <main>
+        <!-- mainvisual -->
+        <section class="mainvisual">
+            <img src="nyumon2/img/spring.png" alt="メイン画像">
+        </section>
+        <!-- /mainvisual -->
+        <!-- pickup -->
+        <section id="pickup" class="pickup u-wrapper">
+            <div class="u-sectionWrapper">
+                <h2 class="pickupTitle u-sectionTitle">PICK UP</h2>
+                <div class="pickup__container">
+                    <div class="pickup__img">
+                        <img class="item__img left" src="nyumon2/img/hd-wallpaper.png" alt="pickup画像1">
+                    </div>
+                    <div class="pickup__item">
+                        <h3 class="itemTitle">お花の定期便始めました</h3>
+                        <p class="u-sectionText">届いたら花瓶に入れるだけ。<br>お手軽に花のある生活を始めてみませんか？</p>
+                        <div class="btn"><input type="submit" value="Read More"></div>
+                    </div>
+                </div>
+                <div class="pickup__container reverse">
+                    <div class="pickup__img">
+                        <img class="item__img" src="nyumon2/img/summer.png" alt="pickup画像1">
+                    </div>
+                    <div class="pickup__item">
+                        <h3 class="itemTitle">カフェのご案内</h3>
+                        <p class="u-sectionText">店舗横にカフェを併設しています。<br>季節のお花を眺めながらゆったりとしたお時間をお過ごしください。</p>
+                        <div class="btn"><input type="submit" value="Read More"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /pickup -->
+        <!-- shop -->
+        <section id="shop" class="shop">
+            <div class="u-sectionWrapper">
+                <h2 class="u-sectionTitle">SHOP</h2>
+                <p class="shopText u-sectionText">Flower Roomの店舗案内はこちらをご覧ください。</p>
+                <div class="btn"><input type="submit" value="View More"></div>
+            </div>
+        </section>
+        <!-- /shop -->
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <small class="footer__copyright">&copy;Copy right</small>
+    </footer>
+    <!-- /footer -->
+</body>
+
+</html>
