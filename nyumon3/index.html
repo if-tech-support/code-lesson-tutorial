@@ -1,0 +1,115 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+    <meta charset="utf-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- ウェブページのタイトルに使用されます。 -->
+    <title>Taro's Scenery</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="フォトグラファーの山田太郎です" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner wrapper">
+        <h1 class="header__title">
+          <img src="image/logo.png" />
+        </h1>
+        <nav class="header__nav">
+          <ul class="header__navList">
+            <li class="header__navItem"><a href="#service">Service</a></li>
+            <li class="header__navItem"><a href="#news">News</a></li>
+            <li class="header__navItem"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  
+    <div class="firstView">
+      <h2 class="firstView__title">My cooking</h2>
+    </div>
+  
+    <section id="service" class="service wrapper">
+      <h2 class="u-sectionTitle">Service</h2>
+      <p class="u-sectionSubTitle">サービス</p>
+      <ul class="service__cards">
+        <li class="service__card">
+          <img src="image/service.png" alt="service1" class="service__cardImage">
+          <div class="service__textbox">
+            <h3 class="service__cardTitle">h3見出し</h3>
+            <p class="service__cardDescription">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+          </div>
+        </li>
+        <li class="service__card">
+          <img src="image/service.png" alt="service2" class="service__cardImage">
+          <div class="service__textbox">
+            <h3 class="service__cardTitle">h3見出し</h3>
+            <p class="service__cardDescription">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+          </div>
+        </li>
+        <li class="service__card">
+          <img src="image/service.png" alt="service3" class="service__cardImage">
+          <div class="service__textbox">
+            <h3 class="service__cardTitle">h3見出し</h3>
+            <p class="service__cardDescription">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  
+    <section id="news" class="news">
+      <div class="wrapper">
+        <h2 class="u-sectionTitle">News</h2>
+        <p class="u-sectionSubTitle">新着情報</p>
+        <dl class="news__list">
+          <div class="news__item">
+            <dt class="news__date">2023/11/11</dt>
+            <dd class="news__description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </div>
+          <div class="news__item">
+            <dt class="news__date">2023/11/11</dt>
+            <dd class="news__description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </div>
+          <div class="news__item">
+            <dt class="news__date">2023/11/11</dt>
+            <dd class="news__description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+          </div>
+        </dl>
+        <button class="u-button">Read More</button>
+      </div>
+    </section>
+  
+    <section id="contact" class="contact">
+      <h2 class="u-sectionTitle">Contact</h2>
+      <p class="u-sectionSubTitle">お問い合わせ</p>
+      <form class="contact__form">
+        <label for="name" class="contact__label">お名前</label>
+        <input type="text" id="name" name="name" class="contact__input">
+        <label for="email" class="contact__label">メールアドレス</label>
+        <input type="email" id="email" name="email" class="contact__input">
+        <label for="message" class="contact__label">お問い合わせ内容</label>
+        <textarea id="message" name="message" class="contact__textarea"></textarea>
+        <button type="submit" class="contact__button u-button">送　信</button>
+      </form>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <p class="footer__text">&copy; Copy right</p>
+      </div>
+    </footer>
+  </body>
+</html>
