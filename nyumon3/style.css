@@ -5,24 +5,53 @@
  */
 
 html {
-  
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
 }
 /* ここから記述します。 */
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #333333;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
+/*--------------------------------
+common
+---------------------------------*/
 .wrapper {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 100px;
 }
 
+.u-sectionTitle{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
+}
+
+.u-sectionSubTitle {
+  text-align: center;
+  margin-bottom: 64px;
+  font-size: 18px;
+}
+
+.u-button {
+  display: block;
+  background: #EC8812;
+  color: #fff;
+  border: none;
+  padding: 16px 64px;
+  margin: 0 auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+/*--------------------------------
+header
+---------------------------------*/
 .header {
   display: flex;
   justify-content: space-between;
@@ -55,6 +84,9 @@ body {
   text-decoration: underline;
 }
 
+/*--------------------------------
+firstView
+---------------------------------*/
 .firstView {
   display: flex;
   justify-content: center;
@@ -72,22 +104,11 @@ body {
   background-color: #ffffff;
 }
 
+/*--------------------------------
+service
+---------------------------------*/
 .service {
   padding: 80px 0;
-}
-
-.u-sectionTitle{
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  margin-bottom: 4px;
-}
-
-.u-sectionSubTitle {
-  text-align: center;
-  margin-bottom: 64px;
-  font-size: 18px;
 }
 
 .service__cards {
@@ -122,6 +143,9 @@ body {
   line-height: 1.4;
 }
 
+/*--------------------------------
+news
+---------------------------------*/
 .news {
   background-color: #F1F8F8;
   padding: 80px 0;
@@ -153,21 +177,9 @@ body {
   margin: 0;
 }
 
-.u-button {
-  display: block;
-  background: #EC8812;
-  color: #fff;
-  border: none;
-  padding: 16px 64px;
-  margin: 0 auto;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.news__button:hover {
-  background: #e68900; 
-}
-
+/*--------------------------------
+contact
+---------------------------------*/
 .contact {
   max-width: 640px;
   margin: 0 auto;
@@ -210,6 +222,9 @@ body {
   margin-top: 64px;
 }
 
+/*--------------------------------
+footer
+---------------------------------*/
 .footer {
   background: #188888;
   color: #fff;
