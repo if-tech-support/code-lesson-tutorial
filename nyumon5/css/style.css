@@ -15,10 +15,6 @@ html {
   padding: 0 100px;
 }
 
-.u-sectionWrapper {
-  padding: 64px 0;
-}
-
 .u-sectionHeading {
   display: flex;
   flex-direction: column;
@@ -76,7 +72,16 @@ first view
 main
 ---------------------------------*/
 .main {
+  padding: 64px 0;
+}
+
+/*--------------------------------
+sidebarLeft
+---------------------------------*/
+.sidebarLeft {
   display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 
 /*--------------------------------
@@ -129,6 +134,8 @@ news
 .news__bottom {
   display: flex;
   gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d4cdb3;
 }
 
 .news__item {
@@ -136,4 +143,71 @@ news
   flex-direction: column;
   gap: 12px;
   flex: 1;
+}
+
+/*--------------------------------
+special
+---------------------------------*/
+.special {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.special__top {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.special__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.special__img {
+  width: 100%;
+}
+
+.special__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.special__detailDate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.special__detailTitle {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.special__detailText {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+.special__bottom {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.special__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.special__linkText {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
