@@ -6,12 +6,28 @@ html {
   color: #382710;
   background-color: #fcfaf2;
   line-height: 1.5;
+  letter-spacing: 0.08em;
 }
 
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 100px;
+}
+
+.u-sectionWrapper {
+  padding: 64px 0;
+}
+
+.u-sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.u-sectionTitle {
+  font-weight: 500;
+  font-size: 32px;
 }
 
 /* 個別部品 */
@@ -53,5 +69,71 @@ first view
   padding: 8px 32px;
 }
 .fv__title .fv__title--bold {
-  font-weight: bold;
+  font-weight: 500;
+}
+
+/*--------------------------------
+main
+---------------------------------*/
+.main {
+  display: flex;
+}
+
+/*--------------------------------
+news
+---------------------------------*/
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.news__top {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.news__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.news__img {
+  width: 100%;
+}
+
+.news__detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.news__detailDate {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.news__detailTitle {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.news__detailText {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+
+.news__bottom {
+  display: flex;
+  gap: 24px;
+}
+
+.news__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
