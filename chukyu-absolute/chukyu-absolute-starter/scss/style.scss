@@ -1,0 +1,20 @@
+/**
+  * @format
+ */
+/*******************************
+Webサイト全体の指定
+*******************************/
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ここから記述します。 */
