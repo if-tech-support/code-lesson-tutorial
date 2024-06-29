@@ -27,7 +27,6 @@ html {
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 100px;
 }
 
 .u-sectionHeading {
@@ -85,10 +84,20 @@ first view
 }
 
 /*--------------------------------
+container
+---------------------------------*/
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+/*--------------------------------
 main
 ---------------------------------*/
 .main {
   padding: 64px 0;
+  width: 58%;
+  min-width: 740px;
 }
 
 /*--------------------------------
@@ -224,4 +233,96 @@ special
   justify-content: flex-end;
   align-items: center;
   font-size: 15px;
+}
+
+/*--------------------------------
+sidebarRight
+---------------------------------*/
+.sidebarRight {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 64px 0;
+  min-width: 300px;
+  width: 23%;
+}
+
+/*--------------------------------
+category
+---------------------------------*/
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category__top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category__text {
+  font-size: 14px;
+}
+
+.category__linkText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.category__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
+}
+
+.category__btn {
+  border: 0.5px solid #d4cdb3;
+  border-radius: 5px;
+}
+
+.category__btnLink {
+  display: block;
+  padding: 11px 6px;
+}
+
+.category__btnImg {
+  width: 100%;
+}
+
+.category__btnText {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.category__search {
+  display: flex;
+  border: 1px solid #d4cdb3;
+  border-radius: 3px;
+  height: 43px;
+}
+
+.category__searchInput {
+  background-color: #fff;
+  width: calc(100% - 53px);
+}
+
+.category__searchBtn {
+  background-color: #fff2bf;
+  padding: 10px;
+  width: 53px;
+}
+
+.category__img {
+  width: 100%;
 }
