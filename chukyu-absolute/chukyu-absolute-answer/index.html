@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+  <meta charset="utf-8" />
+  <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- ウェブページのタイトルに使用されます。 -->
+  <title>Gnam gnam</title>
+  <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+  <meta name="description" content="Gnam gnamは新宿にある本格イタリアンのお店です。" />
+  <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+  <meta name="format-detection" content="telephone=no" />
+  <!-- ファビコン（favicon）を呼び出しています -->
+  <link rel="icon" href="image/favicon.ico">
+  <!-- reset.cssは、destyleを使用しています。 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <!-- スタイルシート（css）を呼び出しています -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fontsを呼び出しています -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logoLink">
+        <img src="image/logo.png" alt="Gnam gnam">
+      </a>
+      <nav>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#concept" class="header__link">Concept</a>
+          </li>
+          <li class="header__item">
+            <a href="#menu" class="header__link">Menu</a>
+          </li>
+          <li class="header__item">
+            <a href="#shop" class="header__link">Shop</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="firstView">
+      <h1 class="firstView__title">
+        Gnam gnam
+      </h1>
+
+      <!-- <img src="image/fv_pc.png" class="firstView__img" alt="ファーストビュー"> -->
+    </section>
+
+    <section id="concept" class="concept">
+      <div class="u-container">
+        <div class="concept__inner">
+          <img src="image/concept.png" alt="コンセプト">
+          <div class="concept__desc">
+            <h2 class="u-sectionTitle">
+              <span class="u-sectionTitle--en">
+                Concept
+              </span>
+              <span class="u-sectionTitle--jp">
+                コンセプト
+              </span>
+            </h2>
+            <p class="concept__text">
+              イタリア語の「Gnam gnam」は「もぐもぐ」という食べるときの音を表す言葉です。<br>
+              本格イタリアンの美味しさを、気軽にもぐもぐ・ぱくぱくお楽しみください。
+            </p>
+            <a href="" # class="u-readMoreBtn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="u-container">
+        <h2 class="u-sectionTitle">
+          <span class="u-sectionTitle--en">
+            Menu
+          </span>
+          <span class="u-sectionTitle--jp">
+            メニュー
+          </span>
+        </h2>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <img src="image/menu01.png" class="menu__img" alt="ボンゴレビアンコ">
+            <h3 class="menu__title">ボンゴレビアンコ</h3>
+            <p class="menu__price">¥1,540-</p>
+          </li>
+          <li class="menu__item">
+            <img src="image/menu02.png" class="menu__img" alt="とろ〜りチーズのピザ">
+            <h3 class="menu__title">とろ〜りチーズのピザ</h3>
+            <p class="menu__price">¥1,430-</p>
+          </li>
+          <li class="menu__item">
+            <img src="image/menu03.png" class="menu__img" alt="タリアッテレのボロネーゼ">
+            <h3 class="menu__title">タリアッテレのボロネーゼ</h3>
+            <p class="menu__price">¥1,540-</p>
+          </li>
+        </ul>
+
+        <a href="" # class="u-readMoreBtn u-readMoreBtn--center">Read More</a>
+      </div>
+    </section>
+
+    <div class="fixedBg">
+    </div>
+
+    <section id="shop" class="shop">
+      <div class="u-container">
+        <div class="shop__inner">
+          <div class="shop__desc">
+            <h2 class="u-sectionTitle">
+              <span class="u-sectionTitle--en">
+                Shop
+              </span>
+              <span class="u-sectionTitle--jp">
+                店舗情報
+              </span>
+            </h2>
+
+            <h3 class="shop__title">
+              Gnam gnam 新宿店
+            </h3>
+
+            <dl class="shop__def">
+              <div class="shop__def-inner">
+                <dt class="shop__def-title">
+                  住所
+                </dt>
+                <dd class="shop__def-data">
+                  〒160-0022<br>
+                  東京都新宿区新宿１
+                </dd>
+              </div>
+              <div class="shop__def-inner">
+                <dt class="shop__def-title">
+                  電話番号
+                </dt>
+                <dd class="shop__def-data">
+                  0120-000-000
+                </dd>
+              </div>
+              <div class="shop__def-inner">
+                <dt class="shop__def-title">
+                  営業時間
+                </dt>
+                <dd class="shop__def-data">
+                  10:00-22:30(L.O 21:30)
+                </dd>
+              </div>
+              <div class="shop__def-inner">
+                <dt class="shop__def-title">
+                  定休日
+                </dt>
+                <dd class="shop__def-data">
+                  毎週月曜日
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <img src="image/shop.png" alt="店舗情報">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <a href="#" class="footer__logoLink">
+        <img src="image/logo.png" alt="Gnam gnam">
+      </a>
+      <nav>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#concept" class="footer__link">Concept</a>
+          </li>
+          <li class="footer__item">
+            <a href="#menu" class="footer__link">Menu</a>
+          </li>
+          <li class="footer__item">
+            <a href="#shop" class="footer__link">Shop</a>
+          </li>
+        </ul>
+        <p class="footer__copy">
+          ©Gnam gnam. 2024
+        </p>
+      </nav>
+    </div>
+  </footer>
+
+  <a href="#" class="fixedBtn">
+    <img src="image/reservation.png" alt="ご予約はこちら">
+  </a>
+</body>
+
+</html>
