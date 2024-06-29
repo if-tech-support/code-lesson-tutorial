@@ -1,0 +1,73 @@
+$breakpoints: (
+  'x-sp': 'screen and (max-width: 360px)',
+  'sp': 'screen and (max-width: 480px)',
+  'x-tab': 'screen and (max-width: 600px)',
+  'tab': 'screen and (max-width: 768px)',
+  'pc': 'screen and (max-width: 1024px)',
+  'l-pc': 'screen and (min-width: 1025px)',
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/* ここから記述します。 */
+
+/* 共通部品 */
+html {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #382710;
+  background-color: #fcfaf2;
+  line-height: 1.5;
+}
+
+.u-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* 個別部品 */
+/*--------------------------------
+header
+---------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
+}
+
+/*--------------------------------
+first view
+---------------------------------*/
+.fv {
+  position: relative;
+}
+
+.fv__img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.fv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  text-align: center;
+  background-color: rgba(255,253,247,0.9);
+  padding: 8px 32px;
+
+  .fv__title--bold {
+    font-weight: bold;
+  }
+}
