@@ -127,7 +127,7 @@ service
   height: auto;
 }
 
-.service__textbox {
+.service__textBox {
   padding: 24px;
 }
 
@@ -184,16 +184,6 @@ contact
   max-width: 640px;
   margin: 0 auto;
   padding: 80px 0;
-}
-
-.contact__title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.contact__subtitle {
-  margin-bottom: 40px;
-  font-size: 1.2rem;
 }
 
 .contact__form {
