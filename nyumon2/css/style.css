@@ -7,10 +7,6 @@ html {
     color: #333;
 }
 
-img{
-    max-width: 100%;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -21,7 +17,7 @@ a {
     margin: 0 auto;
     padding: 80px 40px;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         padding: 64px 20px;
     }
 }
@@ -34,7 +30,7 @@ a {
     letter-spacing: 0.08em;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         font-size: 24px;
     }
 }
@@ -86,15 +82,11 @@ header
 /*--------------------------------
 mainvisual
 ---------------------------------*/
-.mainvisual{
-    @media screen and (max-width: 390px) {
-        height: 500px;
-    }
-}
 
 .mainvisual__img {
+    max-width: 100%;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         height: 100%;
         object-fit: cover;
     }
@@ -117,7 +109,7 @@ pickup
     letter-spacing: 0.08em;
     margin-bottom: 24px;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         text-align: center;
     }
 }
@@ -126,11 +118,11 @@ pickup
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:32px;
+    gap: 32px;
     align-items: center;
     margin-bottom: 40px;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         display: block;
     }
 }
@@ -141,29 +133,35 @@ pickup
 
 .pickup__imgContainer {
     width: 500px;
+    max-width: 100%;
+    height: auto;
 
-    @media screen and (max-width: 390px) {
-        width: 100%;
-        margin-bottom: 24px
+    @media screen and (max-width: 560px) {
+        /* width: 350px;
+        height: auto; */
+        margin:0 auto 24px
     }
 }
 
-.pickup__img{
+.pickup__img {
     width: 100%;
 }
 
 
 .pickup__textContainer {
     width: 50%;
+    max-width: 468px;
 
-    @media screen and (max-width: 390px) {
+    @media screen and (max-width: 560px) {
         width: 100%;
+        max-width: 100%;
     }
 }
 
-.pickup__btn input{
+.pickup__btn {
     width: 179px;
     height: 43px;
+    line-height: 43px;
     border-radius: 100px;
     border: 1px solid #83776A;
     background-color: #fff;
@@ -171,20 +169,15 @@ pickup
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    line-height: 1.45;
+
     letter-spacing: 0.08em;
     cursor: pointer;
 
-    @media screen and (max-width: 390px) {
-        text-align: center;
+
+    @media screen and (max-width: 560px) {
+        margin: 0 auto;
     }
 
-}
-
-@media screen and (max-width: 390px) {
-    .pickup__btn {
-        text-align: center;
-    }
 }
 
 /*--------------------------------
@@ -198,12 +191,18 @@ shop
 }
 
 .shop__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
     margin-bottom: 40px;
 }
 
-.shop__btn input {
+.shop__btn {
+    margin: 0 auto;
     width: 175px;
     height: 53px;
+    line-height: 53px;
     border-radius: 100px;
     border: 1px solid #fff;
     background-color: #fff;
@@ -211,7 +210,6 @@ shop
     font-size: 20px;
     font-weight: 500;
     text-align: center;
-    line-height: 1.45;
     letter-spacing: 0.08em;
     cursor: pointer;
 }

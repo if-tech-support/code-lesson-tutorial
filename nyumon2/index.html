@@ -33,7 +33,10 @@
     <main>
         <!-- mainvisual -->
         <section class="mainvisual">
-            <img class="mainvisual__img" src="img/spring.png" alt="トップ画像">
+            <picture>
+                <source media="(max-width:560px)" srcset="img/spring_sp.png">
+                <img class="mainvisual__img" src="img/spring.png" alt="花籠を持った女性">
+            </picture>
         </section>
         <!-- /mainvisual -->
         <!-- pickup -->
@@ -42,22 +45,22 @@
                 <h2 class="pickup__title u-sectionTitle">PICK UP</h2>
                 <div class="pickup__item">
                     <div class="pickup__imgContainer">
-                        <img class="pickup__img" src="img/hd-wallpaper.png" alt="pickup画像1">
+                        <img class="pickup__img" src="img/hd-wallpaper.png" alt="窓と花の画像">
                     </div>
                     <div class="pickup__textContainer">
                         <h3 class="pickup__itemTitle">お花の定期便始めました</h3>
                         <p class="u-sectionText">届いたら花瓶に入れるだけ。<br>お手軽に花のある生活を始めてみませんか？</p>
-                        <div class="pickup__btn"><input type="submit" value="Read More"></div>
+                        <div class="pickup__btn"><a href="#">Read More</a></div>
                     </div>
                 </div>
                 <div class="pickup__item pickup__item--reverse">
                     <div class="pickup__imgContainer">
-                        <img class="pickup__img" src="img/summer.png" alt="pickup画像1">
+                        <img class="pickup__img" src="img/summer.png" alt="テーブルと花の画像">
                     </div>
                     <div class="pickup__textContainer">
                         <h3 class="pickup__itemTitle">カフェのご案内</h3>
                         <p class="u-sectionText">店舗横にカフェを併設しています。<br>季節のお花を眺めながらゆったりとしたお時間をお過ごしください。</p>
-                        <div class="pickup__btn"><input type="submit" value="Read More"></div>
+                        <div class="pickup__btn"><a href="#">Read More</a></div>
                     </div>
                 </div>
             </div>
@@ -67,8 +70,8 @@
         <section id="shop" class="shop">
             <div class="u-sectionWrapper">
                 <h2 class="u-sectionTitle">SHOP</h2>
-                <p class="shop__text u-sectionText">Flower Roomの店舗案内はこちらをご覧ください。</p>
-                <div class="shop__btn"><input type="submit" value="View More"></div>
+                <p class="shop__text">Flower Roomの店舗案内はこちらをご覧ください。</p>
+                <div class="shop__btn"><a href="#">View More</a></div>
             </div>
         </section>
         <!-- /shop -->
