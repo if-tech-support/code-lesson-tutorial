@@ -39,19 +39,19 @@ $fontSizeLarge: 32px;
   }
 }
 
-.u-sectionTitle--en {
+.u-sectionTitleEn {
   font-family: "Noto Serif JP";
   font-size: $fontSizeLarge;
   font-weight: bold;
 }
 
-.u-sectionTitle--jp {
+.u-sectionTitleJp {
   display: block;
   padding-left: 45px;
   position: relative;
 }
 
-.u-sectionTitle--jp::before {
+.u-sectionTitleJp::before {
   position: absolute;
   content: "";
   width: 35px;
