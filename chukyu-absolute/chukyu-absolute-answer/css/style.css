@@ -406,7 +406,7 @@ img {
   color: #83776a;
 }
 
-.shop__def-inner {
+.shop__dl-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,12 +415,12 @@ img {
   border-bottom: 1px solid #ccc;
 }
 
-.shop__def-title {
+.shop__dl-title {
   width: 70px;
   font-weight: normal;
 }
 
-.shop__def-data {
+.shop__dl-data {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;

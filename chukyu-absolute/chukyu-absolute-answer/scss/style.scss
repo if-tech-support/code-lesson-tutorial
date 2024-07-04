@@ -357,19 +357,19 @@ $fontSizeLarge: 32px;
   color: $accentColor;
 }
 
-.shop__def-inner {
+.shop__dl-inner {
   display: flex;
   gap: 24px;
   padding: 16px 0;
   border-bottom: 1px solid #ccc;
 }
 
-.shop__def-title {
+.shop__dl-title {
   width: 70px;
   font-weight: normal;
 }
 
-.shop__def-data {
+.shop__dl-data {
   flex-grow: 1;
 }
 
