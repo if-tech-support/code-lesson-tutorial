@@ -359,8 +359,7 @@ img {
   height: 500px;
   background-image: url(../image/fixed_bg.png);
   background-attachment: fixed;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 @media screen and (max-width: 768px) {
