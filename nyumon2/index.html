@@ -1,86 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
+	<head>
+		<!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+		<meta charset="UTF-8" />
+		<!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- ウェブページのタイトルに使用されます。 -->
+		<title>Flower Room</title>
+		<!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+		<meta name="description" content="フラワーショップのサイトです" />
+		<!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+		<meta name="format-detection" content="telephone=no" />
+		<!-- ファビコンを設定しています。 -->
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<!-- reset.cssは、destyleを使用しています。 -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+		/>
+		<!-- スタイルシート（css）を呼び出しています -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-<head>
-    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
-    <meta charset="UTF-8">
-    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ウェブページのタイトルに使用されます。 -->
-    <title>Flower Room</title>
-    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
-    <meta name="description" content="フラワーショップのサイトです" />
-    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
-    <meta name="format-detection" content="telephone=no" />
-    <!-- reset.cssは、destyleを使用しています。 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
-    <!-- スタイルシート（css）を呼び出しています -->
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-    <!-- header -->
-    <header class="header">
-        <h1 class="header__title">Flower Room</h1>
-        <nav>
-            <ul class="header__nav">
-                <li><a href="#pickup">PICK UP</a></li>
-                <li><a href="#shop">SHOP</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- /header -->
-    <main>
-        <!-- mainvisual -->
-        <section class="mainvisual">
-            <picture>
-                <source media="(max-width:560px)" srcset="img/spring_sp.png">
-                <img class="mainvisual__img" src="img/spring.png" alt="花籠を持った女性">
-            </picture>
-        </section>
-        <!-- /mainvisual -->
-        <!-- pickup -->
-        <section id="pickup" class="pickup">
-            <div class="u-sectionWrapper">
-                <h2 class="pickup__title u-sectionTitle">PICK UP</h2>
-                <div class="pickup__item">
-                    <div class="pickup__imgContainer">
-                        <img class="pickup__img" src="img/hd-wallpaper.png" alt="窓と花の画像">
-                    </div>
-                    <div class="pickup__textContainer">
-                        <h3 class="pickup__itemTitle">お花の定期便始めました</h3>
-                        <p class="u-sectionText">届いたら花瓶に入れるだけ。<br>お手軽に花のある生活を始めてみませんか？</p>
-                        <div class="pickup__btn"><a href="#">Read More</a></div>
-                    </div>
-                </div>
-                <div class="pickup__item pickup__item--reverse">
-                    <div class="pickup__imgContainer">
-                        <img class="pickup__img" src="img/summer.png" alt="テーブルと花の画像">
-                    </div>
-                    <div class="pickup__textContainer">
-                        <h3 class="pickup__itemTitle">カフェのご案内</h3>
-                        <p class="u-sectionText">店舗横にカフェを併設しています。<br>季節のお花を眺めながらゆったりとしたお時間をお過ごしください。</p>
-                        <div class="pickup__btn"><a href="#">Read More</a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /pickup -->
-        <!-- shop -->
-        <section id="shop" class="shop">
-            <div class="u-sectionWrapper">
-                <h2 class="u-sectionTitle">SHOP</h2>
-                <p class="shop__text">Flower Roomの店舗案内はこちらをご覧ください。</p>
-                <div class="shop__btn"><a href="#">View More</a></div>
-            </div>
-        </section>
-        <!-- /shop -->
-    </main>
-    <!-- footer -->
-    <footer class="footer">
-        <small class="footer__copyright">&copy;Copy right</small>
-    </footer>
-    <!-- /footer -->
-</body>
-
+	<body>
+		<!-- header -->
+		<header class="header">
+			<h1 class="header__title">Flower Room</h1>
+			<nav>
+				<ul class="header__nav">
+					<li><a href="#pickup">PICK UP</a></li>
+					<li><a href="#shop">SHOP</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- /header -->
+		<main>
+			<!-- mainvisual -->
+			<section class="mainvisual">
+				<picture>
+					<source media="(max-width:560px)" srcset="img/spring_sp.png" />
+					<img
+						class="mainvisual__img"
+						src="img/spring_pc.png"
+						alt="花籠を持った女性"
+					/>
+				</picture>
+			</section>
+			<!-- /mainvisual -->
+			<!-- pickup -->
+			<section id="pickup" class="pickup">
+				<div class="u-sectionWrapper">
+					<h2 class="pickup__title u-sectionTitle">PICK UP</h2>
+					<div class="pickup__item">
+						<div class="pickup__imgContainer">
+							<img
+								class="pickup__img"
+								src="img/hd-wallpaper.png"
+								alt="窓と花の画像"
+							/>
+						</div>
+						<div class="pickup__textContainer">
+							<h3 class="pickup__itemTitle">お花の定期便始めました</h3>
+							<p class="u-sectionText">
+								届いたら花瓶に入れるだけ。<br />お手軽に花のある生活を始めてみませんか？
+							</p>
+							<div class="pickup__btn"><a href="#">Read More</a></div>
+						</div>
+					</div>
+					<div class="pickup__item pickup__item--reverse">
+						<div class="pickup__imgContainer">
+							<img
+								class="pickup__img"
+								src="img/summer.png"
+								alt="テーブルと花の画像"
+							/>
+						</div>
+						<div class="pickup__textContainer">
+							<h3 class="pickup__itemTitle">カフェのご案内</h3>
+							<p class="u-sectionText">
+								店舗横にカフェを併設しています。<br />季節のお花を眺めながらゆったりとしたお時間をお過ごしください。
+							</p>
+							<div class="pickup__btn"><a href="#">Read More</a></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /pickup -->
+			<!-- shop -->
+			<section id="shop" class="shop">
+				<div class="u-sectionWrapper">
+					<h2 class="u-sectionTitle">SHOP</h2>
+					<p class="shop__text">
+						Flower Roomの店舗案内はこちらをご覧ください。
+					</p>
+					<div class="shop__btn"><a href="#">View More</a></div>
+				</div>
+			</section>
+			<!-- /shop -->
+		</main>
+		<!-- footer -->
+		<footer class="footer">
+			<small class="footer__copyright">&copy;Copy right</small>
+		</footer>
+		<!-- /footer -->
+	</body>
 </html>
