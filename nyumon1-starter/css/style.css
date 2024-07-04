@@ -1,0 +1,13 @@
+/**
+ * 共通部品
+ *
+ * @format
+ */
+
+html {
+    font-family: Inter;
+    color: #333;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+/* ここから記述します。 */
