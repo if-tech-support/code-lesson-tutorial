@@ -4,6 +4,8 @@
 html {
   font-family: Inter;
   color: #333;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 .u-wrapper {
