@@ -224,9 +224,9 @@ special
 }
 
 /*--------------------------------
-sidebarRight
+aside
 ---------------------------------*/
-.sidebarRight {
+aside {
   display: flex;
   flex-direction: column;
   gap: 24px;
