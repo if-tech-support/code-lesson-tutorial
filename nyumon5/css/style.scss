@@ -59,17 +59,17 @@ header
 /*--------------------------------
 first view
 ---------------------------------*/
-.fv {
+.firstView {
   position: relative;
 }
 
-.fv__img {
+.firstView__img {
   width: 100%;
   height: 500px;
   object-fit: cover;
 }
 
-.fv__title {
+.firstView__title {
   max-width: 580px;
   position: absolute;
   top: 50%;
@@ -80,7 +80,7 @@ first view
   background-color: rgba(255,253,247,0.9);
   padding: 8px 32px;
 
-  .fv__title--bold {
+  .firstView__title--bold {
     font-weight: 500;
   }
 }
