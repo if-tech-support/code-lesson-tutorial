@@ -356,19 +356,19 @@ $fontSizeLarge: 32px;
   color: $accentColor;
 }
 
-.shop__dl-inner {
+.shop__dlInner {
   display: flex;
   gap: 24px;
   padding: 16px 0;
   border-bottom: 1px solid #ccc;
 }
 
-.shop__dl-title {
+.shop__dlTitle {
   width: 70px;
   font-weight: normal;
 }
 
-.shop__dl-data {
+.shop__dlData {
   flex-grow: 1;
 }
 
