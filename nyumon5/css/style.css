@@ -12,6 +12,12 @@ html {
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .u-wrapper {
+    padding: 0 30px;
+  }
 }
 
 .u-sectionHeading {
@@ -34,11 +40,51 @@ header
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    padding: 11px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    width: 100%;
+    background-color: #f4eed8;
+  }
 }
 
 .header__list {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .header__list {
+    padding: 8px 30px;
+  }
+}
+
+.header__menuLink {
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 768px) {
+  .header__menuLink {
+    font-size: 1.5rem;
+  }
 }
 
 /*--------------------------------
