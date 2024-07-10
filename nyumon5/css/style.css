@@ -99,9 +99,14 @@ first view
   height: 500px;
   object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .firstView__img {
+    height: 240px;
+  }
+}
 
 .firstView__title {
-  max-width: 580px;
+  width: 580px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -111,7 +116,15 @@ first view
   background-color: rgba(255, 253, 247, 0.9);
   padding: 8px 32px;
 }
+@media screen and (max-width: 768px) {
+  .firstView__title {
+    width: 302px;
+    font-size: 22px;
+    padding: 3px 10px;
+  }
+}
 .firstView__title .firstView__title--bold {
+  display: block;
   font-weight: 500;
 }
 
