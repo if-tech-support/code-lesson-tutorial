@@ -226,7 +226,7 @@ special
 /*--------------------------------
 aside
 ---------------------------------*/
-aside {
+.sidebar {
   display: flex;
   flex-direction: column;
   gap: 24px;
