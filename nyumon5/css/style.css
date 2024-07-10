@@ -30,6 +30,11 @@ html {
   font-weight: 500;
   font-size: 32px;
 }
+@media screen and (max-width: 768px) {
+  .u-sectionTitle {
+    font-size: 24px;
+  }
+}
 
 /* 個別部品 */
 /*--------------------------------
@@ -144,6 +149,11 @@ main
   width: 58%;
   min-width: 740px;
 }
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 50px 0;
+  }
+}
 
 /*--------------------------------
 sidebarLeft
@@ -174,6 +184,15 @@ news
   flex-direction: column;
   gap: 12px;
   max-width: 640px;
+}
+
+.news__text {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .news__text {
+    font-size: 15px;
+  }
 }
 
 .news__img {

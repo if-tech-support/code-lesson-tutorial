@@ -43,6 +43,10 @@ html {
 .u-sectionTitle {
   font-weight: 500;
   font-size: 32px;
+
+  @include mq(tab) {
+    font-size: 24px;
+  }
 }
 
 /* 個別部品 */
@@ -153,6 +157,10 @@ main
   padding: 64px 0;
   width: 58%;
   min-width: 740px;
+
+  @include mq(tab) {
+    padding: 50px 0;
+  }
 }
 
 /*--------------------------------
@@ -183,6 +191,14 @@ news
   flex-direction: column;
   gap: 12px;
   max-width: 640px;
+}
+
+.news__text {
+  font-size: 16px;
+
+  @include mq(tab) {
+    font-size: 15px;
+  }
 }
 
 .news__img {
