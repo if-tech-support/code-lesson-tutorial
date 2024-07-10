@@ -456,6 +456,10 @@ footer
 .footer {
   background-color: #fff;
   padding: 42px;
+
+  @include mq(tab) {
+    padding: 48px 30px 14px;
+  }
 }
 
 .footer__contents {
@@ -463,6 +467,15 @@ footer
   max-width: 985px;
   margin: 0 auto;
   gap: 160px;
+
+  @include mq(pc) {
+    gap: 80px;
+  }
+
+  @include mq(tab) {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
 }
 
 .footer__left {
@@ -474,6 +487,20 @@ footer
 
 .footer__catch {
   font-size: 14px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 160px;
+
+  @include mq(pc) {
+    gap: 80px;
+  }
+
+  @include mq(tab) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .footer__center {
