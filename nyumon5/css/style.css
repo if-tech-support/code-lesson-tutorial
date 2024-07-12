@@ -12,12 +12,6 @@ html {
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 100px;
-}
-@media screen and (max-width: 768px) {
-  .u-wrapper {
-    padding: 0 30px;
-  }
 }
 
 .u-sectionHeading {
@@ -42,27 +36,35 @@ header
 ---------------------------------*/
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100px;
-  max-width: 1080px;
-  margin: 0 auto;
   padding: 0 100px;
 }
 @media screen and (max-width: 768px) {
   .header {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .header__inner {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: auto;
     max-width: none;
-    padding: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header__logo {
-    padding: 11px 30px;
+    margin: 11px 30px;
+    width: 120px;
   }
 }
 
@@ -84,11 +86,17 @@ header
 }
 
 .header__menuLink {
+  font-weight: 500;
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   .header__menuLink {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__menuLink {
+    font-size: 10px;
   }
 }
 
@@ -137,8 +145,27 @@ first view
 container
 ---------------------------------*/
 .container {
+  padding: 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+.container__inner {
   display: flex;
   gap: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .container__inner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container__inner {
+    gap: 50px;
+  }
 }
 
 /*--------------------------------
@@ -146,12 +173,22 @@ main
 ---------------------------------*/
 .main {
   padding: 64px 0;
-  width: 58%;
-  min-width: 740px;
+  width: 69%;
+}
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .main {
     padding: 50px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 50px 0 30px;
+    border-bottom: 1px solid #d4cdb3;
   }
 }
 
@@ -163,6 +200,11 @@ sidebarLeft
   flex-direction: column;
   gap: 56px;
 }
+@media screen and (max-width: 480px) {
+  .sidebarLeft {
+    gap: 40px;
+  }
+}
 
 /*--------------------------------
 news
@@ -171,6 +213,11 @@ news
   display: flex;
   flex-direction: column;
   gap: 42px;
+}
+@media screen and (max-width: 480px) {
+  .news {
+    gap: 30px;
+  }
 }
 
 .news__top {
@@ -197,6 +244,16 @@ news
 
 .news__img {
   width: 100%;
+}
+
+.news__pickup {
+  max-width: 640px;
+  width: 86%;
+}
+@media screen and (max-width: 480px) {
+  .news__pickup {
+    width: 100%;
+  }
 }
 
 .news__detail {
@@ -226,6 +283,12 @@ news
   padding-bottom: 24px;
   border-bottom: 1px solid #d4cdb3;
 }
+@media screen and (max-width: 480px) {
+  .news__bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 .news__item {
   display: flex;
@@ -241,6 +304,11 @@ special
   display: flex;
   flex-direction: column;
   gap: 42px;
+}
+@media screen and (max-width: 480px) {
+  .special {
+    gap: 30px;
+  }
 }
 
 .special__top {
@@ -258,6 +326,16 @@ special
 
 .special__img {
   width: 100%;
+}
+
+.special__pickup {
+  max-width: 640px;
+  width: 86%;
+}
+@media screen and (max-width: 480px) {
+  .special__pickup {
+    width: 100%;
+  }
 }
 
 .special__detail {
@@ -285,6 +363,12 @@ special
   display: flex;
   gap: 24px;
 }
+@media screen and (max-width: 480px) {
+  .special__bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 .special__item {
   display: flex;
@@ -309,8 +393,18 @@ aside
   flex-direction: column;
   gap: 24px;
   padding: 64px 0;
-  min-width: 300px;
-  width: 23%;
+  width: 28%;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sidebar {
+    padding: 0 0 50px;
+    gap: 30px;
+  }
 }
 
 /*--------------------------------
@@ -442,6 +536,13 @@ post
   font-size: 16px;
   width: fit-content;
   margin-left: auto;
+}
+
+/*--------------------------------
+X
+---------------------------------*/
+iframe {
+  width: 100%;
 }
 
 /*--------------------------------

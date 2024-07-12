@@ -27,11 +27,6 @@ html {
 .u-wrapper {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 100px;
-
-  @include mq(tab) {
-    padding: 0 30px;
-  }
 }
 
 .u-sectionHeading {
@@ -55,26 +50,33 @@ header
 ---------------------------------*/
 .header {
   display: flex;
+  height: 100px;
+  padding: 0 100px;
+
+  @include mq(tab) {
+    height: auto;
+    padding: 0;
+  }
+}
+
+.header__inner {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 100px;
+  width: 100%;
 
   @include mq(tab) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    height: auto;
     max-width: none;
-    padding: 0;
   }
 }
 
 .header__logo {
   @include mq(tab) {
-    padding: 11px 30px;
+    margin: 11px 30px;
+    width: 120px;
   }
 }
 
@@ -95,10 +97,15 @@ header
 }
 
 .header__menuLink {
+  font-weight: 500;
   font-size: 16px;
 
   @include mq(tab) {
     font-size: 15px;
+  }
+
+  @include mq(sp) {
+    font-size: 10px;
   }
 }
 
@@ -146,8 +153,24 @@ first view
 container
 ---------------------------------*/
 .container {
+  padding: 0 100px;
+
+  @include mq(tab) {
+    padding: 0 30px;
+  }
+}
+
+.container__inner {
   display: flex;
   gap: 40px;
+
+  @include mq(pc) {
+    flex-direction: column;
+  }
+
+  @include mq(sp) {
+    gap: 50px;
+  }
 }
 
 /*--------------------------------
@@ -155,11 +178,19 @@ main
 ---------------------------------*/
 .main {
   padding: 64px 0;
-  width: 58%;
-  min-width: 740px;
+  width: 69%;
+
+  @include mq(pc) {
+    width: 100%;
+  }
 
   @include mq(tab) {
     padding: 50px 0;
+  }
+
+  @include mq(sp) {
+    padding: 50px 0 30px;
+    border-bottom: 1px solid #d4cdb3;
   }
 }
 
@@ -170,6 +201,10 @@ sidebarLeft
   display: flex;
   flex-direction: column;
   gap: 56px;
+
+  @include mq(sp) {
+    gap: 40px;
+  }
 }
 
 /*--------------------------------
@@ -179,6 +214,10 @@ news
   display: flex;
   flex-direction: column;
   gap: 42px;
+
+  @include mq(sp) {
+    gap: 30px;
+  }
 }
 
 .news__top {
@@ -203,6 +242,15 @@ news
 
 .news__img {
   width: 100%;
+}
+
+.news__pickup {
+  max-width: 640px;
+  width: 86%;
+
+  @include mq(sp) {
+    width: 100%;
+  }
 }
 
 .news__detail {
@@ -231,6 +279,11 @@ news
   gap: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #d4cdb3;
+
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .news__item {
@@ -247,6 +300,10 @@ special
   display: flex;
   flex-direction: column;
   gap: 42px;
+
+  @include mq(sp) {
+    gap: 30px;
+  }
 }
 
 .special__top {
@@ -263,6 +320,15 @@ special
 
 .special__img {
   width: 100%;
+}
+
+.special__pickup {
+  max-width: 640px;
+  width: 86%;
+
+  @include mq(sp) {
+    width: 100%;
+  }
 }
 
 .special__detail {
@@ -289,6 +355,11 @@ special
 .special__bottom {
   display: flex;
   gap: 24px;
+
+  @include mq(sp) {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .special__item {
@@ -314,8 +385,16 @@ aside
   flex-direction: column;
   gap: 24px;
   padding: 64px 0;
-  min-width: 300px;
-  width: 23%;
+  width: 28%;
+
+  @include mq(pc) {
+    width: 100%;
+  }
+
+  @include mq(sp) {
+    padding: 0 0 50px;
+    gap: 30px;
+  }
 }
 
 /*--------------------------------
@@ -448,6 +527,13 @@ post
   font-size: 16px;
   width: fit-content;
   margin-left: auto;
+}
+
+/*--------------------------------
+X
+---------------------------------*/
+iframe {
+  width: 100%;
 }
 
 /*--------------------------------
