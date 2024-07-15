@@ -101,11 +101,7 @@ header
   font-size: 16px;
 
   @include mq(tab) {
-    font-size: 15px;
-  }
-
-  @include mq(sp) {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -190,7 +186,6 @@ main
 
   @include mq(sp) {
     padding: 50px 0 30px;
-    border-bottom: 1px solid #d4cdb3;
   }
 }
 
@@ -278,7 +273,6 @@ news
   display: flex;
   gap: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #d4cdb3;
 
   @include mq(sp) {
     flex-direction: column;
