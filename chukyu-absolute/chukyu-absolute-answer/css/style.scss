@@ -400,6 +400,11 @@ $fontSizeLarge: 32px;
   font-family: "Noto Serif JP";
   font-weight: bold;
   color: $accentColor;
+  transition: 0.2s;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
 }
 
 .footer__copy {
