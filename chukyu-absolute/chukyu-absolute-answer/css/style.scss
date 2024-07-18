@@ -30,6 +30,17 @@ $fontSizeLarge: 32px;
 /*******************************
 共通パーツの指定
 *******************************/
+.u-container {
+  max-width: 1000px;
+  padding: 80px 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    max-width: 460px;
+    padding: 80px 30px;
+  }
+}
+
 .u-sectionTitle {
   color: $accentColor;
   margin-bottom: 64px;
@@ -61,17 +72,6 @@ $fontSizeLarge: 32px;
   bottom: 0;
   margin: auto;
   left: 0;
-}
-
-.u-container {
-  max-width: 1000px;
-  padding: 80px 40px;
-  margin: 0 auto;
-
-  @media screen and (max-width: 768px) {
-    max-width: 460px;
-    padding: 80px 30px;
-  }
 }
 
 .u-readMoreBtn {

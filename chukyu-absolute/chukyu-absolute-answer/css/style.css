@@ -24,6 +24,18 @@ img {
 /*******************************
 共通パーツの指定
 *******************************/
+.u-container {
+  max-width: 1000px;
+  padding: 80px 40px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .u-container {
+    max-width: 460px;
+    padding: 80px 30px;
+  }
+}
+
 .u-sectionTitle {
   color: #83776a;
   margin-bottom: 64px;
@@ -56,18 +68,6 @@ img {
   bottom: 0;
   margin: auto;
   left: 0;
-}
-
-.u-container {
-  max-width: 1000px;
-  padding: 80px 40px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 768px) {
-  .u-container {
-    max-width: 460px;
-    padding: 80px 30px;
-  }
 }
 
 .u-readMoreBtn {
