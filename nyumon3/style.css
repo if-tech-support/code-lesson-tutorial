@@ -97,7 +97,6 @@ header
 
 .header__navItem a {
   color: #ffffff;
-  text-decoration: none;
 }
 
 .header__navItem a:hover {
