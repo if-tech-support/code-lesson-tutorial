@@ -7,6 +7,8 @@
 html {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
 }
 /* ここから記述します。 */
 
@@ -32,7 +34,6 @@ common
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  letter-spacing: 0.1em;
   margin-bottom: 4px;
 }
 
@@ -72,7 +73,6 @@ header
 .header__title {
   font-size: 24px;
   font-weight: bold;
-  letter-spacing: 0.1em;
   @media screen and (max-width: 768px) {
 		margin-bottom: 10px;
 	}
@@ -124,7 +124,6 @@ firstView
   padding: 8px 32px;
   font-size: 40px;
   font-weight: bold;
-  letter-spacing: 0.1em;
   background-color: #ffffff;
   @media screen and (max-width: 768px) {
 		font-size: 32px;
@@ -173,7 +172,6 @@ course
 
 .course__cardDescription {
   font-size: 1rem;
-  line-height: 1.4;
 }
 
 /*--------------------------------
@@ -278,4 +276,3 @@ footer
   font-size: 14px;
   padding: 30px 0;
 }
-
