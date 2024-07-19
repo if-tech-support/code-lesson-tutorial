@@ -1,0 +1,424 @@
+/**
+  * @format
+ */
+/*******************************
+Webサイト全体の指定
+*******************************/
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*******************************
+変数の指定
+*******************************/
+$mainColor: #f9f5ed;
+$baseColor: #fff;
+$accentColor: #83776a;
+$fontSizeSmall: 14px;
+$fontSizeMedium: 20px;
+$fontSizeLarge: 32px;
+
+/*******************************
+共通パーツの指定
+*******************************/
+.u-container {
+  max-width: 1000px;
+  padding: 80px 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    max-width: 460px;
+    padding: 80px 30px;
+  }
+}
+
+.u-sectionTitle {
+  color: $accentColor;
+  margin-bottom: 64px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.u-sectionTitleEn {
+  font-family: "Noto Serif JP";
+  font-size: $fontSizeLarge;
+  font-weight: bold;
+}
+
+.u-sectionTitleJp {
+  display: block;
+  padding-left: 45px;
+  position: relative;
+}
+
+.u-sectionTitleJp::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 1px;
+  background-color: $accentColor;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+}
+
+.u-readMoreBtn {
+  display: block;
+  width: 180px;
+  padding: 10px 0;
+  background-color: $baseColor;
+  border: 1px solid $accentColor;
+  color: $accentColor;
+  text-align: center;
+  transition: 0.2s;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.u-readMoreBtn:hover {
+  background-color: $accentColor;
+  color: $baseColor;
+}
+
+.u-readMoreBtn::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 1px;
+  background-color: $accentColor;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: -35px;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.u-readMoreBtn:hover::after {
+  right: -45px;
+}
+
+.u-readMoreBtn--center {
+  margin: 0 auto;
+}
+
+/*******************************
+ヘッダー
+*******************************/
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $baseColor;
+  z-index: 100;
+}
+
+.header__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    padding: 15px 20px;
+  }
+}
+
+.header__logoLink {
+  display: inline-block;
+}
+
+.header__list {
+  display: flex;
+  gap: 40px;
+
+  @media screen and (max-width: 768px) {
+    gap: 16px;
+  }
+}
+
+.header__link {
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: $accentColor;
+  transition: 0.2s;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+/*******************************
+ファーストビュー
+*******************************/
+.main {
+  margin-top: 80px;
+}
+
+.firstView {
+  padding: 300px 0;
+  margin-left: 280px;
+  background-image: url(../image/fv.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.firstView__title {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid $accentColor;
+  bottom: 80px;
+  left: -150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Noto Serif JP";
+  font-size: 40px;
+  font-weight: bold;
+  color: $accentColor;
+
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+    top: 100px;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 24px;
+  }
+}
+
+.firstView__img {
+  margin-left: auto;
+}
+
+/*******************************
+コンセプト
+*******************************/
+.concept__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.concept__text {
+  margin-bottom: 40px;
+}
+
+/*******************************
+メニュー
+*******************************/
+.menu {
+  background-color: $mainColor;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__item::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: "Noto Serif JP";
+  font-size: $fontSizeLarge;
+  font-weight: bold;
+  color: $accentColor;
+  text-align: center;
+  line-height: 60px;
+}
+
+.menu__item:nth-of-type(1)::before {
+  content: "01";
+}
+
+.menu__item:nth-of-type(2) {
+  margin-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.menu__item:nth-of-type(2)::before {
+  content: "02";
+}
+
+.menu__item:nth-of-type(3) {
+  margin-top: 80px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.menu__item:nth-of-type(3)::before {
+  content: "03";
+}
+
+.menu__img {
+  margin-bottom: 16px;
+}
+
+.menu__price {
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: $accentColor;
+}
+
+.menu__linkWrap {
+  text-align: center;
+}
+
+/*******************************
+固定背景
+*******************************/
+.fixedBg {
+  height: 500px;
+  background-image: url(../image/fixed_bg.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (max-width: 768px) {
+    height: 350px;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
+/*******************************
+店舗情報
+*******************************/
+.shop__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.shop__desc {
+  flex-grow: 1;
+}
+
+.shop__title {
+  font-family: "Noto Serif JP";
+  font-size: $fontSizeMedium;
+  font-weight: bold;
+  color: $accentColor;
+}
+
+.shop__dlInner {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.shop__dlTitle {
+  width: 70px;
+  font-weight: normal;
+}
+
+.shop__dlData {
+  flex-grow: 1;
+}
+
+/*******************************
+フッター
+*******************************/
+.footer {
+  background: $mainColor;
+}
+
+.footer__inner {
+  padding: 40px;
+  text-align: center;
+}
+
+.footer__logoLink {
+  display: inline-block;
+  margin: 0 auto 16px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.footer__link {
+  font-family: "Noto Serif JP";
+  font-weight: bold;
+  color: $accentColor;
+  transition: 0.2s;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+
+.footer__copy {
+  font-size: $fontSizeSmall;
+  color: $accentColor;
+}
+
+/*******************************
+固定予約ボタン
+*******************************/
+.fixedBtn {
+  display: inline-block;
+  position: fixed;
+  bottom: 15%;
+  right: 0;
+  z-index: 90;
+}
