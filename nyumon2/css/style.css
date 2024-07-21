@@ -1,4 +1,3 @@
-/* ここから記述します。 */
 @charset "utf-8";
 
 /* 共通部品 */
@@ -8,6 +7,8 @@ html {
     line-height: 1.5;
     letter-spacing: 0.08em;
 }
+
+/* ここから記述します。 */
 
 .u-sectionWrapper {
     max-width: 1080px;
@@ -22,7 +23,7 @@ html {
 .u-sectionTitle {
     text-align: center;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 40px;
 
     @media screen and (max-width: 560px) {
@@ -54,25 +55,21 @@ header
 
 .header__title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 16px;
 }
 
 .header__nav {
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
-    font-size: 16px;
     font-weight: 500;
-    list-style: none;
 }
 
 /*--------------------------------
-mainVisual
+firstView
 ---------------------------------*/
 
-.mainVisual__img {
+.firstView__img {
     max-width: 100%;
 
     @media screen and (max-width: 560px) {
@@ -94,7 +91,7 @@ pickup
 .pickup__itemTitle {
     color: #83776A;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 24px;
 
     @media screen and (max-width: 560px) {
@@ -214,7 +211,9 @@ footer
 .footer {
     height: 100px;
     background-color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #83776A;
 }
 
