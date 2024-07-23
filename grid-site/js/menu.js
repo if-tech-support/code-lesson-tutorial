@@ -1,7 +1,7 @@
   document.addEventListener('DOMContentLoaded', function() {
-    let nav = document.getElementById('header__js');
+    let nav = document.querySelector('header');
     let btn = document.querySelector('.header__toggleBtn');
-    let mask = document.querySelector('header__mask');
+    let mask = document.querySelector('.header__mask');
 
     // メニューを開閉する
     btn.addEventListener('click', function() {

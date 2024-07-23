@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
     <meta charset="UTF-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel=”icon” href="image/favicon.ico" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- ウェブページのタイトルに使用されます。 -->
     <title>company | うつわ屋こはる</title>
-    <meta name="description" content="会社概要 | うつわ屋こはるオンラインショップ"/>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="会社概要 | うつわ屋こはるオンラインショップ" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- ファビコンを設定しています。 -->
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="body__backGround">
+  <body class="body">
     <!-- header -->
     <header class="header u-wrapper">
       <h1>
         <a href="index.html"><img class="header__logo" src="image/logo-white.png" alt="うつわ屋こはる" /></a>
       </h1>
-      <div id="header__js">
+      <div>
         <nav class="header__menu">
-          <a href="index.html"><img class="footer__logo" src="image/logo.png" alt="うつわ屋こはる" /></a>
+          <a href="index.html"><img class="header__menuLogo" src="image/logo.png" alt="うつわ屋こはる" /></a>
           <ul>
             <li class="header__menuList"><a class="header__menuLink" href="index.html">ホーム</a></li>
             <li class="header__menuList"><a class="header__menuLink" href="products.html">商品一覧</a></li>
