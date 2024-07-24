@@ -21,6 +21,10 @@ a:hover {
   background: #353535;
 }
 
+.main {
+  position: relative;
+}
+
 .u-wrapper {
   width: 100%;
   max-width: 1360px;
@@ -76,22 +80,12 @@ a:hover {
   margin-bottom: 24px;
 }
 
-.open .header__menu {
-  left: 0;
-  opacity: 1;
-}
-
 .header__menuLink {
   color: #353535;
 }
 
 .header__menuList {
   margin-bottom: 20px;
-}
-
-.open .header__menu {
-  left: 0;
-  opacity: 1;
 }
 
 /*ハンバーガーメニュー*/
@@ -105,7 +99,7 @@ a:hover {
 }
 
 /*ハンバーガーメニューの横線*/
-.header__humbergerLine {
+.header__hamburgerLine {
   display: block;
   position: absolute;
   width: 30px;
@@ -115,29 +109,33 @@ a:hover {
   transition: all 0.5s;
 }
 
-.header__humbergerLine:nth-child(1) {
+.header__hamburgerLine:nth-child(1) {
   top: 0px;
 }
 
-.header__humbergerLine:nth-child(2) {
+.header__hamburgerLine:nth-child(2) {
   top: 9px;
 }
 
-.header__humbergerLine:nth-child(3) {
+.header__hamburgerLine:nth-child(3) {
   top: 18px;
 }
 
 /*ハンバーガーメニュークリック時、×になる*/
-.open .header__humbergerLine {
+.open .header__menu {
+  left: 0;
+  opacity: 1;
+}
+.open .header__hamburgerLine {
   background-color: #fff;
 }
-.open .header__humbergerLine:nth-child(1) {
+.open .header__hamburgerLine:nth-child(1) {
   transform: translateY(4px) rotate(-45deg);
 }
-.open .header__humbergerLine:nth-child(2) {
+.open .header__hamburgerLine:nth-child(2) {
   transform: translateY(-4px) rotate(45deg);
 }
-.open .header__humbergerLine:nth-child(3) {
+.open .header__hamburgerLine:nth-child(3) {
   display: none;
 }
 
@@ -203,10 +201,8 @@ gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+  object-fit: cover;
+  object-position: right;
 }
 
 .grid__item:nth-child(2) {
@@ -307,8 +303,7 @@ footer
 
 .footer__innerUl {
   display: flex;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 900px) {
   .footer__innerUl {
@@ -317,6 +312,10 @@ footer
     row-gap: 24px;
     margin-bottom: 40px;
   }
+}
+
+.footer__copyright {
+  font-size: 14px;
 }
 
 /*-------------------------------------------
@@ -535,8 +534,6 @@ itemページ / item.html
   margin-bottom: 4px;
 }
 
-/* input
-*******************************/
 .item__number {
   width: 160px;
   height: 40px;
@@ -649,4 +646,3 @@ products
     margin-bottom: 80px;
   }
 }
-/*# sourceMappingURL=style.css.map */

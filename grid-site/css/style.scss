@@ -18,6 +18,9 @@ a:hover {
 .body{
   background: #353535;
 }
+.main{
+  position: relative;
+}
 .u-wrapper {
   width: 100%;
   max-width: 1360px;
@@ -28,6 +31,7 @@ a:hover {
       padding: 0px 15px;
   }
 }
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
@@ -67,20 +71,14 @@ a:hover {
   height: auto;
   margin-bottom: 24px;
 }
-.open .header__menu{
-  left: 0;
-  opacity: 1;
-}
+
 .header__menuLink {
   color: #353535;
 }
 .header__menuList {
   margin-bottom: 20px;
 }
-.open .header__menu {
-  left: 0;
-  opacity: 1;
-}
+
 /*ハンバーガーメニュー*/
 .header__toggleBtn {
   width: 30px;
@@ -91,7 +89,7 @@ a:hover {
   z-index: 20;
 }
 /*ハンバーガーメニューの横線*/
-.header__humbergerLine {
+.header__hamburgerLine {
   display: block;
   position: absolute;
   width: 30px;
@@ -100,27 +98,31 @@ a:hover {
   border-radius: 4px;
   transition: all 0.5s;
 }
-.header__humbergerLine:nth-child(1) {
+.header__hamburgerLine:nth-child(1) {
   top: 0px;
 }
-.header__humbergerLine:nth-child(2) {
+.header__hamburgerLine:nth-child(2) {
   top: 9px;
 }
-.header__humbergerLine:nth-child(3) {
+.header__hamburgerLine:nth-child(3) {
   top: 18px;
 }
 /*ハンバーガーメニュークリック時、×になる*/
 .open{
-  .header__humbergerLine{
+  .header__menu{
+    left: 0;
+    opacity: 1;
+  }
+  .header__hamburgerLine{
     background-color: #fff;
   }
-  .header__humbergerLine:nth-child(1){
+  .header__hamburgerLine:nth-child(1){
     transform: translateY(4px) rotate(-45deg);
   }
-  .header__humbergerLine:nth-child(2){
+  .header__hamburgerLine:nth-child(2){
     transform: translateY(-4px) rotate(45deg);
   }
-  .header__humbergerLine:nth-child(3){
+  .header__hamburgerLine:nth-child(3){
     display: none;
   }
 }
@@ -143,6 +145,7 @@ a:hover {
     cursor: pointer;
   }
 }
+
 /*-------------------------------------------
 gridレイアウト
 -------------------------------------------*/
@@ -177,7 +180,7 @@ gridレイアウト
   margin-bottom: 4px;
 }
 
-.grid__item:nth-child(1) { 
+.grid__item:nth-child(1) {
   grid-area: A;
 }
 .grid__item:nth-child(1){
@@ -187,23 +190,23 @@ gridレイアウト
     object-position: right;
   }
 }
-.grid__item:nth-child(2) { 
+.grid__item:nth-child(2) {
   grid-area: B;
 }
-.grid__item:nth-child(3) { 
-  grid-area: C; 
+.grid__item:nth-child(3) {
+  grid-area: C;
 }
-.grid__item:nth-child(4) { 
-  grid-area: D; 
+.grid__item:nth-child(4) {
+  grid-area: D;
 }
-.grid__item:nth-child(5) { 
-  grid-area: E; 
+.grid__item:nth-child(5) {
+  grid-area: E;
 }
-.grid__item:nth-child(6) { 
-  grid-area: F; 
+.grid__item:nth-child(6) {
+  grid-area: F;
 }
-.grid__item:nth-child(7) { 
-  grid-area: G; 
+.grid__item:nth-child(7) {
+  grid-area: G;
 }
 .grid__btnWrap {
 text-align: center;
@@ -243,6 +246,7 @@ margin-bottom: 120px;
   display: block;
   margin-right: 24px;
 }
+
 /*-------------------------------------------
 footer
 -------------------------------------------*/
@@ -278,6 +282,10 @@ footer
       margin-bottom: 40px;
   }
 }
+.footer__copyright{
+  font-size: 14px;
+}
+
 /*-------------------------------------------
 aboutページ / about.html
 -------------------------------------------*/
@@ -335,6 +343,7 @@ aboutページ / about.html
 .about__text:first-of-type{
   margin-bottom: 32px;
 }
+
 /*-------------------------------------------
 companyページ / company.html
 -------------------------------------------*/
@@ -421,6 +430,7 @@ companyページ / company.html
 .company__dd:last-of-type {
   border-bottom: none;
 }
+
 /*-------------------------------------------
 itemページ / item.html
 -------------------------------------------*/
@@ -460,8 +470,8 @@ itemページ / item.html
   color: #fff;
   margin-bottom: 4px;
 }
-/* input
-*******************************/
+
+// input
 .item__number {
   width: 160px;
   height: 40px;
@@ -491,6 +501,7 @@ input[type=number]::-webkit-outer-spin-button {
 .item__text--marginBottom {
   margin-bottom: 16px;
 }
+
 /*-------------------------------------------
 products
 -------------------------------------------*/
