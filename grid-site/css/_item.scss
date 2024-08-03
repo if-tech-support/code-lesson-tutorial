@@ -1,0 +1,80 @@
+/*-------------------------------------------
+itemページ / item.html
+-------------------------------------------*/
+.item__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin: 32px auto 120px;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+}
+
+.item__title {
+    font-size: 36px;
+    color: #fff;
+    margin: 32px auto 24px;
+
+    @media screen and (max-width: 900px) {
+        font-size: 24px;
+        margin: 0px auto 16px;
+    }
+}
+
+.item__price {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 900px) {
+        font-size: 20px;
+    }
+}
+
+.item__textSmall {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+
+// input
+.item__number {
+    width: 160px;
+    height: 40px;
+    background: #fff;
+    padding: 6px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.item__link {
+    width: 240px;
+    height: 48px;
+    color: #fff;
+    background: #BA0808;
+    padding: 16px;
+    margin: 12px 0px 48px;
+}
+
+/*お買い物かごicon*/
+.fa-solid,
+.fas {
+    margin-left: 4px;
+}
+
+/*icon end*/
+.item__text {
+    color: #fff;
+    line-height: 1.9;
+}
+
+.item__text--marginBottom {
+    margin-bottom: 16px;
+}

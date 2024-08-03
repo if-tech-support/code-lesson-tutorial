@@ -159,7 +159,53 @@ a:hover {
 }
 
 /*-------------------------------------------
-gridレイアウト
+footer
+-------------------------------------------*/
+.footer__wrapper {
+  background: #fff;
+  font-size: 14px;
+  color: #121212;
+  padding: 48px 0px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.footer__innerUl {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+@media screen and (max-width: 900px) {
+  .footer__innerUl {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.footer__copyright {
+  font-size: 14px;
+}
+
+/*-------------------------------------------
+TOP gridレイアウト 
 -------------------------------------------*/
 .grid {
   display: grid;
@@ -201,8 +247,10 @@ gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  object-fit: cover;
-  object-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 
 .grid__item:nth-child(2) {
@@ -271,51 +319,6 @@ gridレイアウト
   background-color: rgba(255, 255, 255, 0.4);
   display: block;
   margin-right: 24px;
-}
-
-/*-------------------------------------------
-footer
--------------------------------------------*/
-.footer__wrapper {
-  background: #fff;
-  font-size: 14px;
-  color: #121212;
-  padding: 48px 0px;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media screen and (max-width: 900px) {
-  .footer__inner {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.footer__logo {
-  width: 160px;
-  height: auto;
-  margin-bottom: 24px;
-}
-
-.footer__innerUl {
-  display: flex;
-  column-gap: 32px;
-}
-@media screen and (max-width: 900px) {
-  .footer__innerUl {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 24px;
-    margin-bottom: 40px;
-  }
-}
-
-.footer__copyright {
-  font-size: 14px;
 }
 
 /*-------------------------------------------
@@ -556,9 +559,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*お買い物かごicon*/
-.fa-solid, .fas {
+.fa-solid,
+.fas {
   margin-left: 4px;
-} /*icon end*/
+}
+
+/*icon end*/
 .item__text {
   color: #fff;
   line-height: 1.9;
@@ -646,3 +652,4 @@ products
     margin-bottom: 80px;
   }
 }
+/*# sourceMappingURL=style.css.map */
