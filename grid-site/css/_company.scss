@@ -2,15 +2,7 @@
 companyページ / company.html
 -------------------------------------------*/
 .company__title {
-    font-size: 32px;
-    color: #fff;
-    margin: 32px auto;
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 900px) {
-        font-size: 24px;
-    }
+    @include main__title;
 }
 
 .company__title::before {
