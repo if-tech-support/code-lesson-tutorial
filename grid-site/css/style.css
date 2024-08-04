@@ -205,7 +205,7 @@ footer
 }
 
 /*-------------------------------------------
-gridレイアウト 
+TOP gridレイアウト 
 -------------------------------------------*/
 .grid {
   display: grid;
@@ -392,19 +392,6 @@ aboutページ / about.html
 /*-------------------------------------------
 companyページ / company.html
 -------------------------------------------*/
-.company__title {
-  font-size: 32px;
-  color: #fff;
-  margin: 32px auto;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 900px) {
-  .company__title {
-    font-size: 24px;
-  }
-}
-
 .company__title::before {
   content: "";
   width: 40px;
