@@ -24,7 +24,7 @@ TOP gridレイアウト
 
 .grid__text {
     font-size: 16px;
-    color: #fff;
+    color: $baseColor;
 
     @media screen and (max-width: 900px) {
         font-size: 14px;
@@ -81,7 +81,7 @@ TOP gridレイアウト
 }
 
 .grid__btnText {
-    color: #fff;
+    color: $baseColor;
     display: inline-block;
     padding: 12px 48px;
     text-align: center;

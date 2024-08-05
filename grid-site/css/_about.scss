@@ -3,7 +3,7 @@ aboutページ / about.html
 -------------------------------------------*/
 .about__title {
     font-size: 32px;
-    color: #fff;
+    color: $baseColor;
     margin: 32px auto;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ aboutページ / about.html
     content: "";
     width: 40px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: $baseColor;
     display: block;
     margin-right: 20px;
 
@@ -45,7 +45,7 @@ aboutページ / about.html
 
 .about__subTitle {
     font-size: 28px;
-    color: #fff;
+    color: $baseColor;
     margin-bottom: 24px;
 
     @media screen and (max-width: 900px) {
@@ -54,7 +54,7 @@ aboutページ / about.html
 }
 
 .about__text {
-    color: #fff;
+    color: $baseColor;
     line-height: 1.9;
 }
 

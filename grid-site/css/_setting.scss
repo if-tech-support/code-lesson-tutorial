@@ -1,7 +1,11 @@
+$baseColor{
+    color: #fff;
+}
+
 /*-------------------------------------------
 mixin
 -------------------------------------------*/
-@mixin main__title{
+@mixin mainTitle{
     font-size: 32px;
       color: #fff;
       margin: 32px auto;

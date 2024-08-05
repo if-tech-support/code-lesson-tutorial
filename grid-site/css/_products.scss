@@ -1,23 +1,18 @@
 /*-------------------------------------------
 products
 -------------------------------------------*/
-.products__title {
-    font-size: 32px;
-    color: #fff;
-    margin: 32px auto;
-    display: flex;
-    align-items: center;
+@use 'setting' as *;
 
-    @media screen and (max-width: 900px) {
-        font-size: 24px;
-    }
+.products__title {
+    @include mainTitle;
+
 }
 
 .products__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: #ffffff;
+    background-color: $baseColor;
     display: block;
     margin-right: 24px;
 
@@ -47,7 +42,7 @@ products
 
 .products__gridText {
     font-size: 16px;
-    color: #fff;
+    color: $baseColor;
 
     @media screen and (max-width: 900px) {
         font-size: 14px;

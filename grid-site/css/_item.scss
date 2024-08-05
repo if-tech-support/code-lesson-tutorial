@@ -16,7 +16,7 @@ itemページ / item.html
 
 .item__title {
     font-size: 36px;
-    color: #fff;
+    color: $baseColor;
     margin: 32px auto 24px;
 
     @media screen and (max-width: 900px) {
@@ -27,7 +27,7 @@ itemページ / item.html
 
 .item__price {
     font-size: 24px;
-    color: #fff;
+    color: $baseColor;
     margin-bottom: 32px;
 
     @media screen and (max-width: 900px) {
@@ -37,7 +37,7 @@ itemページ / item.html
 
 .item__textSmall {
     font-size: 14px;
-    color: #fff;
+    color: $baseColor;
     margin-bottom: 4px;
 }
 
@@ -45,7 +45,7 @@ itemページ / item.html
 .item__number {
     width: 160px;
     height: 40px;
-    background: #fff;
+    background: $baseColor;
     padding: 6px;
 }
 
@@ -57,7 +57,7 @@ input[type=number]::-webkit-outer-spin-button {
 .item__link {
     width: 240px;
     height: 48px;
-    color: #fff;
+    color: $baseColor;
     background: #BA0808;
     padding: 16px;
     margin: 12px 0px 48px;
@@ -71,7 +71,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*icon end*/
 .item__text {
-    color: #fff;
+    color: $baseColor;
     line-height: 1.9;
 }
 

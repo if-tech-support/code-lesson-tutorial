@@ -18,9 +18,7 @@ img {
   display: block;
 }
 
-/*******************************
-変数の指定
-*******************************/
+/* ここから記述します。 *//*# sourceMappingURL=style.css.map */*******/
 /*******************************
 共通パーツの指定
 *******************************/
@@ -78,7 +76,6 @@ img {
   border: 1px solid #83776a;
   color: #83776a;
   text-align: center;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   position: relative;
 }
@@ -103,7 +100,6 @@ img {
   bottom: 0;
   margin: auto;
   right: -35px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   z-index: 10;
 }
@@ -131,15 +127,9 @@ img {
   max-width: 1080px;
   margin: 0 auto;
   padding: 15px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
   .header__inner {
@@ -152,8 +142,6 @@ img {
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
@@ -167,7 +155,6 @@ img {
   font-family: "Noto Serif JP";
   font-weight: bold;
   color: #83776a;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -204,15 +191,9 @@ img {
   border: 1px solid #83776a;
   bottom: 80px;
   left: -150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-family: "Noto Serif JP";
   font-size: 40px;
   font-weight: bold;
@@ -239,20 +220,13 @@ img {
 コンセプト
 *******************************/
 .concept__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 60px;
 }
 @media screen and (max-width: 768px) {
   .concept__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 40px;
   }
 }
@@ -269,24 +243,15 @@ img {
 }
 
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 40px;
   margin-bottom: 40px;
 }
 @media screen and (max-width: 768px) {
   .menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -374,28 +339,19 @@ img {
 店舗情報
 *******************************/
 .shop__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   gap: 60px;
 }
 @media screen and (max-width: 768px) {
   .shop__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 40px;
   }
 }
 
 .shop__desc {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .shop__title {
@@ -406,8 +362,6 @@ img {
 }
 
 .shop__dlInner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
   padding: 16px 0;
@@ -420,9 +374,7 @@ img {
 }
 
 .shop__dlData {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 /*******************************
@@ -443,12 +395,8 @@ img {
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 32px;
   margin-bottom: 24px;
 }
@@ -457,7 +405,6 @@ img {
   font-family: "Noto Serif JP";
   font-weight: bold;
   color: #83776a;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -479,4 +426,4 @@ img {
   bottom: 15%;
   right: 0;
   z-index: 90;
-}
+}/*# sourceMappingURL=style.css.map */
