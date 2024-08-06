@@ -12,21 +12,12 @@ html {
 }
 /* ここから記述します。 */
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/*--------------------------------
-common
----------------------------------*/
-.wrapper {
-  max-width: 1000px;
+.u-wrapper {
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 100px;
   @media screen and (max-width: 768px) {
-		padding: 0 30px;
+		padding: 0 20px;
 	}
 }
 
@@ -56,6 +47,9 @@ common
   font-size: 20px;
   cursor: pointer;
 }
+
+/* 個別部品 */
+
 /*--------------------------------
 header
 ---------------------------------*/
@@ -70,6 +64,7 @@ header
 		padding: 16px;
 	}
 }
+
 .header__title {
   font-size: 24px;
   font-weight: bold;
@@ -77,6 +72,7 @@ header
 		margin-bottom: 10px;
 	}
 }
+
 .header__inner {
   width: 100%;
   display: flex;
