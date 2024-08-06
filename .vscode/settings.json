@@ -6,5 +6,6 @@
       "savePath": "/chukyu-absolute/chukyu-absolute-answer/css",
       "savePathReplacementPairs": null
     }
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
