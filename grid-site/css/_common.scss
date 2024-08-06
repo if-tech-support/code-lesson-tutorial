@@ -1,6 +1,8 @@
 /*-------------------------------------------
 共通クラス
 -------------------------------------------*/
+@use 'setting' as *;
+
 body {
     font-family: "Hiragino Mincho Pro", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
     letter-spacing: .1em;
@@ -17,7 +19,7 @@ a:hover {
 }
 
 .body {
-    background: #353535;
+    background: $colorBlack;
 }
 
 .main {
@@ -61,9 +63,9 @@ a:hover {
     left: -100%;
     bottom: 0;
     width: 300px;
-    color: #fff;
+    color: $colorWhite;
     padding: 60px 25px;
-    background-color: #ffffff;
+    background-color: $colorWhite;
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -79,7 +81,7 @@ a:hover {
 }
 
 .header__menuLink {
-    color: #353535;
+    color: $colorBlack;
 }
 
 .header__menuList {
@@ -102,7 +104,7 @@ a:hover {
     position: absolute;
     width: 30px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: $colorWhite;
     border-radius: 4px;
     transition: all 0.5s;
 }
@@ -127,7 +129,7 @@ a:hover {
     }
 
     .header__hamburgerLine {
-        background-color: #fff;
+        background-color: $colorWhite;
     }
 
     .header__hamburgerLine:nth-child(1) {
@@ -168,9 +170,8 @@ a:hover {
 footer
 -------------------------------------------*/
 .footer__wrapper {
-    background: #fff;
-    font-size: 14px;
-    color: #121212;
+    background: $colorWhite;
+    color: $colorBlack;
     padding: 48px 0px;
 }
 

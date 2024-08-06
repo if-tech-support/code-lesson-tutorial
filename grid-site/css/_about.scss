@@ -1,23 +1,16 @@
 /*-------------------------------------------
 aboutページ / about.html
 -------------------------------------------*/
+@use 'setting' as *;
 .about__title {
-    font-size: 32px;
-    color: $baseColor;
-    margin: 32px auto;
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 900px) {
-        font-size: 24px;
-    }
+    @include mainTitle;
 }
 
 .about__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: $baseColor;
+    background-color: $colorWhite;
     display: block;
     margin-right: 20px;
 
@@ -45,7 +38,7 @@ aboutページ / about.html
 
 .about__subTitle {
     font-size: 28px;
-    color: $baseColor;
+    color: $colorWhite;
     margin-bottom: 24px;
 
     @media screen and (max-width: 900px) {
@@ -54,7 +47,7 @@ aboutページ / about.html
 }
 
 .about__text {
-    color: $baseColor;
+    color: $colorWhite;
     line-height: 1.9;
 }
 

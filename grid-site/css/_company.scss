@@ -4,14 +4,14 @@ companyページ / company.html
 @use 'setting' as *;
 
 .company__title {
-@include mainTitle;
+    @include mainTitle;
 }
 
 .company__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: $baseColor;
+    background-color: $colorWhite;
     display: block;
     margin-right: 24px;
 
@@ -61,7 +61,7 @@ companyページ / company.html
 .company__dl {
     display: flex;
     flex-wrap: wrap;
-    color: $baseColor;
+    color: $colorWhite;
     margin-bottom: 20px;
 
     @media screen and (max-width: 900px) {
@@ -71,7 +71,7 @@ companyページ / company.html
 
 .company__dt {
     width: 30%;
-    border-bottom: solid 1px #cacaca;
+    border-bottom: solid 1px $borderColor;
     padding: 20px 10px;
 }
 
@@ -81,7 +81,7 @@ companyページ / company.html
 
 .company__dd {
     width: 70%;
-    border-bottom: solid 1px #cacaca;
+    border-bottom: solid 1px $borderColor;
     padding: 20px 10px;
 }
 

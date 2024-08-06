@@ -5,14 +5,13 @@ products
 
 .products__title {
     @include mainTitle;
-
 }
 
 .products__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: $baseColor;
+    background-color: $colorWhite;
     display: block;
     margin-right: 24px;
 
@@ -42,7 +41,7 @@ products
 
 .products__gridText {
     font-size: 16px;
-    color: $baseColor;
+    color: $colorWhite;
 
     @media screen and (max-width: 900px) {
         font-size: 14px;

@@ -1,18 +1,20 @@
-$baseColor{
-    color: #fff;
-}
+$colorWhite: #fff;
+$colorBlack: #353535;
+$borderColor: #cacaca;
 
-/*-------------------------------------------
-mixin
--------------------------------------------*/
 @mixin mainTitle{
     font-size: 32px;
-      color: #fff;
-      margin: 32px auto;
-      display: flex;
-      align-items: center;
+    color: $colorWhite;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
     
-      @media screen and (max-width: 900px) {
-          font-size: 24px;
-      }
+    @media screen and (max-width: 900px) {
+        font-size: 24px;
+    }
+}
+@mixin buttonStyle{
+    width: 240px;
+    color: $colorWhite;
+    display: inline-block;
 }
