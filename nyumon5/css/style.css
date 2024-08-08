@@ -10,8 +10,14 @@ html {
 }
 
 .u-wrapper {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .u-wrapper {
+    padding: 0 15px;
+  }
 }
 
 .u-sectionHeading {
@@ -35,25 +41,16 @@ html {
 header
 ---------------------------------*/
 .header {
-  display: flex;
   height: 100px;
-  padding: 0 100px;
-}
-@media screen and (max-width: 768px) {
-  .header {
-    height: auto;
-    padding: 0;
-  }
-}
-
-.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .header__inner {
+  .header {
+    height: auto;
+    padding: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -81,7 +78,8 @@ header
 }
 @media screen and (max-width: 768px) {
   .header__list {
-    padding: 8px 30px;
+    padding: 8px 29.5px;
+    justify-content: center;
   }
 }
 
@@ -140,25 +138,16 @@ first view
 container
 ---------------------------------*/
 .container {
-  padding: 0 100px;
-}
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 15px;
-  }
-}
-
-.container__inner {
   display: flex;
   gap: 40px;
 }
 @media screen and (max-width: 1024px) {
-  .container__inner {
+  .container {
     flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
-  .container__inner {
+  .container {
     gap: 50px;
   }
 }

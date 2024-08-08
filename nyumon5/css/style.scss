@@ -22,8 +22,12 @@ html {
 }
 
 .u-wrapper {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 0 100px;
+  @include mq(tab) {
+    padding: 0 15px;
+  }
 }
 
 .u-sectionHeading {
@@ -46,23 +50,14 @@ html {
 header
 ---------------------------------*/
 .header {
-  display: flex;
   height: 100px;
-  padding: 0 100px;
-
-  @include mq(tab) {
-    height: auto;
-    padding: 0;
-  }
-}
-
-.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
   @include mq(tab) {
+    height: auto;
+    padding: 0;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -89,7 +84,8 @@ header
   gap: 20px;
 
   @include mq(tab) {
-    padding: 8px 30px;
+    padding: 8px 29.5px;
+    justify-content: center;
   }
 }
 
@@ -146,14 +142,6 @@ first view
 container
 ---------------------------------*/
 .container {
-  padding: 0 100px;
-
-  @include mq(tab) {
-    padding: 0 15px;
-  }
-}
-
-.container__inner {
   display: flex;
   gap: 40px;
 
