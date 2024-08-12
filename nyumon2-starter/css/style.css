@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* 共通部品 */
+html {
+    font-family: Noto Sans JP;
+    color: #333;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+}
+
+/* ここから記述します。 */

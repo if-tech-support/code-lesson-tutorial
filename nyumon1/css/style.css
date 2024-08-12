@@ -4,10 +4,12 @@
 html {
   font-family: Inter;
   color: #333;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
 }
 
 .u-wrapper {
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 100px;
 
@@ -20,7 +22,6 @@ html {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  letter-spacing: 1.6px;
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -31,8 +32,6 @@ html {
 .u-sectionText {
   font-family: Noto Sans JP;
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.8px;
 }
 
 .u-sectionWrapper {
@@ -74,7 +73,7 @@ header
   font-size: 40px;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -123,7 +122,6 @@ about
   font-family: Noto Sans JP;
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 1.2px;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,5 +184,4 @@ footer
   text-align: center;
   font-family: Noto Sans JP;
   font-size: 12px;
-  letter-spacing: 0.6px;
 }

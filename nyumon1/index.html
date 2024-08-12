@@ -13,6 +13,8 @@
     <meta name="description" content="フォトグラファーの山田太郎です" />
     <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
     <meta name="format-detection" content="telephone=no" />
+    <!-- ファビコンを設定しています。 -->
+    <link rel="shortcut icon" href="image/favicon.ico">
     <!-- reset.cssは、destyleを使用しています。 -->
     <link
       rel="stylesheet"
@@ -28,7 +30,7 @@
       <nav>
         <ul class="header__nav">
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="works">WORKS</a></li>
+          <li><a href="#works">WORKS</a></li>
         </ul>
       </nav>
     </header>
@@ -41,7 +43,7 @@
           <img
             class="about__img"
             src="image/about.png"
-            alt="山田太郎の画像"
+            alt="山田太郎のサムネイル"
           />
           <div class="about__textContainer">
             <h3 class="about__name">山田 太郎</h3>
@@ -54,19 +56,19 @@
       </section>
       <!-- /about -->
       <!-- works -->
-      <section class="works u-wrapper u-sectionWrapper">
+      <section class="works u-wrapper u-sectionWrapper" id="works">
         <h2 class="u-sectionTitle">WORKS</h2>
         <ul class="works__container">
           <li class="works__item">
-            <img class="works__img" src="image/works1.png" alt="works1" />
+            <img class="works__img" src="image/works1.png" alt="海面からの日の出" />
             <p class="works__itemText u-sectionText">Sunrise</p>
           </li>
           <li class="works__item">
-            <img class="works__img" src="image/works2.png" alt="works2" />
+            <img class="works__img" src="image/works2.png" alt="都会のビル群" />
             <p class="works__itemText u-sectionText">Night View</p>
           </li>
           <li class="works__item">
-            <img class="works__img" src="image/works3.png" alt="works3" />
+            <img class="works__img" src="image/works3.png" alt="湾曲した階段" />
             <p class="works__itemText u-sectionText">Architecture</p>
           </li>
         </ul>
