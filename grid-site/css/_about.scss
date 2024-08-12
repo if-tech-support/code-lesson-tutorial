@@ -1,16 +1,16 @@
 /*-------------------------------------------
 aboutページ / about.html
 -------------------------------------------*/
-@use 'setting' as *;
+@use 'setting' as s;
 .about__title {
-    @include mainTitle;
+    @include s.mainTitle;
 }
 
 .about__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: $colorWhite;
+    background-color: s.$colorWhite;
     display: block;
     margin-right: 20px;
 
@@ -38,7 +38,7 @@ aboutページ / about.html
 
 .about__subTitle {
     font-size: 28px;
-    color: $colorWhite;
+    color: s.$colorWhite;
     margin-bottom: 24px;
 
     @media screen and (max-width: 900px) {
@@ -47,7 +47,7 @@ aboutページ / about.html
 }
 
 .about__text {
-    color: $colorWhite;
+    color: s.$colorWhite;
     line-height: 1.9;
 }
 

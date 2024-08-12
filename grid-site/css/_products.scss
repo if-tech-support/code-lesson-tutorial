@@ -1,17 +1,17 @@
 /*-------------------------------------------
 products
 -------------------------------------------*/
-@use 'setting' as *;
+@use 'setting' as s;
 
 .products__title {
-    @include mainTitle;
+    @include s.mainTitle;
 }
 
 .products__title::before {
     content: "";
     width: 40px;
     height: 1px;
-    background-color: $colorWhite;
+    background-color: s.$colorWhite;
     display: block;
     margin-right: 24px;
 
@@ -41,7 +41,7 @@ products
 
 .products__gridText {
     font-size: 16px;
-    color: $colorWhite;
+    color: s.$colorWhite;
 
     @media screen and (max-width: 900px) {
         font-size: 14px;
