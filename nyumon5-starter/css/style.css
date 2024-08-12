@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* 共通部品 */
+html {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  color: #382710;
+  background-color: #fcfaf2;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+
+/* ここから記述します。 *//*# sourceMappingURL=style.css.map */
