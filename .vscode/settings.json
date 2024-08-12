@@ -1,10 +1,1 @@
 {
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/chukyu-absolute/chukyu-absolute-answer/css",
-      "savePathReplacementPairs": null
-    }
-  ]
-}
