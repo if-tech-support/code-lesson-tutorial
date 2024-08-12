@@ -11,7 +11,7 @@ TOP gridレイアウト
         "A E F G";
     margin-bottom: 80px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "A A" "B C" "D E" "F G";
         gap: 28px 8px;
@@ -27,7 +27,7 @@ TOP gridレイアウト
     font-size: 16px;
     color: s.$colorWhite;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         font-size: 14px;
     }
 }
@@ -76,7 +76,8 @@ TOP gridレイアウト
     text-align: center;
     margin-bottom: 120px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
+
         margin-bottom: 80px;
     }
 }
@@ -98,7 +99,7 @@ TOP gridレイアウト
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         display: none;
     }
 }

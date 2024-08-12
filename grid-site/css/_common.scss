@@ -32,7 +32,7 @@ a:hover {
     margin: 0 auto;
     padding: 0 40px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         padding: 0px 15px;
     }
 }
@@ -180,7 +180,7 @@ footer
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         flex-direction: column;
         align-items: center;
     }
@@ -196,7 +196,7 @@ footer
     display: flex;
     column-gap: 32px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         flex-direction: column;
         align-items: center;
         row-gap: 24px;

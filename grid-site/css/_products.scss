@@ -15,7 +15,7 @@ products
     display: block;
     margin-right: 24px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         width: 32px;
         margin-right: 16px;
     }
@@ -27,7 +27,7 @@ products
     gap: 35px;
     margin-bottom: 120px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         grid-template-columns: repeat(2, 1fr);
         gap: 28px 8px;
         margin-bottom: 80px;
@@ -43,7 +43,7 @@ products
     font-size: 16px;
     color: s.$colorWhite;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         font-size: 14px;
     }
 }
@@ -59,7 +59,7 @@ products
     gap: 35px;
     margin-bottom: 120px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         grid-template-columns: repeat(1, 1fr);
         gap: 28px 8px;
         margin-bottom: 80px;

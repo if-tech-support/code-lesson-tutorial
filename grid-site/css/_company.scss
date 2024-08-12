@@ -15,7 +15,7 @@ companyページ / company.html
     display: block;
     margin-right: 24px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         width: 32px;
         margin-right: 16px;
     }
@@ -28,7 +28,7 @@ companyページ / company.html
     gap: 48px;
     margin-bottom: 120px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         flex-direction: column;
         margin-bottom: 80px;
     }
@@ -44,7 +44,7 @@ companyページ / company.html
     position: relative;
     padding-top: 50%;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         padding-top: 75%;
     }
 }
@@ -64,7 +64,7 @@ companyページ / company.html
     color: s.$colorWhite;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         font-size: 14px;
     }
 }

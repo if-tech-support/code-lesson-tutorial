@@ -187,8 +187,7 @@ footer
 
 .footer__innerUl {
   display: flex;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 @media screen and (max-width: 900px) {
   .footer__innerUl {
@@ -204,7 +203,7 @@ footer
 }
 
 /*-------------------------------------------
-TOP gridレイアウト 
+TOP gridレイアウト
 -------------------------------------------*/
 .grid {
   display: grid;
@@ -246,10 +245,8 @@ TOP gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+  object-fit: cover;
+  object-position: right;
 }
 
 .grid__item:nth-child(2) {
@@ -651,4 +648,3 @@ products
     margin-bottom: 80px;
   }
 }
-/*# sourceMappingURL=style.css.map */

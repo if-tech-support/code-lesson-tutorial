@@ -10,7 +10,7 @@ itemページ / item.html
     gap: 48px;
     margin: 32px auto 120px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         flex-direction: column;
         margin-bottom: 80px;
     }
@@ -21,7 +21,7 @@ itemページ / item.html
     color: s.$colorWhite;
     margin: 32px auto 24px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         font-size: 24px;
         margin: 0px auto 16px;
     }
@@ -32,7 +32,7 @@ itemページ / item.html
     color: s.$colorWhite;
     margin-bottom: 32px;
 
-    @media screen and (max-width: 900px) {
+    @include s.mq(tab) {
         font-size: 20px;
     }
 }
