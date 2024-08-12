@@ -1,0 +1,114 @@
+/*-------------------------------------------
+TOP gridレイアウト
+-------------------------------------------*/
+@use 'setting' as s;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    grid-template-areas:
+        "A B C D"
+        "A E F G";
+    margin-bottom: 80px;
+
+    @include s.mq(tab) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "A A" "B C" "D E" "F G";
+        gap: 28px 8px;
+    }
+}
+
+.grid__img {
+    margin-bottom: 10px;
+    vertical-align: top;
+}
+
+.grid__text {
+    font-size: 16px;
+    color: s.$colorWhite;
+
+    @include s.mq(tab) {
+        font-size: 14px;
+    }
+}
+
+.grid__text:first-of-type {
+    margin-bottom: 4px;
+}
+
+.grid__item:nth-child(1) {
+    grid-area: A;
+}
+
+.grid__item:nth-child(1) {
+    .grid__img {
+        height: calc(100% - 50.78px);
+        object-fit: cover;
+        object-position: right;
+    }
+}
+
+.grid__item:nth-child(2) {
+    grid-area: B;
+}
+
+.grid__item:nth-child(3) {
+    grid-area: C;
+}
+
+.grid__item:nth-child(4) {
+    grid-area: D;
+}
+
+.grid__item:nth-child(5) {
+    grid-area: E;
+}
+
+.grid__item:nth-child(6) {
+    grid-area: F;
+}
+
+.grid__item:nth-child(7) {
+    grid-area: G;
+}
+
+.grid__btnWrap {
+    text-align: center;
+    margin-bottom: 120px;
+
+    @include s.mq(tab) {
+
+        margin-bottom: 80px;
+    }
+}
+
+.grid__btnText {
+    @include s.buttonStyle;
+    padding: 12px 48px;
+    border: solid 1px s.$borderColor;
+}
+
+.grid__sideText {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    position: absolute;
+    left: 14px;
+    top: 65%;
+    transform: rotate(270deg);
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+
+    @include s.mq(tab) {
+        display: none;
+    }
+}
+
+.grid__sideText::before {
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    margin-right: 24px;
+}
