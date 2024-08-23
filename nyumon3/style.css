@@ -1,0 +1,272 @@
+/**
+ * 共通部品
+ *
+ * @format
+ */
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+/* ここから記述します。 */
+
+.u-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 100px;
+  @media screen and (max-width: 768px) {
+		padding: 0 20px;
+	}
+}
+
+.u-sectionTitle{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.u-sectionSubTitle {
+  text-align: center;
+  margin-bottom: 64px;
+  font-size: 18px;
+  @media screen and (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+}
+
+.u-button {
+  display: block;
+  background: #EC8812;
+  color: #ffffff;
+  border: none;
+  padding: 16px 64px;
+  margin: 0 auto;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* 個別部品 */
+
+/*--------------------------------
+header
+---------------------------------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #188888;
+  color: #ffffff;
+  width: 100%;
+  padding: 38px 0;
+  @media screen and (max-width: 768px) {
+		padding: 16px;
+	}
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+  @media screen and (max-width: 768px) {
+		margin-bottom: 10px;
+	}
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.header__navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header__navItem a {
+  color: #ffffff;
+}
+
+.header__navItem a:hover {
+  text-decoration: underline;
+}
+
+/*--------------------------------
+firstView
+---------------------------------*/
+.firstView {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: url('image/FV.png') no-repeat center/cover;
+  width: 100%;
+  @media screen and (max-width: 768px) {
+		height: 540px;
+	}
+}
+
+.firstView__title {
+  margin: 0;
+  padding: 8px 32px;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #ffffff;
+  @media screen and (max-width: 768px) {
+		font-size: 32px;
+	}
+}
+
+/*--------------------------------
+course
+---------------------------------*/
+.course {
+  padding: 80px 0;
+  @media screen and (max-width: 768px) {
+		padding: 64px 0;
+	}
+}
+
+.course__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  @media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.course__card {
+  background: #ffffff;
+  filter: drop-shadow(0 4px 15px rgba(51, 51, 51, 0.25));
+}
+
+.course__cardImage {
+  width: 100%;
+  height: auto;
+}
+
+.course__textBox {
+  padding: 24px;
+}
+
+.course__cardTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.course__cardDescription {
+  font-size: 16px;
+}
+
+/*--------------------------------
+news
+---------------------------------*/
+.news {
+  background-color: #F1F8F8;
+  padding: 80px 0;
+  @media screen and (max-width: 768px) {
+		padding: 64px 0;
+	}
+}
+
+.news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 64px;
+  @media screen and (max-width: 768px) {
+		gap: 32px;
+	}
+}
+
+.news__item {
+  display: flex;
+  background: #ffffff;
+  @media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.news__date {
+  text-align: center;
+  padding: 24px 0;
+  width: 22%;
+  color: #ffffff;
+  background-color: #188888;
+  @media screen and (max-width: 768px) {
+		width: 100%;
+    padding: 12px 16px;
+	}
+}
+
+.news__description {
+  padding: 24px 50px 24px 24px;
+  width: 78%;
+  margin: 0;
+  @media screen and (max-width: 768px) {
+		width: 100%;
+    padding: 12px 16px;
+	}
+}
+
+/*--------------------------------
+contact
+---------------------------------*/
+.contact {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 80px 0;
+  @media screen and (max-width: 768px) {
+		padding: 64px 30px;
+	}
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__label {
+  margin-bottom: 12px;
+}
+
+.contact__input,
+.contact__textarea {
+  border: solid 1px #c4c4c4;
+  padding: 10px;
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+.contact__textarea {
+  min-height: 160px;
+}
+
+.contact__button {
+  margin-top: 64px;
+  @media screen and (max-width: 768px) {
+		margin-top: 40px;
+	}
+}
+
+/*--------------------------------
+footer
+---------------------------------*/
+.footer {
+  background: #188888;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 30px 0;
+}
