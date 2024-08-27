@@ -8,6 +8,10 @@ html {
   line-height: 1.5;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .u-wrapper {
   max-width: 1280px;
   margin: 0 auto;
