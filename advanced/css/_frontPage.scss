@@ -262,7 +262,7 @@
 
 .service__layout::before {
     top: -110px;
-    background: transparent url(../image/service/service-bg01.png) no-repeat
+    background: transparent url(../image/service-bg01.png) no-repeat
         center / cover;
 
     @include s.mq("sp") {
@@ -273,7 +273,7 @@
 .service__layout::after {
     bottom: -110px;
     left: 0;
-    background: transparent url(../image/service/service-bg02.png) no-repeat
+    background: transparent url(../image/service-bg02.png) no-repeat
         center / cover;
 
     @include s.mq("sp") {
@@ -386,7 +386,7 @@
 .about__layout::before {
     content: "";
     position: absolute;
-    background: transparent url(../image/about/about-img.png) no-repeat center /
+    background: transparent url(../image/about-img.png) no-repeat center /
         cover;
     width: 237px;
     height: 185px;
@@ -405,7 +405,7 @@
 .about__layout::after {
     content: "";
     position: absolute;
-    background: transparent url(../image/about/about-bubble.png) no-repeat
+    background: transparent url(../image/about-bubble.png) no-repeat
         center / cover;
     width: 318px;
     height: 596px;
@@ -527,12 +527,12 @@
 }
 
 .company__gridCard:first-of-type {
-    background: transparent url(../image/company/philosophy.png) no-repeat top
+    background: transparent url(../image/philosophy.png) no-repeat top
         center / cover;
 }
 
 .company__gridCard:last-of-type {
-    background: transparent url(../image/company/company.png) no-repeat top
+    background: transparent url(../image/company.png) no-repeat top
         center / cover;
 }
 
@@ -584,13 +584,13 @@
 /*背景*/
 .staff__layout {
     padding: 110px 0 159px percentage(math.div(222, 1280));
-    background: transparent url(../image/staff/staff-bg.png) no-repeat center /
+    background: transparent url(../image/staff-bg.png) no-repeat center /
         cover;
     position: relative;
 
     @include s.mq("sp") {
         padding: 80px 15px;
-        background: transparent url(../image/staff/staff-bg-sp.png) no-repeat
+        background: transparent url(../image/staff-bg-sp.png) no-repeat
             top center / cover;
     }
 }
@@ -604,13 +604,13 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background: transparent url(../image/staff/staff-bubble.png) no-repeat
+    background: transparent url(../image/staff-bubble.png) no-repeat
         center / cover;
 
     @include s.mq("sp") {
         width: 117px;
         height: 182px;
-        background: transparent url(../image/staff/staff-bubble-sp.png)
+        background: transparent url(../image/staff-bubble-sp.png)
             no-repeat center / cover;
         top: inherit;
         left: inherit;
@@ -644,7 +644,7 @@
     position: absolute;
     width: 347.27px;
     height: 154.86px;
-    background: transparent url(../image/staff/staff-art.png) no-repeat center /
+    background: transparent url(../image/staff-art.png) no-repeat center /
         cover;
     left: 0;
     bottom: -77px;
@@ -697,13 +697,13 @@
 /*背景*/
 .recruit__layout {
     padding: 120px 0 159px;
-    background: transparent url(../image/recruit/recruit-bg.png) no-repeat
+    background: transparent url(../image/recruit-bg.png) no-repeat
         center / cover;
     position: relative;
 
     @include s.mq("sp") {
         padding: 80px 0;
-        background: transparent url(../image/recruit/recruit-bg-sp.png)
+        background: transparent url(../image/recruit-bg-sp.png)
             no-repeat top center / cover;
     }
 }
@@ -717,7 +717,7 @@
     z-index: 1;
     bottom: 0;
     right: 0;
-    background: transparent url(../image/recruit/recruit-bubble.png) no-repeat
+    background: transparent url(../image/recruit-bubble.png) no-repeat
         center / cover;
 
     @include s.mq("sp") {
@@ -761,7 +761,7 @@
     position: absolute;
     width: 254.37px;
     height: 148.86px;
-    background: transparent url(../image/recruit/recruit-art.png) no-repeat
+    background: transparent url(../image/recruit-art.png) no-repeat
         center / cover;
     left: 0;
     bottom: -74px;
@@ -798,7 +798,7 @@
 -------------------------------------------*/
 /*背景画像*/
 .contact__layout {
-    background: transparent url(../image/contact/contact-bg.png) no-repeat
+    background: transparent url(../image/contact-bg.png) no-repeat
         center / cover;
     width: 100vw;
     height: 356px;

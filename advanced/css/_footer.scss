@@ -7,12 +7,12 @@ footer
 /*ヘッダー背景*/
 .footer__layout {
     width: 100vw;
-    background: transparent url(../image/footer/footer-bg.png) no-repeat top
+    background: transparent url(../image/footer-bg.png) no-repeat top
         center / cover;
     padding-bottom: 24px;
 
     @include s.mq("sp") {
-        background: transparent url(../image/footer/footer-bg-sp.png) no-repeat
+        background: transparent url(../image/footer-bg-sp.png) no-repeat
             top center / cover;
     }
 }
