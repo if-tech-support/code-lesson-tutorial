@@ -1,0 +1,167 @@
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+@use "setting" as s;
+@use "sass:math";
+
+.header {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    @include s.mq("sp") {
+        height: 72px;
+        background-color: s.$colorWhite;
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: percentage(math.div(1220, 1280));
+    height: 100%;
+    margin: 0 auto;
+
+    @include s.mq("sp") {
+        width: percentage(math.div(360, 420));
+    }
+}
+
+.header__logo {
+    width: 130px;
+    height: auto;
+
+    @include s.mq("sp") {
+        width: 67.85px;
+    }
+}
+
+.header__nav {
+    @include s.mq("sp") {
+        display: none;
+    }
+}
+
+.header__menu {
+    display: flex;
+    gap: 36px;
+    transition: all 0.3s;
+}
+
+.header__menuLink {
+    color: s.$colorBlack;
+    font-weight: 700;
+    transition: opacity .3s;
+}
+
+.header__menuLink:hover {
+    opacity: 0.6;
+}
+
+/*ハンバーガーメニュー*/
+.header__toggleBtn {
+    display: none;
+
+    @include s.mq("sp") {
+        display: block;
+        width: 42px;
+        height: 24px;
+        position: relative;
+        transition: all 0.5s;
+        cursor: pointer;
+        z-index: 20;
+    }
+}
+
+/*ハンバーガーメニューの横線*/
+.header__hamburgerLine {
+    display: block;
+    position: absolute;
+    width: 42px;
+    height: 2.5px;
+    background-color: #00008c;
+    border-radius: 2.5px;
+    transition: all 0.5s;
+}
+
+.header__hamburgerLine:nth-child(1) {
+    top: 0px;
+}
+
+.header__hamburgerLine:nth-child(2) {
+    top: 9px;
+}
+
+.header__hamburgerLine:nth-child(3) {
+    top: 18px;
+}
+
+/*ハンバーガーメニュークリック時、×になる*/
+.open {
+    .header__hamburgerLine:nth-child(1) {
+        transform: translateY(10px) rotate(-45deg);
+    }
+
+    .header__hamburgerLine:nth-child(2) {
+        transform: translateY(2px) rotate(45deg);
+    }
+
+    .header__hamburgerLine:nth-child(3) {
+        display: none;
+    }
+}
+
+/*ハンバーガーメニュークリック時背景*/
+.header__mask {
+    background: transparent url(../image/header/overlay.png) no-repeat top
+        center / cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: -120%;
+    top: 72px;
+    transition: all 0.5s;
+}
+
+.header__maskNav {
+    margin-top: 80px;
+    margin-left: percentage(math.div(48, 420));
+    color: s.$colorBlue;
+    font-weight: 700;
+}
+
+.header__maskList {
+    margin-top: 48px;
+}
+
+.header__maskList:first-of-type {
+    margin-top: 0;
+}
+
+.header__maskWrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__maskLink--sns:first-of-type {
+    width: 33px;
+    height: 30px;
+}
+
+.header__maskLink--sns:last-of-type {
+    width: 33.25px;
+    height: 33.25px;
+}
+
+.open {
+    .header__mask {
+        right: 0;
+        z-index: 10;
+    }
+}

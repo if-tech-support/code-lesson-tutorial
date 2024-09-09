@@ -1,0 +1,21 @@
+.js-fadeIn {
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 2s, transform 0.5s ease-in-out;
+}
+
+.js-fadeIn.is-scrollIn {
+    opacity: 1;
+    transform: translate(0);
+}
+
+.contact__inner.js-fadeIn {
+    transform: translate(-50%, 150px);
+}
+
+.contact__inner.js-fadeIn.is-scrollIn {
+    transform: translate(-50%, 0);
+} 
+
+
