@@ -42,15 +42,14 @@ img {
     width: 25.78px;
     height: 26.67px;
     background: transparent url(../image/title-image.png) no-repeat center / cover;
-    left: -33.78px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: -36px;
+    top: 8px;
 
     @include s.mq('sp') {
         width: 19px;
         height: 19px;
         left: 0;
-        top: -8px;
+        top: -21px;
     }
 }
 
@@ -62,6 +61,7 @@ img {
     @include s.mq('sp') {
         font-size: 13px;
         margin-top: 2px;
+        letter-spacing: 0.067em;
     }
 }
 
@@ -84,6 +84,11 @@ img {
     width: 37.56px;
     height: 4.33px;
     transition: .3s;
+
+    @include s.mq('sp') {
+        width: 43px;
+        height: 5px;
+    }
 }
 
 .u-btn:hover img {
@@ -91,7 +96,21 @@ img {
 }
 
 .u-btn p {
+    font-size: 14px;
     letter-spacing: 0.03em;
+
+    @include s.mq('sp') {
+        font-size: 16px;
+    }
+}
+
+/*パソコン画面のみ使用*/
+.u-pcScreen {
+    display: block;
+    
+    @include s.mq('sp') {
+        display: none;
+    }
 }
 
 

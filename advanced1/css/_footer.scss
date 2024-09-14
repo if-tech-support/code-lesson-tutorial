@@ -21,8 +21,8 @@ footer
     width: percentage(math.div(888, 1280));
     max-width: 888px;
     margin: 0 auto;
-    padding-top: 166px;
-
+    padding-top: 170px;
+    
     @include s.mq("sp") {
         width: percentage(math.div(378, 420));
         padding: 73.34px 0 24px;
@@ -51,11 +51,17 @@ footer
 .footer__logo {
     width: 93px;
     height: auto;
+    border-radius: 10px;
+    
+    @include s.mq('sp') {
+        width: 106px;
+        border-radius: 6px;
+    }
 }
 
 .footer__linkWrap {
     display: flex;
-    gap: 28.45px;
+    gap: 26.45px;
 
     @include s.mq("sp") {
         flex-direction: column;
@@ -97,6 +103,10 @@ footer
 
 .footer__ruleWrap a {
     transition: opacity 0.3s;
+
+    @include s.mq('sp') {
+        font-size: 15px;
+    }
 }
 
 .footer__ruleWrap a:hover {
@@ -105,6 +115,7 @@ footer
 
 .footer__copyright {
     font-size: 12px;
+    letter-spacing: 0.07em;
 
     @include s.mq("sp") {
         margin-top: 32px;

@@ -24,7 +24,8 @@
     @include s.mq("sp") {
         width: 198px;
         height: 320px;
-        bottom: -238px;
+        bottom: -217px;
+        background: transparent url(../image/bubble-sp.png) no-repeat center / cover;
     }
 }
 
@@ -71,7 +72,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: top;
 }
 
 /*スライドのアニメーション*/
@@ -98,7 +99,8 @@
 
     @include s.mq("sp") {
         top: inherit;
-        bottom: 59px;
+        bottom: 86px;
+        left: 21px;
     }
 }
 
@@ -108,9 +110,12 @@
     font-weight: 700;
     line-height: 1.6;
     color: s.$colorBlue;
+    letter-spacing: 0.08em;
 
     @include s.mq("sp") {
         font-size: 32px;
+        letter-spacing: 0.14em;
+        line-height: 1.65;
     }
 }
 
@@ -121,12 +126,12 @@
 .slide__titleWrap p:first-of-type::after {
     content: "";
     position: absolute;
-    right: -36px;
+    right: -31px;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
-    width: 26px;
-    height: 27px;
+    width: 25px;
+    height: 25px;
     background: transparent url(../image/title-image.png) no-repeat center /
         cover;
 }
@@ -144,7 +149,7 @@
     height: 670px;
 
     @include s.mq("sp") {
-        margin: 80px auto 116px;
+        margin: 54px auto 116px;
         flex-direction: column;
         width: percentage(math.div(390, 420));
         height: auto;
@@ -164,10 +169,20 @@
 .support__image {
     max-width: 500px;
     margin: 0 auto;
+
+    @include s.mq('sp') {
+        height: 260px;
+    }
 }
 
 .support__image img {
     border-radius: 10px;
+
+    @include s.mq("sp") {
+        border-radius: 6px;       
+        object-position: 24%;
+    }
+
 }
 
 .support__imageContainer {
@@ -183,10 +198,12 @@
     width: 237.38px;
     height: auto;
     position: absolute;
+    top: -6px;
     left: -86px;
 
     @include s.mq("sp") {
         width: 181.24px;
+        top: -28px;
         left: -38px;
     }
 }
@@ -195,29 +212,37 @@
     width: 485.31px;
     height: auto;
     position: absolute;
-    right: -25%;
+    top: -22px;
+    right: -127px;
 
     @include s.mq("sp") {
         width: 300.39px;
+        top: -6px;
         right: 0;
     }
 }
 
 .support__content {
-    width: percentage(math.div(465, 1080));
+    width: 44%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @include s.mq("sp") {
         width: 100%;
+        margin-top: -10px;
     }
+}
+
+.support__contentWrap {
+    padding: 0 6px 0 8px;
 }
 
 .support__title {
     font-size: 36px;
     font-weight: 700;
     color: s.$colorBlue;
+    letter-spacing: 0.08em;
 
     @include s.mq("sp") {
         font-size: 30px;
@@ -225,11 +250,15 @@
 }
 
 .support__text {
-    margin-top: 20px;
+    margin-top: 27px;
+    letter-spacing: 0.06em;
 
     @include s.mq("sp") {
+        font-size: 15px;
         margin-top: 12px;
         margin-bottom: 23px;
+        line-height: 1.6;
+        letter-spacing: 0.075em;
     }
 }
 
@@ -242,7 +271,7 @@
     padding-top: 64px;
 
     @include s.mq("sp") {
-        padding: 80px 0;
+        padding: 80px 0 61px;
     }
 }
 
@@ -286,34 +315,37 @@
     @include s.innerWidth;
     max-width: 1080px;
     margin: 0 auto;
+
+    @include s.mq('sp') {
+        width: 87%;
+    }
 }
 
 .service__grid {
-    margin: 48px auto 64px;
+    margin: 49px auto 0;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 354px));
     column-gap: 75px;
 
-    @include s.mq("sp") {
-        margin: 15px auto 0;
+    @include s.mq("sp") {        
+        margin: 13px 0 0 1px;
         grid-template-columns: 1fr;
     }
 }
 
 .service__gridCard {
     height: 614px;
-    padding-bottom: 44px;
     position: relative;
 
     @include s.mq("sp") {
         height: auto;
-        padding-bottom: 0;
-        margin-bottom: 48px;
+        margin-bottom: 47px;
     }
 }
 
 .service__gridCard:nth-of-type(2) {
-    margin-top: 44px;
+    margin-top: 46px;
 
     @include s.mq("sp") {
         margin-top: 0;
@@ -341,32 +373,50 @@
 
 .service__gridTitle {
     font-size: 24px;
+    letter-spacing: 0.08em;
     font-weight: 700;
     line-height: 36px;
     color: s.$colorBlue;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 21px;
+
+    @include s.mq('sp') {
+        margin-top: 21px;
+    }
 }
 
 .service__gridText {
-    margin: 8px 8px 20px 8px;
+    margin: 8px 2px 20px 7px;
+
+    @include s.mq('sp') {
+        margin: 9.14px 12px 0 9.14px;
+    }
 }
 
 .service__gridBtn {
     width: 258.55px;
     position: absolute;
-    bottom: 44px;
+    bottom: 42px;
     left: 50%;
     transform: translateX(-50%);
 
     @include s.mq("sp") {
+        width: 272.91px;
         position: inherit;
         left: inherit;
         transform: translateX(0);
         bottom: 0;
-        margin: 0 auto;
+        margin: 20px auto 0;
     }
 }
+
+.service__gridCard:last-of-type .service__gridBtn {
+
+    @include s.mq('sp') {
+        margin-top: 42px;
+    }
+}
+
 
 /*-------------------------------------------
 「ABOUT」レイアウト
@@ -374,10 +424,10 @@
 .about__layout {
     position: relative;
     margin: 110px auto;
-    padding-top: 110px;
+    padding-top: 109px;
 
     @include s.mq(sp) {
-        margin: 36.19px auto 80px;
+        margin: 36.19px auto 78px;
         padding-top: 80px;
     }
 }
@@ -410,12 +460,14 @@
     width: 318px;
     height: 596px;
     right: 0;
-    top: -41%;
+    top: -277px;
 
     @include s.mq("sp") {
         width: 154px;
         height: 230px;
-        top: -124px;
+        top: -125px;
+        background: transparent url(../image/about-bubble-sp.png) no-repeat
+        center / cover;
     }
 }
 
@@ -439,18 +491,24 @@
 
 .about__img {
     width: percentage(math.div(640, 1080));
+    height: 445px;
     position: relative;
     z-index: -1;
     
     @include s.mq("sp") {
         width: 100%;
-        margin: 24px auto 0;
+        height: auto;
+        margin: 6px auto 0;
     }
 }
 
 .about__img img {
     aspect-ratio: 1.5;
     border-radius: 10px;
+
+    @include s.mq('sp') {
+        border-radius: 6px;
+    }
 }
 
 .about__content {
@@ -460,18 +518,18 @@
     margin-top: 14.41px;
 
     @include s.mq("sp") {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 24px;
+        width: 98%;
+        margin-left: 8px;
+        margin-top: 21px;
     }
 }
 
 .about__titleWrap {
     margin-left: 600px;
-    margin-bottom: 14.41px;
+    margin-bottom: 17px;
 
     @include s.mq("sp") {
-        margin-left: 0;
+        margin-left: 7px;
     }
 }
 
@@ -488,6 +546,7 @@
 
 .about__contentText {
     margin: 16px 0 63.62px;
+    letter-spacing: 0.09em;
 
     @include s.mq("sp") {
         margin: 12px 0 30px;
@@ -496,6 +555,11 @@
 
 .about__btnWrap {
     width: 258.55px;
+
+    @include s.mq('sp') {
+        margin-left: -7px;
+        width: 272.91px;
+    }
 }
 
 /*-------------------------------------------
@@ -511,13 +575,13 @@
 }
 
 .company__gridCard {
-    padding: 51.5px 0 51.5px percentage(math.div(100, 640));
+    padding: 52px 0 51.5px percentage(math.div(100, 640));
     color: s.$colorWhite;
     transition: filter 0.3s;
     margin: 0;
 
     @include s.mq("sp") {
-        padding: 32px 0 32px 32px;
+        padding: 32px 0 36px 32px;
     }
 }
 
@@ -566,7 +630,7 @@
     @include s.mq("sp") {
         width: 20px;
         height: 20px;
-        margin-top: 12px;
+        margin-top: 9px;
     }
 }
 
@@ -583,13 +647,13 @@
 -------------------------------------------*/
 /*背景*/
 .staff__layout {
-    padding: 110px 0 159px percentage(math.div(222, 1280));
+    padding: 121px 0 159px percentage(math.div(222, 1280));
     background: transparent url(../image/staff-bg.png) no-repeat center /
         cover;
     position: relative;
 
     @include s.mq("sp") {
-        padding: 80px 15px;
+        padding: 78px 15px;
         background: transparent url(../image/staff-bg-sp.png) no-repeat
             top center / cover;
     }
@@ -602,7 +666,7 @@
     width: 273px;
     height: 551.5px;
     z-index: 1;
-    top: 0;
+    top: 17px;
     left: 0;
     background: transparent url(../image/staff-bubble.png) no-repeat
         center / cover;
@@ -622,7 +686,7 @@
 .staff__inner {
     display: flex;
     justify-content: flex-end;
-    gap:percentage(math.div(60, 1058));
+    gap:5%;
 
     @include s.mq("sp") {
         flex-direction: column-reverse;
@@ -630,7 +694,7 @@
 }
 
 .staff__content {
-    @include s.innerWidth(410px, 1058px);
+    width: 40%;
     position: relative;
 
     @include s.mq("sp") {
@@ -647,7 +711,7 @@
     background: transparent url(../image/staff-art.png) no-repeat center /
         cover;
     left: 0;
-    bottom: -77px;
+    bottom: -90px;
 
     @include s.mq("sp") {
         bottom: inherit;
@@ -655,31 +719,44 @@
         width: 186.09px;
         height: 82.99px;
         right: 0;
-        top: -70px;
+        top: -75px;
+    }
+}
+
+.staff__contentWrap {
+    @include s.mq('sp') {
+        margin: 2px 6px;
     }
 }
 
 .staff__text {
-    margin: 35px 0;
+    margin: 38px 0 35px;
+    letter-spacing: 0.065em;
 
     @include s.mq("sp") {
         margin: 25px 0;
+        letter-spacing: 0.075em;
     }
 }
 
 .staff__image {
-    @include s.innerWidth(588px, 1058px);
+    width: 56%;
     margin-top: 38px;
 
     @include s.mq("sp") {
         width: 100%;
         margin: 0 auto;
+        height: 260px;
     }
 }
 
 .staff__image img {
     border-radius: 10px;
     width: 100%;
+
+    @include s.mq('sp') {
+        border-radius: 6px;
+    }
 }
 
 .staff__btnWrap {
@@ -696,13 +773,14 @@
 -------------------------------------------*/
 /*背景*/
 .recruit__layout {
-    padding: 120px 0 159px;
+    padding: 120px 0;
     background: transparent url(../image/recruit-bg.png) no-repeat
-        center / cover;
+        left bottom / cover;
+         background-position: 10% center;
     position: relative;
 
     @include s.mq("sp") {
-        padding: 80px 0;
+        padding: 81px 0;
         background: transparent url(../image/recruit-bg-sp.png)
             no-repeat top center / cover;
     }
@@ -715,7 +793,7 @@
     width: 319px;
     height: 487px;
     z-index: 1;
-    bottom: 0;
+    bottom: -95px;
     right: 0;
     background: transparent url(../image/recruit-bubble.png) no-repeat
         center / cover;
@@ -747,7 +825,7 @@
 }
 
 .recruit__content {
-    @include s.innerWidth(410px, 1280px);
+    width: 33%;
     position: relative;
 
     @include s.mq("sp") {
@@ -764,23 +842,31 @@
     background: transparent url(../image/recruit-art.png) no-repeat
         center / cover;
     left: 0;
-    bottom: -74px;
+    bottom: -67px;
 
     @include s.mq("sp") {
         width: 140.65px;
         height: 82.31px;
         left: inherit;
         bottom: inherit;
-        top: -83px;
+        top: -78px;
         right: 0;
     }
 }
 
+.recruit__contentWrap {
+    @include s.mq('sp') {
+        margin: 0 6px;
+    }
+}
+
 .recruit__text {
-    margin: 35px 0;
+    margin: 38px 0 35px;
+    letter-spacing: 0.07em;
 
     @include s.mq("sp") {
-        margin: 24px 0;
+        margin: 24px 0;        
+        letter-spacing: 0.075em;
     }
 }
 
@@ -807,6 +893,9 @@
 
     @include s.mq("sp") {
         height: 272px;
+        background: transparent url(../image/contact-bg-sp.png) no-repeat
+        center / cover;
+        margin-bottom: 208px;
     }
 }
 
@@ -837,7 +926,7 @@
 
     @include s.mq("sp") {
         width: 100%;
-        padding: 24px 16px;
+        padding: 24px 15px;
         border-radius: 0 0 3.28px 3.28px;
     }
 }
@@ -845,15 +934,16 @@
 .contact__text {
     @include s.mq("sp") {
         font-size: 15px;
+        line-height: 1.65;
     }
 }
 
 .contact__btnWrap {
-    margin: 48px auto 0;
+    margin: 48px 0 0;
     width: 273.55px;
 
     @include s.mq("sp") {
-        margin-top: 20px;
+        margin: 16px auto 0;
         width: 289.91px;
     }
 }
@@ -879,6 +969,7 @@
     right: 15px;
     bottom: 40px;
     opacity: 0;
+    z-index: 100;
 }
 
 .top__iconLink {
