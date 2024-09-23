@@ -1,4 +1,5 @@
 @use "setting" as s;
+/*除算用にmathモジュールをインポート*/
 @use "sass:math";
 
 /*-------------------------------------------
@@ -878,6 +879,20 @@
     }
 }
 
+/*「採用情報」までのアニメーション*/
+
+.js-fadeIn {
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 2s, transform 0.5s ease-in-out;
+}
+
+.js-fadeIn.is-scrollIn {
+    opacity: 1;
+    transform: translate(0);
+}
+
 /*-------------------------------------------
 「お問い合わせ」レイアウト
 -------------------------------------------*/
@@ -959,6 +974,15 @@
         }
     }
 }
+
+/*「お問い合わせ」のアニメーション*/
+.contact__inner.js-fadeIn {
+    transform: translate(-50%, 150px);
+}
+
+.contact__inner.js-fadeIn.is-scrollIn {
+    transform: translate(-50%, 0);
+} 
 
 /*-------------------------------------------
 「トップアイコン」レイアウト

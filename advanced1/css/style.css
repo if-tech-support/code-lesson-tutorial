@@ -124,6 +124,7 @@ img {
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
+/*除算用にmathモジュールをインポート*/
 .header {
   width: 100%;
   height: 120px;
@@ -226,13 +227,13 @@ img {
 }
 
 /*ハンバーガーメニュークリック時、×になる*/
-.open .header__hamburgerLine:nth-child(1) {
+.js-open .header__hamburgerLine:nth-child(1) {
   transform: translateY(11px) rotate(-45deg);
 }
-.open .header__hamburgerLine:nth-child(2) {
+.js-open .header__hamburgerLine:nth-child(2) {
   transform: translateY(-1px) rotate(45deg);
 }
-.open .header__hamburgerLine:nth-child(3) {
+.js-open .header__hamburgerLine:nth-child(3) {
   display: none;
 }
 
@@ -282,11 +283,12 @@ img {
   height: 33.25px;
 }
 
-.open .header__mask {
+.js-open .header__mask {
   right: 0;
   z-index: 10;
 }
 
+/*除算用にmathモジュールをインポート*/
 /*-------------------------------------------
 スライドレイアウト
 -------------------------------------------*/
@@ -1208,6 +1210,19 @@ img {
   }
 }
 
+/*「採用情報」までのアニメーション*/
+.js-fadeIn {
+  position: relative;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 2s, transform 0.5s ease-in-out;
+}
+
+.js-fadeIn.is-scrollIn {
+  opacity: 1;
+  transform: translate(0);
+}
+
 /*-------------------------------------------
 「お問い合わせ」レイアウト
 -------------------------------------------*/
@@ -1292,6 +1307,15 @@ img {
   }
 }
 
+/*「お問い合わせ」のアニメーション*/
+.contact__inner.js-fadeIn {
+  transform: translate(-50%, 150px);
+}
+
+.contact__inner.js-fadeIn.is-scrollIn {
+  transform: translate(-50%, 0);
+}
+
 /*-------------------------------------------
 「トップアイコン」レイアウト
 -------------------------------------------*/
@@ -1309,29 +1333,10 @@ img {
   height: 68px;
 }
 
-.js-fadeIn {
-  position: relative;
-  opacity: 0;
-  transform: translateY(150px);
-  transition: opacity 2s, transform 0.5s ease-in-out;
-}
-
-.js-fadeIn.is-scrollIn {
-  opacity: 1;
-  transform: translate(0);
-}
-
-.contact__inner.js-fadeIn {
-  transform: translate(-50%, 150px);
-}
-
-.contact__inner.js-fadeIn.is-scrollIn {
-  transform: translate(-50%, 0);
-}
-
 /*-------------------------------------------
 footer
 -------------------------------------------*/
+/*除算用にmathモジュールをインポート*/
 /*ヘッダー背景*/
 .footer__layout {
   width: 100vw;
