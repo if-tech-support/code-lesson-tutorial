@@ -11,6 +11,12 @@
     height: 720px;
 }
 
+@media screen and (min-width: 1390px) {
+    .slide {
+        height: 900px;
+    }
+}
+
 /*スライド横のイラスト配置*/
 .slide::before {
     content: "";
@@ -26,7 +32,8 @@
         width: 198px;
         height: 320px;
         bottom: -217px;
-        background: transparent url(../image/bubble-sp.png) no-repeat center / cover;
+        background: transparent url(../image/bubble-sp.png) no-repeat center /
+            cover;
     }
 }
 
@@ -171,7 +178,7 @@
     max-width: 500px;
     margin: 0 auto;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         height: 260px;
     }
 }
@@ -180,10 +187,9 @@
     border-radius: 10px;
 
     @include s.mq("sp") {
-        border-radius: 6px;       
+        border-radius: 6px;
         object-position: 24%;
     }
-
 }
 
 .support__imageContainer {
@@ -292,8 +298,8 @@
 
 .service__layout::before {
     top: -110px;
-    background: transparent url(../image/service-bg01.png) no-repeat
-        center / cover;
+    background: transparent url(../image/service-bg01.png) no-repeat center /
+        cover;
 
     @include s.mq("sp") {
         top: -36.19px;
@@ -303,8 +309,8 @@
 .service__layout::after {
     bottom: -110px;
     left: 0;
-    background: transparent url(../image/service-bg02.png) no-repeat
-        center / cover;
+    background: transparent url(../image/service-bg02.png) no-repeat center /
+        cover;
 
     @include s.mq("sp") {
         bottom: -36.19px;
@@ -317,7 +323,7 @@
     max-width: 1080px;
     margin: 0 auto;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         width: 87%;
     }
 }
@@ -329,7 +335,7 @@
     grid-template-columns: repeat(3, minmax(0, 354px));
     column-gap: 75px;
 
-    @include s.mq("sp") {        
+    @include s.mq("sp") {
         margin: 13px 0 0 1px;
         grid-template-columns: 1fr;
     }
@@ -381,7 +387,7 @@
     text-align: center;
     margin-top: 21px;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin-top: 21px;
     }
 }
@@ -389,7 +395,7 @@
 .service__gridText {
     margin: 8px 2px 20px 7px;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin: 9.14px 12px 0 9.14px;
     }
 }
@@ -412,12 +418,10 @@
 }
 
 .service__gridCard:last-of-type .service__gridBtn {
-
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin-top: 42px;
     }
 }
-
 
 /*-------------------------------------------
 「ABOUT」レイアウト
@@ -437,8 +441,7 @@
 .about__layout::before {
     content: "";
     position: absolute;
-    background: transparent url(../image/about-img.png) no-repeat center /
-        cover;
+    background: transparent url(../image/about-img.png) no-repeat center / cover;
     width: 237px;
     height: 185px;
     left: percentage(math.div(53, 1280));
@@ -456,8 +459,8 @@
 .about__layout::after {
     content: "";
     position: absolute;
-    background: transparent url(../image/about-bubble.png) no-repeat
-        center / cover;
+    background: transparent url(../image/about-bubble.png) no-repeat center /
+        cover;
     width: 318px;
     height: 596px;
     right: 0;
@@ -468,7 +471,7 @@
         height: 230px;
         top: -125px;
         background: transparent url(../image/about-bubble-sp.png) no-repeat
-        center / cover;
+            center / cover;
     }
 }
 
@@ -495,7 +498,7 @@
     height: 445px;
     position: relative;
     z-index: -1;
-    
+
     @include s.mq("sp") {
         width: 100%;
         height: auto;
@@ -507,7 +510,7 @@
     aspect-ratio: 1.5;
     border-radius: 10px;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         border-radius: 6px;
     }
 }
@@ -557,7 +560,7 @@
 .about__btnWrap {
     width: 258.55px;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin-left: -7px;
         width: 272.91px;
     }
@@ -592,13 +595,13 @@
 }
 
 .company__gridCard:first-of-type {
-    background: transparent url(../image/philosophy.png) no-repeat top
-        center / cover;
+    background: transparent url(../image/philosophy.png) no-repeat top center /
+        cover;
 }
 
 .company__gridCard:last-of-type {
-    background: transparent url(../image/company.png) no-repeat top
-        center / cover;
+    background: transparent url(../image/company.png) no-repeat top center /
+        cover;
 }
 
 .company__gridTitle {
@@ -649,14 +652,13 @@
 /*背景*/
 .staff__layout {
     padding: 121px 0 159px percentage(math.div(222, 1280));
-    background: transparent url(../image/staff-bg.png) no-repeat center /
-        cover;
+    background: transparent url(../image/staff-bg.png) no-repeat center / cover;
     position: relative;
 
     @include s.mq("sp") {
         padding: 78px 15px;
-        background: transparent url(../image/staff-bg-sp.png) no-repeat
-            top center / cover;
+        background: transparent url(../image/staff-bg-sp.png) no-repeat top
+            center / cover;
     }
 }
 
@@ -669,14 +671,14 @@
     z-index: 1;
     top: 17px;
     left: 0;
-    background: transparent url(../image/staff-bubble.png) no-repeat
-        center / cover;
+    background: transparent url(../image/staff-bubble.png) no-repeat center /
+        cover;
 
     @include s.mq("sp") {
         width: 117px;
         height: 182px;
-        background: transparent url(../image/staff-bubble-sp.png)
-            no-repeat center / cover;
+        background: transparent url(../image/staff-bubble-sp.png) no-repeat
+            center / cover;
         top: inherit;
         left: inherit;
         bottom: -60px;
@@ -687,7 +689,7 @@
 .staff__inner {
     display: flex;
     justify-content: flex-end;
-    gap:5%;
+    gap: 5%;
 
     @include s.mq("sp") {
         flex-direction: column-reverse;
@@ -709,8 +711,7 @@
     position: absolute;
     width: 347.27px;
     height: 154.86px;
-    background: transparent url(../image/staff-art.png) no-repeat center /
-        cover;
+    background: transparent url(../image/staff-art.png) no-repeat center / cover;
     left: 0;
     bottom: -90px;
 
@@ -725,7 +726,7 @@
 }
 
 .staff__contentWrap {
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin: 2px 6px;
     }
 }
@@ -754,7 +755,7 @@
     border-radius: 10px;
     width: 100%;
 
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         border-radius: 6px;
     }
 }
@@ -774,15 +775,15 @@
 /*背景*/
 .recruit__layout {
     padding: 120px 0;
-    background: transparent url(../image/recruit-bg.png) no-repeat
-        left bottom / cover;
-         background-position: 10% center;
+    background: transparent url(../image/recruit-bg.png) no-repeat left bottom /
+        cover;
+    background-position: 10% center;
     position: relative;
 
     @include s.mq("sp") {
         padding: 81px 0;
-        background: transparent url(../image/recruit-bg-sp.png)
-            no-repeat top center / cover;
+        background: transparent url(../image/recruit-bg-sp.png) no-repeat top
+            center / cover;
     }
 }
 
@@ -795,8 +796,8 @@
     z-index: 1;
     bottom: -95px;
     right: 0;
-    background: transparent url(../image/recruit-bubble.png) no-repeat
-        center / cover;
+    background: transparent url(../image/recruit-bubble.png) no-repeat center /
+        cover;
 
     @include s.mq("sp") {
         width: 105px;
@@ -817,7 +818,7 @@
 
 .recruit__image {
     @include s.innerWidth(640px, 1280px);
-    
+
     @include s.mq("sp") {
         width: 100%;
         margin: 0 auto;
@@ -839,8 +840,8 @@
     position: absolute;
     width: 254.37px;
     height: 148.86px;
-    background: transparent url(../image/recruit-art.png) no-repeat
-        center / cover;
+    background: transparent url(../image/recruit-art.png) no-repeat center /
+        cover;
     left: 0;
     bottom: -67px;
 
@@ -855,7 +856,7 @@
 }
 
 .recruit__contentWrap {
-    @include s.mq('sp') {
+    @include s.mq("sp") {
         margin: 0 6px;
     }
 }
@@ -865,7 +866,7 @@
     letter-spacing: 0.07em;
 
     @include s.mq("sp") {
-        margin: 24px 0;        
+        margin: 24px 0;
         letter-spacing: 0.075em;
     }
 }
@@ -898,8 +899,8 @@
 -------------------------------------------*/
 /*背景画像*/
 .contact__layout {
-    background: transparent url(../image/contact-bg.png) no-repeat
-        center / cover;
+    background: transparent url(../image/contact-bg.png) no-repeat center /
+        cover;
     width: 100vw;
     height: 356px;
     position: relative;
@@ -907,8 +908,8 @@
 
     @include s.mq("sp") {
         height: 272px;
-        background: transparent url(../image/contact-bg-sp.png) no-repeat
-        center / cover;
+        background: transparent url(../image/contact-bg-sp.png) no-repeat center /
+            cover;
         margin-bottom: 208px;
     }
 }
@@ -982,7 +983,7 @@
 
 .contact__inner.js-fadeIn.is-scrollIn {
     transform: translate(-50%, 0);
-} 
+}
 
 /*-------------------------------------------
 「トップアイコン」レイアウト

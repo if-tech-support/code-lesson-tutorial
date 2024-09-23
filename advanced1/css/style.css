@@ -298,6 +298,11 @@ img {
   height: 720px;
 }
 
+@media screen and (min-width: 1390px) {
+  .slide {
+    height: 900px;
+  }
+}
 /*スライド横のイラスト配置*/
 .slide::before {
   content: "";
