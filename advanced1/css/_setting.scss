@@ -1,0 +1,31 @@
+//Sassでは、割り算に「/」を使うと、CSSの「値を分けるための記号」として誤解される可能性があるので
+//代わりに math.div(分子, 分母) を使うので、mathモジュールをインポートします。
+@use 'sass:math';
+
+// 色を変数登録
+$colorBlack: #333a3f;
+$colorWhite: #fff;
+$colorBlue: #18669e;
+$colorBlue--black: #282c33;
+$colorYellow: #f1c11a;
+$colorBtn: #5f82b3;
+
+//ヘッダーの高さを登録
+$headerHeight: 120px;
+$headerHeight--sp: 72px;
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+    "sp": "screen and (max-width: 821px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// 追加回せるスタイリングをmixin登録
+@mixin innerWidth($innerWidth: 1080px, $maxWidth: 1280px) {
+    width: percentage(math.div($innerWidth, $maxWidth));
+}
