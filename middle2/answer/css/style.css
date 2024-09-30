@@ -23,7 +23,7 @@ html {
 .u-sectionHeading {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
 }
 
 .u-sectionTitle {
@@ -312,7 +312,7 @@ special
 
 .special__pickup {
   max-width: 640px;
-  width: 86%;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .special__pickup {
@@ -373,7 +373,7 @@ aside
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 33px;
   padding: 64px 0;
   width: 28%;
 }
@@ -395,7 +395,7 @@ category
 .category {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
 .category__contents {
@@ -492,7 +492,7 @@ popularity
 .popularity__link {
   display: flex;
   gap: 20px;
-  padding: 14px 0;
+  padding: 0px 0 27px 15px;
 }
 
 .popularity__itemDate {
