@@ -6,7 +6,7 @@
 Webサイト全体の指定
 *******************************/
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: #333;
   letter-spacing: 0.08em;
   line-height: 1.5;
@@ -18,4 +18,4 @@ img {
   display: block;
 }
 
-/* ここから記述します。 */
+/* ここから記述します。 *//*# sourceMappingURL=style.css.map */
