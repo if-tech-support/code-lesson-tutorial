@@ -34,6 +34,10 @@ html {
   display: flex;
   flex-direction: column;
   gap: 5px;
+
+  @include mq(tab) {
+    gap: 10px;
+  }
 }
 
 .u-sectionTitle {
@@ -84,7 +88,7 @@ header
   gap: 20px;
 
   @include mq(tab) {
-    padding: 8px 29.5px;
+    padding: 8px 20px;
     justify-content: center;
   }
 }
@@ -237,6 +241,10 @@ news
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  @include mq(sp) {
+    gap: 8px;
+  }
 }
 
 .news__detailDate {
@@ -372,7 +380,7 @@ aside
 
   @include mq(sp) {
     padding: 0 0 50px;
-    gap: 30px;
+    gap: 41px;
   }
 }
 
@@ -395,6 +403,10 @@ category
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
 }
 
 .category__text {
@@ -427,6 +439,10 @@ category
 
 .category__btnImg {
   width: 100%;
+
+  @include mq(sp) {
+    margin-bottom: 16px;
+  }
 }
 
 .category__btnText {
@@ -467,6 +483,10 @@ popularity
   font-size: 16px;
   width: fit-content;
   margin-left: auto;
+
+  @include mq(sp) {
+    margin-bottom: 20px;
+  }
 }
 
 .popularity__item {
@@ -481,14 +501,32 @@ popularity
   display: flex;
   gap: 20px;
   padding: 0px 0 27px 15px;
+
+  @include mq(sp) {
+    padding: 14px 0;
+  }
 }
 
 .popularity__itemDate {
   font-size: 14px;
+
+  @include mq(sp) {
+    font-size: 16px;
+  }
 }
 
 .popularity__itemText {
   font-size: 14px;
+
+  @include mq(sp) {
+    font-size: 16px;
+  }
+}
+
+.post__linkImg {
+  @include mq(sp) {
+    width: 30px;
+  }
 }
 
 /*--------------------------------
@@ -498,6 +536,10 @@ post
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
 }
 
 .post__linkText {

@@ -25,6 +25,11 @@ html {
   flex-direction: column;
   gap: 5px;
 }
+@media screen and (max-width: 768px) {
+  .u-sectionHeading {
+    gap: 10px;
+  }
+}
 
 .u-sectionTitle {
   font-weight: 500;
@@ -78,7 +83,7 @@ header
 }
 @media screen and (max-width: 768px) {
   .header__list {
-    padding: 8px 29.5px;
+    padding: 8px 20px;
     justify-content: center;
   }
 }
@@ -244,6 +249,11 @@ news
   flex-direction: column;
   gap: 6px;
 }
+@media screen and (max-width: 480px) {
+  .news__detail {
+    gap: 8px;
+  }
+}
 
 .news__detailDate {
   font-size: 14px;
@@ -385,7 +395,7 @@ aside
 @media screen and (max-width: 480px) {
   .sidebar {
     padding: 0 0 50px;
-    gap: 30px;
+    gap: 41px;
   }
 }
 
@@ -408,6 +418,11 @@ category
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media screen and (max-width: 480px) {
+  .category__top {
+    gap: 20px;
+  }
 }
 
 .category__text {
@@ -440,6 +455,11 @@ category
 
 .category__btnImg {
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .category__btnImg {
+    margin-bottom: 16px;
+  }
 }
 
 .category__btnText {
@@ -481,6 +501,11 @@ popularity
   width: fit-content;
   margin-left: auto;
 }
+@media screen and (max-width: 480px) {
+  .popularity__linkText {
+    margin-bottom: 20px;
+  }
+}
 
 .popularity__item {
   border-top: 1px solid #e8e3d2;
@@ -494,13 +519,34 @@ popularity
   gap: 20px;
   padding: 0px 0 27px 15px;
 }
+@media screen and (max-width: 480px) {
+  .popularity__link {
+    padding: 14px 0;
+  }
+}
 
 .popularity__itemDate {
   font-size: 14px;
 }
+@media screen and (max-width: 480px) {
+  .popularity__itemDate {
+    font-size: 16px;
+  }
+}
 
 .popularity__itemText {
   font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .popularity__itemText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post__linkImg {
+    width: 30px;
+  }
 }
 
 /*--------------------------------
@@ -510,6 +556,11 @@ post
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media screen and (max-width: 480px) {
+  .post {
+    gap: 20px;
+  }
 }
 
 .post__linkText {
