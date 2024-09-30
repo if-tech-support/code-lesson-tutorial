@@ -500,11 +500,7 @@ popularity
 .popularity__link {
   display: flex;
   gap: 20px;
-  padding: 0px 0 27px 15px;
-
-  @include mq(sp) {
-    padding: 14px 0;
-  }
+  padding: 14px 0;
 }
 
 .popularity__itemDate {
