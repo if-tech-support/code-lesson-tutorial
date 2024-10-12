@@ -1,10 +1,6 @@
-/**
- * 共通部品
- *
- * @format
- */
+/* 共通部品 */
 
-html {
+ html {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
   line-height: 1.5;
@@ -107,7 +103,7 @@ firstView
   justify-content: center;
   align-items: center;
   height: 500px;
-  background: url('image/FV.png') no-repeat center/cover;
+  background: url('../image/FV.png') no-repeat center/cover;
   width: 100%;
   @media screen and (max-width: 768px) {
 		height: 540px;
