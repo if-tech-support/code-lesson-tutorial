@@ -1,0 +1,13 @@
+/**
+ * 共通部品
+ *
+ * @format
+ */
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+}
+/* ここから記述します。 */
