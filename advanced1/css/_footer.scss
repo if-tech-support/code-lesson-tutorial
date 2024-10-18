@@ -1,0 +1,124 @@
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+@use "setting" as s;
+/*除算用にmathモジュールをインポート*/
+@use "sass:math";
+
+/*ヘッダー背景*/
+.footer__layout {
+    width: 100vw;
+    background: transparent url(../image/footer-bg.png) no-repeat top
+        center / cover;
+    padding-bottom: 24px;
+
+    @include s.mq("sp") {
+        background: transparent url(../image/footer-bg-sp.png) no-repeat
+            top center / cover;
+    }
+}
+
+.footer__inner {
+    width: percentage(math.div(888, 1280));
+    max-width: 888px;
+    margin: 0 auto;
+    padding-top: 170px;
+    
+    @include s.mq("sp") {
+        width: percentage(math.div(378, 420));
+        padding: 73.34px 0 24px;
+    }
+}
+
+.footer__wrapUpper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include s.mq("sp") {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.footer__wrapUpper a {
+    transition: opacity .3s;
+}
+
+.footer__wrapUpper a:hover {
+    opacity: 0.6;
+}
+
+.footer__logo {
+    width: 93px;
+    height: auto;
+    border-radius: 10px;
+    
+    @include s.mq('sp') {
+        width: 106px;
+        border-radius: 6px;
+    }
+}
+
+.footer__linkWrap {
+    display: flex;
+    gap: 26.45px;
+
+    @include s.mq("sp") {
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 8px;
+    }
+}
+
+.footer__linkWrap a {
+    transition: opacity 0.3s;
+    @include s.mq("sp") {
+        font-size: 15px;
+    }
+}
+
+.footer__linkWrap a:hover {
+    opacity: 0.6;
+}
+
+.footer__wrapLower {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56.89px;
+
+    @include s.mq("sp") {
+        flex-direction: column;
+        margin-top: 8px;
+    }
+}
+
+.footer__ruleWrap {
+    display: flex;
+    gap: 35.55px;
+
+    @include s.mq("sp") {
+        gap: 11.67px;
+    }
+}
+
+.footer__ruleWrap a {
+    transition: opacity 0.3s;
+
+    @include s.mq('sp') {
+        font-size: 15px;
+    }
+}
+
+.footer__ruleWrap a:hover {
+    opacity: 0.6;
+}
+
+.footer__copyright {
+    font-size: 12px;
+    letter-spacing: 0.07em;
+
+    @include s.mq("sp") {
+        margin-top: 32px;
+    }
+}

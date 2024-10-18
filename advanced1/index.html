@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+        <meta charset="UTF-8" />
+        <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ※架空サイトのため、検索されないようにするコードです-->
+        <meta name="robots" content="noindex, nofollow" />
+        <!-- ウェブページのタイトルに使用されます。 -->
+        <title>Nova Tech</title>
+        <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+        <meta name="description" content="未来を創る最先端のIT技術を提供" />
+        <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+        <meta name="format-detection" content="telephone=no" />
+        <!-- ファビコンを設定しています。 -->
+        <link rel="shortcut icon" href="image/favicon.ico" />
+        <!-- reset.cssは、destyleを使用しています。 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+        />
+        <!-- Google Fontを読み込みます-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- スタイルシート（css）を呼び出しています -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="body">
+        <!-- header -->
+        <header class="header" id="header">
+            <div class="header__inner">
+                <h1>
+                    <a href="#">
+                        <img
+                            class="header__logo"
+                            src="image/logo.png"
+                            alt="Nova Tech"
+                            width="130"
+                            height="120"
+                        />
+                    </a>
+                </h1>
+                <div>
+                    <nav class="header__nav" aria-label="Main Navigation">
+                        <ul class="header__menu">
+                            <li class="header__menuList">
+                                <a class="header__menuLink" href="#service">
+                                    SERVICE
+                                </a>
+                            </li>
+                            <li class="header__menuList">
+                                <a class="header__menuLink" href="#about">
+                                    ABOUT
+                                </a>
+                            </li>
+                            <li class="header__menuList">
+                                <a class="header__menuLink" href="#contact"
+                                    >CONTACT
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__toggleBtn">
+                        <span class="header__hamburgerLine"></span>
+                        <span class="header__hamburgerLine"></span>
+                        <span class="header__hamburgerLine"></span>
+                    </div>
+                    <div class="header__mask">
+                        <nav
+                            class="header__maskNav"
+                            aria-label="Main Navigation"
+                        >
+                            <ul class="header__maskMenu">
+                                <li class="header__maskList">
+                                    <a class="header__maskLink" href="#service">
+                                        SERVICE
+                                    </a>
+                                </li>
+                                <li class="header__maskList">
+                                    <a class="header__maskLink" href="#about">
+                                        ABOUT
+                                    </a>
+                                </li>
+                                <li class="header__maskList">
+                                    <a class="header__maskLink" href="#contact">
+                                        CONTACT
+                                    </a>
+                                </li>
+                                <li class="header__maskList">
+                                    <a class="header__maskLink" href="#">
+                                        利用規約
+                                    </a>
+                                </li>
+                                <li class="header__maskList">
+                                    <a class="header__maskLink" href="#">
+                                        プライバシーポリシー
+                                    </a>
+                                </li>
+                                <li class="header__maskList">
+                                    <div class="header__maskWrap">
+                                        <a
+                                            class="header__maskLink--sns"
+                                            href="https://x.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="image/x-img.png"
+                                                alt="X"
+                                                width="33"
+                                                height="30"
+                                            />
+                                        </a>
+                                        <a
+                                            class="header__maskLink--sns"
+                                            href="https://www.instagram.com/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <img
+                                                src="image/insta-img.png"
+                                                alt="インスタグラム"
+                                                width="33.25"
+                                                height="33.25"
+                                            />
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- main -->
+        <main class="main">
+            <!-- slide -->
+            <section class="slide">
+                <ul class="slide__list">
+                    <li class="slide__item">
+                        <picture>
+                            <source
+                                srcset="image/slide01.png"
+                                media="(min-width: 821px)"                      />
+                            <img
+                                src="image/sp-slide01.png"
+                                width="420"
+                                height="694"
+                                alt="最先端TのIT技術でビジネスネットワークをつなげます"
+                            />
+                        </picture>
+                    </li>
+                    <li class="slide__item">
+                        <picture>
+                            <source
+                                srcset="image/slide02.png"
+                                media="(min-width: 821px)"
+                            />
+                            <img
+                                src="image/sp-slide02.png"
+                                width="420"
+                                height="694"
+                                alt="最先端のIT技術を提供します"
+                            />
+                        </picture>
+                    </li>
+                    <li class="slide__item">
+                        <picture>
+                            <source
+                                srcset="image/slide03.png"
+                                media="(min-width: 821px)"
+                            />
+                            <img
+                                src="image/sp-slide03.png"
+                                width="420"
+                                height="694"
+                                alt="最先端のIT技術でお客様をサポートします"
+                            />
+                        </picture>
+                    </li>
+                </ul>
+                <div class="slide__titleWrap">
+                    <p>未来を創る</p>
+                    <br />
+                    <p>最先端のIT技術を提供</p>
+                </div>
+            </section>
+            <section class="support">
+                <div class="support__inner">
+                    <div class="support__imageWrap">
+                        <figure class="support__image">
+                            <img
+                                class="js-fadeIn"
+                                src="image/support01.jpg"
+                                alt="お客様の強力なパートナーであり続けます"
+                                width="500"
+                                height="375"
+                            />
+                        </figure>
+                        <div class="support__imageContainer">
+                            <figure class="support__imageLeft">
+                                <img
+                                    src="image/support03.png"
+                                    alt="最先端の技術と専門知識"
+                                    width="237.38"
+                                    height="275.51"
+                                />
+                            </figure>
+                            <figure class="support__imageRight">
+                                <img
+                                    src="image/support04.png"
+                                    alt="最先端の技術と専門知識"
+                                    width="485.51"
+                                    height="486.3"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="support__content">
+                        <div class="support__contentWrap">
+                            <h2 class="support__title">信頼の技術とサポート</h2>
+                            <p class="support__text">
+                                私たちは、お客様のビジネスを次のレベルへと導くため、
+                                最先端の技術と専門知識を活用しています。
+                                カスタマイズされたソリューションと信頼性の高いサポートを
+                                提供し、持続可能な成長と成功を実現します。
+                                私たちの使命は、お客様の目標を達成するための強力な
+                                パートナーであり続けることです。
+                            </p>
+                        </div>
+                        <figure class="support__image">
+                            <img
+                                class="js-fadeIn"
+                                src="image/support02.jpg"
+                                alt="サポートを提供します"
+                                width="464"
+                                height="261"
+                            />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- /support-->
+            <!-- service-->
+            <section class="service" id="service">
+                <div class="service__layout">
+                    <div class="service__inner">
+                        <div class="service__titleWrap">
+                            <h2 class="service__title u-sectionTitle">
+                                SERVICE
+                            </h2>
+                            <p class="service__titleSub u-sectionTitle--sub">
+                                サービス
+                            </p>
+                        </div>
+                        <ul class="service__grid">
+                            <li class="service__gridCard js-fadeIn">
+                                <figure class="service__gridImage">
+                                    <img
+                                        src="image/system.png"
+                                        alt="システム開発"
+                                        width="620"
+                                        height="715"
+                                    />
+                                </figure>
+                                <h3 class="service__gridTitle">システム開発</h3>
+                                <p class="service__gridText">
+                                    オーダーメイドのソフトウェア開発と
+                                    最新技術を駆使したシステム構築を提供します。
+                                </p>
+                                <div class="service__gridBtn">
+                                    <a class="u-btn" href="#">
+                                        <p>もっと見る</p>
+                                        <img
+                                            src="image/arrow.png"
+                                            alt="詳細ページへ"
+                                            width="38"
+                                            height="4"
+                                        />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="service__gridCard js-fadeIn">
+                                <figure class="service__gridImage">
+                                    <img
+                                        src="image/cloud.png"
+                                        alt="クラウドソリューション"
+                                        width="620"
+                                        height="715"
+                                    />
+                                </figure>
+                                <h3 class="service__gridTitle">
+                                    クラウドソリューション
+                                </h3>
+                                <p class="service__gridText">
+                                    安全で効率的なクラウド環境の提供とデータ管理、
+                                    ストレージの最適化を行います。
+                                </p>
+                                <div class="service__gridBtn">
+                                    <a class="u-btn" href="#">
+                                        <p>もっと見る</p>
+                                        <img
+                                            src="image/arrow.png"
+                                            alt="詳細ページへ"
+                                            width="38"
+                                            height="4"
+                                        />
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="service__gridCard js-fadeIn">
+                                <figure class="service__gridImage">
+                                    <img
+                                        src="image/consul.png"
+                                        alt=" ITコンサルティング"
+                                        width="620"
+                                        height="715"
+                                    />
+                                </figure>
+                                <h3 class="service__gridTitle">
+                                    ITコンサルティング
+                                </h3>
+                                <p class="service__gridText">
+                                    技術的課題の解決とビジネスプロセスの最適化をサポートします。
+                                </p>
+                                <div class="service__gridBtn">
+                                    <a class="u-btn" href="#">
+                                        <p>もっと見る</p>
+                                        <img
+                                            src="image/arrow.png"
+                                            alt="詳細ページへ"
+                                            width="38"
+                                            height="4"
+                                        />
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /service -->
+            <!-- about-->
+            <section class="about" id="about">
+                <div class="about__layout">
+                    <div class="about__inner">
+                        <div class="about__titleWrap">
+                            <div class="about__titleLayout">
+                                <h2 class="about__title u-sectionTitle">
+                                    ABOUT
+                                </h2>
+                                <p class="about__titleSub u-sectionTitle--sub">
+                                    私たちについて
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__wrap">
+                            <picture class="about__img js-fadeIn">
+                                <source
+                                    srcset="image/about-person.jpg"
+                                    media="(min-width: 821px)"
+                                />
+                                <img
+                                    src="image/about-person-sp.jpg"
+                                    alt="経験豊富なエンジニアとコンサルタントがチームを組み、
+                                    信頼性の高いサービスを提供します"
+                                    width="780"
+                                    height="521"
+                                />
+                            </picture>
+                            <div class="about__content">
+                                <h3 class="about__contentTitle">
+                                    私たちの取り組み
+                                </h3>
+                                <p class="about__contentText">
+                                    私たちのミッションは、最先端のIT技術を駆使してお客様のビジネス成功をサポートすることです。
+                                    経験豊富なエンジニアとコンサルタントがチームを組<br
+                                        class="u-pcScreen"
+                                    />み、 信頼性の高いサービスを提供します。
+                                </p>
+                                <div class="about__btnWrap">
+                                    <a class="u-btn" href="#">
+                                        <p>もっと見る</p>
+                                        <img
+                                            src="image/arrow.png"
+                                            alt="詳細ページへ"
+                                            width="38"
+                                            height="4"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /service -->
+            <!-- company -->
+            <section class="company">
+                <div class="company__grid">
+                    <a href="#" class="company__gridCard">
+                        <h2 class="company__gridTitle">会社理念</h2>
+                        <p class="company__gridTitle--sub">PHILOSOPHY</p>
+                        <div class="company__girdArrow">
+                            <img
+                                src="image/company-arrow.png"
+                                alt="詳細ページへ"
+                                width="38"
+                                height="4"
+                            />
+                        </div>
+                    </a>
+                    <a href="#" class="company__gridCard">
+                        <h2 class="company__gridTitle">会社概要</h2>
+                        <p class="company__gridTitle--sub">COMPANY</p>
+                        <div class="company__girdArrow">
+                            <img
+                                src="image/company-arrow.png"
+                                alt="詳細ページへ"
+                                width="38"
+                                height="4"
+                            />
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- /company -->
+            <!-- staff -->
+            <section class="staff">
+                <div class="staff__layout">
+                    <div class="staff__inner">
+                        <div class="staff__content">
+                            <div class="staff__contentWrap">
+                                <h2 class="staff__title u-sectionTitle">
+                                    STAFF
+                                </h2>
+                                <p class="staff__titleSub u-sectionTitle--sub">
+                                    スタッフ紹介
+                                </p>
+                                <p class="staff__text">
+                                    私たちのチームは、多様なバックグラウンドと専門知識を持つプロフェッショナルで構成されています。各メンバーの紹介と役割をこちらでご覧ください。
+                                </p>
+                            </div>
+                            <div class="staff__btnWrap">
+                                <a class="u-btn" href="#">
+                                    <p>スタッフ紹介</p>
+                                    <img
+                                        src="image/arrow.png"
+                                        alt="詳細ページへ"
+                                        width="38"
+                                        height="4"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <picture class="staff__image js-fadeIn">
+                            <source
+                            srcset="image/staff-img.jpg"
+                            media="(min-width: 821px)"
+                        />
+                            <img
+                                src="image/staff-img-sp.jpg"
+                                alt="スタッフ紹介"
+                                width="586"
+                                height="469"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+            <!-- /staff -->
+            <!-- recruit -->
+            <section class="recruit" id="recruit">
+                <div class="recruit__layout">
+                    <div class="recruit__inner">
+                        <picture class="recruit__image js-fadeIn">
+                            <source
+                                srcset="image/recruit-img.png"
+                                media="(min-width: 821px)"
+                            />
+                            <img
+                                src="image/recruit-sp-img.png"
+                                alt="採用情報"
+                                width="840"
+                                height="569"
+                            />
+                        </picture>
+                        <div class="recruit__content">
+                            <div class="recruit__contentWrap">
+                                <h2 class="recruit__title u-sectionTitle">
+                                    RECRUIT
+                                </h2>
+                                <p
+                                    class="recruit__titleSub u-sectionTitle--sub"
+                                >
+                                    採用情報
+                                </p>
+                                <p class="recruit__text">
+                                    当社は常に優秀な人材を求めています。
+                                    私たちのミッションに共感し、共に未来を創りたいと考える方は、
+                                    ぜひ採用情報をご覧ください。
+                                    詳細な募集要項と応<br
+                                        class="u-pcScreen"
+                                    />募方法はこちらからご確認いただけます。
+                                </p>
+                            </div>
+                            <div class="recruit__btnWrap">
+                                <a class="u-btn" href="#">
+                                    <p>採用について</p>
+                                    <img
+                                        src="image/arrow.png"
+                                        alt="詳細ページへ"
+                                        width="38"
+                                        height="4"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /recruit -->
+            <!-- contact-->
+            <section class="contact" id="contact">
+                <div class="contact__layout">
+                    <div class="contact__inner js-fadeIn">
+                        <div class="contact__content">
+                            <p class="contact__text">
+                                お客様のニーズに合わせたオーダーメイドで最適な提供をいたします。
+                                <br />
+                                ご不明点などお気軽にお問い合わせください。
+                            </p>
+                            <div class="contact__btnWrap">
+                                <a class="u-btn" href="#">
+                                    <p>お問い合わせ</p>
+                                    <img
+                                        src="image/arrow.png"
+                                        alt="詳細ページへ"
+                                        width="38"
+                                        height="4"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <picture class="contact__image">
+                            <source
+                                srcset="image/contact-image.png"
+                                media="(min-width: 821px)"
+                            />
+                            <img
+                                src="image/contact-image-sp.png"
+                                alt="お問い合わせ"
+                                width="1041"
+                                height="721"
+                            />
+                        </picture>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- /main -->
+        <button id="js-scrollTop" class="top__icon">
+            <a class="top__iconLink" href="#header">
+                <img
+                    src="image/top_btn.png"
+                    alt="ページトップへ戻る"
+                    width="68"
+                    height="68"
+                />
+            </a>
+        </button>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__layout">
+                <div class="footer__inner">
+                    <div class="footer__wrapUpper">
+                        <a href="#"
+                            ><img
+                                class="footer__logo"
+                                src="image/footer-logo.png"
+                                alt="Nova Tech"
+                                width="213"
+                                height="196"
+                            />
+                        </a>
+                        <nav aria-label="Footer Navigation">
+                            <ul class="footer__linkWrap">
+                                <li><a href="#service">SERVICE</a></li>
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__wrapLower">
+                        <ul class="footer__ruleWrap">
+                            <li><a href="#">利用規約</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                        </ul>
+                        <small class="footer__copyright"
+                            >© Nova Technology.</small
+                        >
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+        <script src="js/common.js" defer></script>
+        <script src="js/frontPage.js" defer></script>
+    </body>
+</html>
