@@ -23,7 +23,6 @@ companyページ / company.html
 
 .company__wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 48px;
     margin-bottom: 120px;
@@ -62,7 +61,6 @@ companyページ / company.html
     display: flex;
     flex-wrap: wrap;
     color: s.$colorWhite;
-    margin-bottom: 20px;
 
     @include s.mq(tab) {
         font-size: 14px;

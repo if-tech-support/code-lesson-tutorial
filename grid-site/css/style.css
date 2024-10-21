@@ -5,7 +5,7 @@
 body {
   font-family: "Hiragino Mincho Pro", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
   letter-spacing: 0.1em;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 img {
@@ -91,7 +91,7 @@ a:hover {
 /*ハンバーガーメニュー*/
 .header__toggleBtn {
   width: 30px;
-  height: 30px;
+  height: 20px;
   position: relative;
   transition: all 0.5s;
   cursor: pointer;
@@ -110,15 +110,15 @@ a:hover {
 }
 
 .header__hamburgerLine:nth-child(1) {
-  top: 0px;
+  top: 2px;
 }
 
 .header__hamburgerLine:nth-child(2) {
-  top: 9px;
+  top: 12px;
 }
 
 .header__hamburgerLine:nth-child(3) {
-  top: 18px;
+  top: 22px;
 }
 
 /*ハンバーガーメニュークリック時、×になる*/
@@ -164,7 +164,14 @@ footer
 .footer__wrapper {
   background: #fff;
   color: #353535;
-  padding: 48px 0px;
+  height: 160px;
+  display: flex;
+}
+@media screen and (max-width: 900px) {
+  .footer__wrapper {
+    height: auto;
+    padding: 48px 0px;
+  }
 }
 
 .footer__inner {
@@ -187,7 +194,8 @@ footer
 
 .footer__innerUl {
   display: flex;
-  column-gap: 32px;
+  -moz-column-gap: 28px;
+       column-gap: 28px;
 }
 @media screen and (max-width: 900px) {
   .footer__innerUl {
@@ -221,7 +229,7 @@ TOP gridレイアウト
 }
 
 .grid__img {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   vertical-align: top;
 }
 
@@ -235,18 +243,21 @@ TOP gridレイアウト
   }
 }
 
-.grid__text:first-of-type {
-  margin-bottom: 4px;
-}
-
 .grid__item:nth-child(1) {
   grid-area: A;
 }
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  object-fit: cover;
-  object-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+@media screen and (max-width: 900px) {
+  .grid__item:nth-child(1) .grid__img {
+    height: auto;
+  }
 }
 
 .grid__item:nth-child(2) {
@@ -285,9 +296,10 @@ TOP gridレイアウト
 
 .grid__btnText {
   width: 240px;
+  height: 50px;
   color: #fff;
   display: inline-block;
-  padding: 12px 48px;
+  padding: 12px 0px;
   border: solid 1px #cacaca;
 }
 
@@ -296,8 +308,8 @@ TOP gridレイアウト
   font-size: 15px;
   position: absolute;
   left: 14px;
-  top: 65%;
-  transform: rotate(270deg);
+  top: 50%;
+  transform: rotate(270deg) translate(-19%, 30%);
   transform-origin: left;
   display: flex;
   align-items: center;
@@ -358,6 +370,7 @@ aboutページ / about.html
 @media screen and (max-width: 900px) {
   .about__wrapper {
     flex-direction: column;
+    margin-bottom: 80px;
   }
 }
 
@@ -418,7 +431,6 @@ companyページ / company.html
 
 .company__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 48px;
   margin-bottom: 120px;
@@ -459,7 +471,6 @@ companyページ / company.html
   display: flex;
   flex-wrap: wrap;
   color: #fff;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 900px) {
   .company__dl {
@@ -507,7 +518,8 @@ itemページ / item.html
 .item__title {
   font-size: 36px;
   color: #fff;
-  margin: 32px auto 24px;
+  margin: 0px auto 24px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 900px) {
   .item__title {
@@ -547,10 +559,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .item__link {
   width: 240px;
+  height: 50px;
   color: #fff;
   display: inline-block;
   background: #BA0808;
-  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 12px 0px 48px;
 }
 
@@ -616,7 +631,7 @@ products
 }
 
 .products__gridImg {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   vertical-align: top;
 }
 
@@ -628,10 +643,6 @@ products
   .products__gridText {
     font-size: 14px;
   }
-}
-
-.products__gridText:first-of-type {
-  margin-bottom: 4px;
 }
 
 /*人気商品のgridレイアウト３列*/
@@ -647,4 +658,4 @@ products
     gap: 28px 8px;
     margin-bottom: 80px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
