@@ -23,7 +23,12 @@ html {
 .u-sectionHeading {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
+}
+@media screen and (max-width: 768px) {
+  .u-sectionHeading {
+    gap: 10px;
+  }
 }
 
 .u-sectionTitle {
@@ -78,7 +83,7 @@ header
 }
 @media screen and (max-width: 768px) {
   .header__list {
-    padding: 8px 29.5px;
+    padding: 8px 20px;
     justify-content: center;
   }
 }
@@ -231,7 +236,7 @@ news
 
 .news__pickup {
   max-width: 640px;
-  width: 86%;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .news__pickup {
@@ -243,6 +248,11 @@ news
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+@media screen and (max-width: 480px) {
+  .news__detail {
+    gap: 8px;
+  }
 }
 
 .news__detailDate {
@@ -312,7 +322,7 @@ special
 
 .special__pickup {
   max-width: 640px;
-  width: 86%;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   .special__pickup {
@@ -373,7 +383,7 @@ aside
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 33px;
   padding: 64px 0;
   width: 28%;
 }
@@ -385,7 +395,7 @@ aside
 @media screen and (max-width: 480px) {
   .sidebar {
     padding: 0 0 50px;
-    gap: 30px;
+    gap: 41px;
   }
 }
 
@@ -395,7 +405,7 @@ category
 .category {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
 .category__contents {
@@ -408,6 +418,11 @@ category
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+@media screen and (max-width: 480px) {
+  .category__top {
+    gap: 20px;
+  }
 }
 
 .category__text {
@@ -440,6 +455,11 @@ category
 
 .category__btnImg {
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .category__btnImg {
+    margin-bottom: 16px;
+  }
 }
 
 .category__btnText {
@@ -481,6 +501,11 @@ popularity
   width: fit-content;
   margin-left: auto;
 }
+@media screen and (max-width: 480px) {
+  .popularity__linkText {
+    margin-bottom: 20px;
+  }
+}
 
 .popularity__item {
   border-top: 1px solid #e8e3d2;
@@ -498,9 +523,25 @@ popularity
 .popularity__itemDate {
   font-size: 14px;
 }
+@media screen and (max-width: 480px) {
+  .popularity__itemDate {
+    font-size: 16px;
+  }
+}
 
 .popularity__itemText {
   font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .popularity__itemText {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .post__linkImg {
+    width: 30px;
+  }
 }
 
 /*--------------------------------
@@ -510,6 +551,11 @@ post
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+@media screen and (max-width: 480px) {
+  .post {
+    gap: 20px;
+  }
 }
 
 .post__linkText {
@@ -613,4 +659,4 @@ footer
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-}
+}/*# sourceMappingURL=style.css.map */

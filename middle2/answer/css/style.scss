@@ -33,7 +33,11 @@ html {
 .u-sectionHeading {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
+
+  @include mq(tab) {
+    gap: 10px;
+  }
 }
 
 .u-sectionTitle {
@@ -84,7 +88,7 @@ header
   gap: 20px;
 
   @include mq(tab) {
-    padding: 8px 29.5px;
+    padding: 8px 20px;
     justify-content: center;
   }
 }
@@ -226,7 +230,7 @@ news
 
 .news__pickup {
   max-width: 640px;
-  width: 86%;
+  width: 100%;
 
   @include mq(sp) {
     width: 100%;
@@ -237,6 +241,10 @@ news
   display: flex;
   flex-direction: column;
   gap: 6px;
+
+  @include mq(sp) {
+    gap: 8px;
+  }
 }
 
 .news__detailDate {
@@ -303,7 +311,7 @@ special
 
 .special__pickup {
   max-width: 640px;
-  width: 86%;
+  width: 100%;
 
   @include mq(sp) {
     width: 100%;
@@ -362,7 +370,7 @@ aside
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 33px;
   padding: 64px 0;
   width: 28%;
 
@@ -372,7 +380,7 @@ aside
 
   @include mq(sp) {
     padding: 0 0 50px;
-    gap: 30px;
+    gap: 41px;
   }
 }
 
@@ -382,7 +390,7 @@ category
 .category {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
 .category__contents {
@@ -395,6 +403,10 @@ category
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
 }
 
 .category__text {
@@ -427,6 +439,10 @@ category
 
 .category__btnImg {
   width: 100%;
+
+  @include mq(sp) {
+    margin-bottom: 16px;
+  }
 }
 
 .category__btnText {
@@ -467,6 +483,10 @@ popularity
   font-size: 16px;
   width: fit-content;
   margin-left: auto;
+
+  @include mq(sp) {
+    margin-bottom: 20px;
+  }
 }
 
 .popularity__item {
@@ -485,10 +505,24 @@ popularity
 
 .popularity__itemDate {
   font-size: 14px;
+
+  @include mq(sp) {
+    font-size: 16px;
+  }
 }
 
 .popularity__itemText {
   font-size: 14px;
+
+  @include mq(sp) {
+    font-size: 16px;
+  }
+}
+
+.post__linkImg {
+  @include mq(sp) {
+    width: 30px;
+  }
 }
 
 /*--------------------------------
@@ -498,6 +532,10 @@ post
   display: flex;
   flex-direction: column;
   gap: 12px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
 }
 
 .post__linkText {
