@@ -27,6 +27,7 @@ $breakpoints: (
 }
 @mixin buttonStyle{
     width: 240px;
+    height: 50px;
     color: $colorWhite;
     display: inline-block;
 }

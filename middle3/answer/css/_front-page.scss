@@ -19,7 +19,7 @@ TOP gridレイアウト
 }
 
 .grid__img {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     vertical-align: top;
 }
 
@@ -32,10 +32,6 @@ TOP gridレイアウト
     }
 }
 
-.grid__text:first-of-type {
-    margin-bottom: 4px;
-}
-
 .grid__item:nth-child(1) {
     grid-area: A;
 }
@@ -45,6 +41,10 @@ TOP gridレイアウト
         height: calc(100% - 50.78px);
         object-fit: cover;
         object-position: right;
+
+        @include s.mq(tab) {
+            height: auto;
+        }
     }
 }
 
@@ -84,7 +84,7 @@ TOP gridレイアウト
 
 .grid__btnText {
     @include s.buttonStyle;
-    padding: 12px 48px;
+    padding: 12px 0px;
     border: solid 1px s.$borderColor;
 }
 
@@ -93,8 +93,8 @@ TOP gridレイアウト
     font-size: 15px;
     position: absolute;
     left: 14px;
-    top: 65%;
-    transform: rotate(270deg);
+    top: 50%;
+    transform: rotate(270deg) translate(-19%, 30%);
     transform-origin: left;
     display: flex;
     align-items: center;
