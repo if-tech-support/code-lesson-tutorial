@@ -29,6 +29,7 @@ aboutページ / about.html
 
     @include s.mq(tab) {
         flex-direction: column;
+        margin-bottom: 80px;
     }
 }
 
