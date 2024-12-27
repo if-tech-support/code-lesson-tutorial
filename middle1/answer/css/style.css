@@ -25,13 +25,13 @@ img {
 共通パーツの指定
 *******************************/
 .u-container {
-  max-width: 1080px;
+  max-width: 1000px;
   padding: 80px 40px;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
   .u-container {
-    max-width: 460px;
+    max-width: 390px;
     padding: 80px 20px;
   }
 }
