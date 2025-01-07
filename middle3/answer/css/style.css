@@ -194,8 +194,7 @@ footer
 
 .footer__innerUl {
   display: flex;
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  column-gap: 28px;
 }
 @media screen and (max-width: 900px) {
   .footer__innerUl {
@@ -249,10 +248,8 @@ TOP gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+  object-fit: cover;
+  object-position: right;
 }
 @media screen and (max-width: 900px) {
   .grid__item:nth-child(1) .grid__img {
@@ -586,7 +583,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*-------------------------------------------
-products
+productsページ / products.html
 -------------------------------------------*/
 .products__title {
   font-size: 32px;
@@ -658,4 +655,4 @@ products
     gap: 28px 8px;
     margin-bottom: 80px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
