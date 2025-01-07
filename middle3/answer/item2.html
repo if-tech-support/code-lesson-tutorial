@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- ウェブページの文字エンコーディングを指定するために使用されます。 -->
+    <meta charset="UTF-8" />
+    <!-- ウェブページのビューポート（表示領域）の設定を指定します。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ウェブページのタイトルに使用されます。 -->
+    <title>item | うつわ屋こはる</title>
+    <!-- ウェブページの簡潔な説明や概要を提供するために使用されます。 -->
+    <meta name="description" content="益子焼のマグカップ | うつわ屋こはるオンラインショップ" />
+    <!-- モバイルブラウザが電話番号の検出やリンク化を行わないように設定しています。 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- ファビコンを設定しています。 -->
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <!-- font-awesomeを使用しています。 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- reset.cssは、destyleを使用しています。 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+    <!-- スタイルシート（css）を呼び出しています -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+		<!-- header -->
+		<header class="header u-wrapper">
+			<h2>
+				<a href="index.html"><img class="header__logo" src="image/logo-white.png" alt="うつわ屋こはる" /></a>
+			</h2>
+			<div>
+				<nav class="header__menu">
+					<a href="index.html"><img class="header__menuLogo" src="image/logo.png" alt="うつわ屋こはる" /></a>
+					<ul>
+						<li class="header__menuList"><a class="header__menuLink" href="index.html">ホーム</a></li>
+						<li class="header__menuList"><a class="header__menuLink" href="products.html">商品一覧</a></li>
+						<li class="header__menuList"><a class="header__menuLink" href="company.html">会社概要</a></li>
+						<li class="header__menuList"><a class="header__menuLink" href="about.html">私たちについて</a></li>
+					</ul>
+				</nav>
+				<div class="header__toggleBtn">
+					<span class="header__hamburgerLine"></span>
+					<span class="header__hamburgerLine"></span>
+					<span class="header__hamburgerLine"></span>
+				</div>
+				<div class="header__mask"></div>
+			</div>
+		</header>
+		<!-- /header -->
+    <!-- main -->
+    <main>
+      <div class="item__wrapper u-wrapper">
+        <div>
+          <img src="image/item2.jpg" alt="湯呑み茶碗" />
+        </div>
+        <div>
+          <h1 class="item__title">湯呑み茶碗</h1>
+          <p class="item__price">価格：4,400円 (税込み)</p>
+          <p class="item__textSmall"><label for="">数量</label></p>
+          <p><input class="item__number" type="number" value="1" /></p>
+          <p class="item__link"><a href="#">お買い物かごに入れる<i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i></a></p>
+          <p class="item__text item__text--marginBottom">このマグカップは、地元で採れる質の高い粘土を使用し、一つ一つ手作業で丁寧に作られています。シンプルながらも洗練されたフォルムは、持ちやすさと使いやすさを追求しました。</p>
+          <p class="item__text">手に馴染む持ち手部分は、長時間の使用でも疲れにくく、毎日のコーヒータイムやティータイムにおすすめです。</p>
+        </div>
+      </div>
+    </main>
+    <!-- /main -->
+    <!-- footer -->
+    <footer class="footer__wrapper">
+      <div class="footer__inner u-wrapper">
+        <div>
+          <a href="index.html"><img class="footer__logo" src="image/logo.png" alt="うつわ屋こはる" /></a>
+          <ul class="footer__innerUl">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="products.html">商品一覧</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="about.html">私たちについて</a></li>
+          </ul>
+        </div>
+          <small class="footer__copyright">©︎うつわ屋こはる All Right Reserved</small>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+    <script src="js/menu.js"></script>
+  </body>
+</html>
