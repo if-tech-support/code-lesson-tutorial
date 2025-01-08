@@ -130,13 +130,13 @@ a:hover {
   background-color: #fff;
 }
 .open .header__hamburgerLine:nth-child(1) {
-  transform: translateY(4px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
 }
 .open .header__hamburgerLine:nth-child(2) {
-  transform: translateY(-4px) rotate(45deg);
+  opacity: 0;
 }
 .open .header__hamburgerLine:nth-child(3) {
-  display: none;
+  transform: translateY(-10px) rotate(45deg);
 }
 
 /*ハンバーガーメニュークリック時、後ろの黒い背景*/
