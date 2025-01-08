@@ -14,7 +14,7 @@ $breakpoints: (
   }
 }
 
-// 使い回せるスタイリングをmixin登録
+// 追加回せるスタイリングをmixin登録
 @mixin mainTitle{
     font-size: 32px;
     color: $colorWhite;

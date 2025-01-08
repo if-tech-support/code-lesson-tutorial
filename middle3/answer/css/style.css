@@ -25,6 +25,9 @@ a:hover {
   position: relative;
 }
 
+/*-------------------------------------------
+共通パーツの指定
+-------------------------------------------*/
 .u-wrapper {
   width: 100%;
   max-width: 1360px;
@@ -130,13 +133,13 @@ a:hover {
   background-color: #fff;
 }
 .open .header__hamburgerLine:nth-child(1) {
-  transform: translateY(4px) rotate(-45deg);
+  transform: translateY(10px) rotate(-45deg);
 }
 .open .header__hamburgerLine:nth-child(2) {
-  transform: translateY(-4px) rotate(45deg);
+  opacity: 0;
 }
 .open .header__hamburgerLine:nth-child(3) {
-  display: none;
+  transform: translateY(-10px) rotate(45deg);
 }
 
 /*ハンバーガーメニュークリック時、後ろの黒い背景*/
@@ -194,8 +197,7 @@ footer
 
 .footer__innerUl {
   display: flex;
-  -moz-column-gap: 28px;
-       column-gap: 28px;
+  column-gap: 28px;
 }
 @media screen and (max-width: 900px) {
   .footer__innerUl {
@@ -249,10 +251,8 @@ TOP gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
+  object-fit: cover;
+  object-position: right;
 }
 @media screen and (max-width: 900px) {
   .grid__item:nth-child(1) .grid__img {
@@ -586,7 +586,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*-------------------------------------------
-products
+productsページ / products.html
 -------------------------------------------*/
 .products__title {
   font-size: 32px;
@@ -658,4 +658,4 @@ products
     gap: 28px 8px;
     margin-bottom: 80px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
