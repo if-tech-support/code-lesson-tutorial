@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// メニューを開閉する
 	btn.addEventListener("click", function () {
-		if (!nav.classList.contains("open")) {
-			nav.classList.add("open");
+		if (!nav.classList.contains("js-open")) {
+			nav.classList.add("js-open");
 		} else {
-			nav.classList.remove("open");
+			nav.classList.remove("js-open");
 		}
 	});
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// マスクをクリックしてメニューを閉じる
 	mask.addEventListener("click", function () {
-		nav.classList.remove("open");
+		nav.classList.remove("js-open");
 	});
 
 

@@ -2,6 +2,7 @@
 ヘッダー
 -------------------------------------------*/
 @use "setting" as s;
+/*除算用にmathモジュールをインポート*/
 @use "sass:math";
 
 .header {
@@ -102,7 +103,7 @@
 }
 
 /*ハンバーガーメニュークリック時、×になる*/
-.open {
+.js-open {
     .header__hamburgerLine:nth-child(1) {
         transform: translateY(11px) rotate(-45deg);
     }
@@ -163,7 +164,7 @@
     height: 33.25px;
 }
 
-.open {
+.js-open {
     .header__mask {
         right: 0;
         z-index: 10;
