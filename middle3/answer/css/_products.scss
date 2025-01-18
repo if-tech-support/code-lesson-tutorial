@@ -1,5 +1,5 @@
 /*-------------------------------------------
-products
+productsページ / products.html
 -------------------------------------------*/
 @use 'setting' as s;
 
@@ -35,7 +35,7 @@ products
 }
 
 .products__gridImg {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     vertical-align: top;
 }
 
@@ -46,10 +46,6 @@ products
     @include s.mq(tab) {
         font-size: 14px;
     }
-}
-
-.products__gridText:first-of-type {
-    margin-bottom: 4px;
 }
 
 /*人気商品のgridレイアウト３列*/

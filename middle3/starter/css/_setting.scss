@@ -1,0 +1,33 @@
+// 色を変数登録
+$colorWhite: #fff;
+$colorBlack: #353535;
+$borderColor: #cacaca;
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+  'tab': 'screen and (max-width: 900px)',
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// 追加回せるスタイリングをmixin登録
+@mixin mainTitle{
+    font-size: 32px;
+    color: $colorWhite;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    @include mq(tab) {
+        font-size: 24px;
+    }
+}
+@mixin buttonStyle{
+    width: 240px;
+    height: 50px;
+    color: $colorWhite;
+    display: inline-block;
+}

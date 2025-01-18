@@ -31,13 +31,13 @@ $fontSizeLarge: 32px;
 共通パーツの指定
 *******************************/
 .u-container {
-  max-width: 1000px;
+  max-width: 1080px;
   padding: 80px 40px;
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {
-    max-width: 460px;
-    padding: 80px 30px;
+    max-width: 390px;
+    padding: 80px 20px;
   }
 }
 
@@ -131,13 +131,13 @@ $fontSizeLarge: 32px;
 .header__inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 15px 40px;
+  padding: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @media screen and (max-width: 768px) {
-    padding: 15px 20px;
+    padding: 16px 20px;
   }
 }
 
@@ -150,7 +150,7 @@ $fontSizeLarge: 32px;
   gap: 40px;
 
   @media screen and (max-width: 768px) {
-    gap: 16px;
+    gap: 24px;
   }
 }
 
@@ -192,7 +192,7 @@ $fontSizeLarge: 32px;
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid $accentColor;
   bottom: 80px;
-  left: -150px;
+  left: -140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,6 +382,10 @@ $fontSizeLarge: 32px;
 .footer__inner {
   padding: 40px;
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 40px 20px;
+  }
 }
 
 .footer__logoLink {
@@ -394,6 +398,10 @@ $fontSizeLarge: 32px;
   justify-content: center;
   gap: 32px;
   margin-bottom: 24px;
+
+  @media screen and (max-width: 768px) {
+    gap: 16px;
+  }
 }
 
 .footer__link {
@@ -418,7 +426,7 @@ $fontSizeLarge: 32px;
 .fixedBtn {
   display: inline-block;
   position: fixed;
-  bottom: 15%;
+  bottom: 65px;
   right: 0;
   z-index: 90;
 }
