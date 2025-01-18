@@ -251,8 +251,10 @@ TOP gridレイアウト
 
 .grid__item:nth-child(1) .grid__img {
   height: calc(100% - 50.78px);
-  object-fit: cover;
-  object-position: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }
 @media screen and (max-width: 900px) {
   .grid__item:nth-child(1) .grid__img {
@@ -658,4 +660,4 @@ productsページ / products.html
     gap: 28px 8px;
     margin-bottom: 80px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
