@@ -22,11 +22,11 @@
     content: "";
     position: absolute;
     z-index: 1;
-    bottom: -56%;
+    bottom: -46%;
     left: 0;
     background: transparent url(../image/bubble.png) no-repeat center / cover;
-    width: 456px;
-    height: 703px;
+    width: 352px;
+    height: 559px;
 
     @include s.mq("sp") {
         width: 198px;
@@ -134,7 +134,7 @@
 .slide__titleWrap p:first-of-type::after {
     content: "";
     position: absolute;
-    right: -31px;
+    right: -35px;
     top: 50%;
     transform: translateY(-50%);
     display: inline-block;
@@ -179,7 +179,8 @@
     margin: 0 auto;
 
     @include s.mq("sp") {
-        height: 260px;
+        width: 100%;
+        aspect-ratio: math.div(390, 260);
     }
 }
 
@@ -187,8 +188,8 @@
     border-radius: 10px;
 
     @include s.mq("sp") {
+        width: 100%;
         border-radius: 6px;
-        object-position: 24%;
     }
 }
 
@@ -202,35 +203,35 @@
 }
 
 .support__imageLeft {
-    width: 237.38px;
+    width: 225px;
     height: auto;
     position: absolute;
-    top: -6px;
-    left: -86px;
+    top: 97px;
+    left: -74px;
 
     @include s.mq("sp") {
-        width: 181.24px;
-        top: -28px;
-        left: -38px;
+        width: 180px;
+        top: 44px;
+        left: 0;
     }
 }
 
 .support__imageRight {
-    width: 485.31px;
+    width: 330px;
     height: auto;
     position: absolute;
-    top: -22px;
-    right: -127px;
+    top: 51px;
+    right: 0;
 
     @include s.mq("sp") {
-        width: 300.39px;
-        top: -6px;
+        width: 200px;
+        top: 13px;
         right: 0;
     }
 }
 
 .support__content {
-    width: 44%;
+    width: 43%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -239,10 +240,6 @@
         width: 100%;
         margin-top: -10px;
     }
-}
-
-.support__contentWrap {
-    padding: 0 6px 0 8px;
 }
 
 .support__title {
@@ -257,8 +254,8 @@
 }
 
 .support__text {
-    margin-top: 27px;
-    letter-spacing: 0.06em;
+    margin-top: 25px;
+    letter-spacing: 0.08em;
 
     @include s.mq("sp") {
         font-size: 15px;
