@@ -825,6 +825,7 @@
 }
 
 .recruit__image {
+    max-width: 640px;
 
     @include s.mq("sp") {
         width: 100%;
