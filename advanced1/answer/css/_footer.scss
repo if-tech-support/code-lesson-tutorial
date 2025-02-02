@@ -22,11 +22,11 @@ footer
     width: percentage(math.div(888, 1280));
     max-width: 888px;
     margin: 0 auto;
-    padding-top: 170px;
+    padding-top: 168px;
     
     @include s.mq("sp") {
         width: percentage(math.div(378, 420));
-        padding: 73.34px 0 24px;
+        padding: 73px 0 24px;
     }
 }
 
@@ -56,6 +56,8 @@ footer
     
     @include s.mq('sp') {
         width: 106px;
+        height: 97px;
+        object-fit: center;
         border-radius: 6px;
     }
 }
