@@ -38,7 +38,7 @@
     height: auto;
 
     @include s.mq("sp") {
-        width: 67.85px;
+        width: 68px;
     }
 }
 
@@ -84,9 +84,9 @@
     display: block;
     position: absolute;
     width: 42px;
-    height: 2.5px;
-    background-color: #00008c;
-    border-radius: 2.5px;
+    height: 3px;
+    background-color: s.$colorBlue;
+    border-radius: 3px;
     transition: all 0.5s;
 }
 
