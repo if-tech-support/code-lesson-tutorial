@@ -1,0 +1,232 @@
+@use "setting" as s;
+/*除算用にmathモジュールをインポート(必要な場合)*/
+@use "sass:math";
+
+/*-------------------------------------------
+PCのヘッダー
+-------------------------------------------*/
+.header {
+  width: s.$headerWidth;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+
+  @include s.mq("sp") {
+    width: 100%;
+    height: s.$headerHeight--sp;
+  }
+}
+
+.header__inner {
+  width: percentage(math.div(168, 200));
+  margin: 40px auto 0;
+  text-align: center;
+
+  @include s.mq("sp") {
+    width: percentage(math.div(440, 480));
+    margin: 0 auto;
+    height: s.$headerHeight--sp;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-bottom: 8px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: s.$colorMain;
+  }
+
+  @include s.mq("sp") {
+    margin: 0;
+  }
+}
+
+.header__logoLink {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  transition: opacity 0.3s;
+
+  @include s.mq("sp") {
+    font-size: 24px;
+    position: relative;
+    top: 8px;
+  }
+
+  & > span {
+    font-size: 20px;
+    line-height: 1;
+    position: relative;
+    top: -8px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.header__nav {
+  border-top: 1px solid s.$colorBorder;
+  padding-top: 24px;
+}
+
+.header__item {
+  margin-bottom: 24px;
+}
+
+.header__link {
+  font-weight: 600;
+  transition: color 0.3s;
+
+  &:hover {
+    color: s.$colorMain;
+  }
+
+  &.is-active {
+    color: s.$colorMain;
+  }
+}
+
+.header__linkBtn {
+  display: inline-block;
+  width: 100%;
+  border: solid 1px s.$colorMain;
+  background-color: s.$colorMain;
+  color: #fff;
+  padding: 8px;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #fff;
+    color: s.$colorMain;
+  }
+}
+
+.header__itemSns {
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__linkImg {
+  width: 40px;
+  height: 40px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/*-------------------------------------------
+レスポンシブのヘッダー
+-------------------------------------------*/
+.hamburger__button {
+  display: inline-block;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: fixed;
+  top: 28px;
+  right: percentage(math.div(20, 480));
+  z-index: 20;
+  width: 35px;
+  height: 24px;
+  transition: all 0.3s;
+}
+
+.hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 35px;
+  height: 1px;
+  background-color: #333;
+  transition: all 0.3s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #333;
+    transition: inherit;
+  }
+
+  &::before {
+    top: -11px;
+  }
+
+  &::after {
+    top: 11px;
+  }
+}
+
+.hamburger__button[aria-expanded="true"] .hamburger__line {
+  background-color: transparent;
+}
+
+.hamburger__button[aria-expanded="true"] .hamburger__line::before {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger__button[aria-expanded="true"] .hamburger__line::after {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.header__navSp {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  padding: 64px 0 24px;
+
+  &.is-active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.header__navSp--logo {
+  font-size: 24px;
+  line-height: 1;
+  display: inline-block;
+  margin-bottom: 24px;
+
+  & > span {
+    font-size: 20px;
+    line-height: 1;
+    position: relative;
+    top: -4px;
+  }
+}
+
+.header__listSp {
+  width: percentage(math.div(292, 480));
+  border-top: 1px solid s.$colorBorder;
+  padding-top: 24px;
+  margin: 0 auto;
+}

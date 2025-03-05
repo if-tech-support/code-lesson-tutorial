@@ -1,0 +1,78 @@
+/*-------------------------------------------
+共通クラス（例）
+-------------------------------------------*/
+@use "setting" as s;
+
+//スムーススクロールの設定
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: s.$fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.75;
+  color: s.$colorText;
+  overflow-x: hidden;
+  display: flex;
+
+  @include s.mq("sp") {
+    display: block;
+  }
+
+  //モーダルが開いたときはスクロールを無効にする
+  &.modal-open {
+    overflow: hidden; 
+  }
+}
+
+//スムーススクロールのレスポンシブ余白設定
+section {
+  @include s.mq("sp") {
+    scroll-margin-top: s.$headerHeight--sp; 
+  }
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 1081px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .sp-only {
+    display: none !important;
+  }
+}
+
+/*-------------------------------------------
+共通のパーツ（例）
+-------------------------------------------*/
+/*セクションのタイトル*/
+.u-sectionTitle {
+  font-size: 36px;
+  font-family: s.$fontTitle;
+  color: s.$colorMain;
+  letter-spacing: 0.08em;
+}
+
+.u-sectionTitle--sub {
+  margin-bottom: 25px;
+  font-family: s.$fontSub;
+  color: s.$colorMain;
+  position: relative;
+  top: -15px;
+
+  @include s.mq("sp") {
+    margin-bottom: 26px;
+  }
+}
