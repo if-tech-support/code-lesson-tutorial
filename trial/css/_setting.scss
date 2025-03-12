@@ -1,0 +1,38 @@
+//除算用にmathモジュールをインポート
+@use 'sass:math';
+//Sassでは、割り算に「/」を使うと、CSSの「値を分けるための記号」として誤解される可能性があるので
+//代わりに math.div(分子, 分母) を使うので、mathモジュールをインポートします。
+
+// 色を変数登録
+$colorText: #333333;
+$colorMain: #A88657;
+$colorBack: #F6F6F6;
+$colorBorder: #BBBBBB;
+
+//フォントを登録
+$fontMain: 'Zen Old Mincho', serif;
+$fontTitle: 'Pinyon Script', serif;
+$fontSub: 'Noto Sans JP', sans-serif;
+
+//ヘッダーの幅を登録
+$headerWidth: 200px;
+
+//ヘッダーの高さを登録
+$headerHeight--sp: 80px;
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+    "sp": "screen and (max-width: 1080px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// 追加回せるスタイリングをmixin登録
+@mixin innerWidth($innerWidth: 920px, $maxWidth: 1080px) {
+    width: percentage(math.div($innerWidth, $maxWidth));
+}
+

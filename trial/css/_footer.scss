@@ -1,0 +1,57 @@
+@use "setting" as s;
+@use "sass:math";
+
+.footer__inner {
+  margin: 40px auto;
+  @include s.innerWidth(920px, 1080px);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid s.$colorBorder;
+
+  @include s.mq("sp") {
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  transition: color 0.3s;
+
+  &:hover {
+    color: s.$colorMain;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.footer__link {
+  font-weight: 600;
+  transition: color 0.3s;
+
+  &:hover {
+    color: s.$colorMain;
+  }
+}
+
+.footer__copy {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-family: s.$fontSub;
+}
+
