@@ -13,7 +13,6 @@ body {
   letter-spacing: 0.08em;
   line-height: 1.75;
   color: #333333;
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,9 +21,6 @@ body {
   body {
     display: block;
   }
-}
-body.modal-open {
-  overflow: hidden;
 }
 
 @media screen and (max-width: 1080px) {
@@ -342,6 +338,10 @@ main {
 -------------------------------------------*/
 .firstView {
   margin: 0;
+  width: 100%;
+}
+
+.firstView__inner {
   width: 100%;
 }
 
@@ -752,8 +752,7 @@ message
 
 .gallery__gridWrapper {
   display: grid;
-  grid-gap: 16px;
-  place-items: center;
+  grid-gap: clamp(8px, 1.7vw, 16px);
   margin: 0 auto;
   width: 100%;
   min-width: 920px;
@@ -761,47 +760,44 @@ message
 }
 @media screen and (max-width: 1080px) {
   .gallery__gridWrapper {
-    grid-gap: 8px;
     min-width: 100%;
   }
 }
 
-.gallery__grid01 {
+.gallery__grid {
   display: grid;
+  grid-gap: inherit;
+}
+@media screen and (max-width: 1080px) {
+  .gallery__grid {
+    grid-template-rows: auto;
+  }
+}
+
+.gallery__grid--01 {
   grid-template-columns: 305px 205px 205px 157px;
-  grid-gap: 16px;
 }
 @media screen and (max-width: 1080px) {
-  .gallery__grid01 {
+  .gallery__grid--01 {
     grid-template-columns: 27.2727272727% 22.7272727273% 22.7272727273% 21.8181818182%;
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
-.gallery__grid02 {
-  display: grid;
+.gallery__grid--02 {
   grid-template-columns: 350px 190px 350px;
-  grid-gap: 16px;
 }
 @media screen and (max-width: 1080px) {
-  .gallery__grid02 {
+  .gallery__grid--02 {
     grid-template-columns: 37.2727272727% 23.1818181818% 35.9090909091%;
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
-.gallery__grid03 {
-  display: grid;
+.gallery__grid--03 {
   grid-template-columns: 265px 393px 230px;
-  grid-gap: 16px;
 }
 @media screen and (max-width: 1080px) {
-  .gallery__grid03 {
+  .gallery__grid--03 {
     grid-template-columns: 30.6818181818% 40.9090909091% 24.7727272727%;
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
@@ -840,7 +836,7 @@ message
   position: fixed;
   top: 0;
   right: 0;
-  width: 84.375%;
+  width: calc(100% - 200px);
   height: 100%;
   background: rgba(51, 51, 51, 0.7);
   display: none; /* 初期は非表示 */
@@ -878,6 +874,10 @@ message
   -o-object-position: center;
      object-position: center;
   border: solid 10px rgba(255, 255, 255, 0.5);
+}
+.gallery__modalImg.position-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 .gallery__modalBtn {

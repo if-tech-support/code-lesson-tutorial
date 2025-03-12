@@ -95,10 +95,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gridImgs.forEach((gridImg) => {
     gridImg.addEventListener("click", function () {
-      document.getElementById("gallery-modal-img").src =
-        this.querySelector("img").src;
+      const specialImg = this.querySelector("img");
+      const galleryModalImg = document.getElementById("gallery-modal-img");
+
+      galleryModalImg.src = this.querySelector("img").src;
       galleryModal.classList.add("is-active");
-      document.body.classList.add("modal-open");
+     
+      //画像の位置を調整
+      if (specialImg.src.includes("grid-img06.jpg")) {
+        galleryModalImg.classList.add("position-bottom");
+      } else {
+        galleryModalImg.classList.remove("position-bottom"); // 別の画像になった場合にクラスを削除
+      }
     });
   });
 

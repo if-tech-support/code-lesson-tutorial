@@ -15,17 +15,12 @@ body {
   letter-spacing: 0.08em;
   line-height: 1.75;
   color: s.$colorText;
-  overflow-x: hidden;
   display: flex;
 
   @include s.mq("sp") {
     display: block;
   }
-
-  //モーダルが開いたときはスクロールを無効にする
-  &.modal-open {
-    overflow: hidden; 
-  }
+  
 }
 
 //スムーススクロールのレスポンシブ余白設定

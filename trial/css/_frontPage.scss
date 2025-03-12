@@ -23,6 +23,10 @@ main {
   width: 100%;
 }
 
+.firstView__inner {
+  width: 100%;
+}
+
 .firstView__video {
   width: 100%;
   height: 100vh;
@@ -390,58 +394,53 @@ message
 
 .gallery__gridWrapper {
   display: grid;
-  grid-gap: 16px;
-  place-items: center;
+  grid-gap: clamp(8px, 1.7vw, 16px);
   margin: 0 auto;
   width: 100%;
   min-width: 920px;
   overflow: hidden;
 
   @include s.mq("sp") {
-    grid-gap: 8px;
     min-width: 100%;
   }
 }
 
-.gallery__grid01 {
+.gallery__grid {
   display: grid;
+  grid-gap: inherit;
+
+  @include s.mq("sp") {
+    grid-template-rows: auto;
+  }
+}
+
+.gallery__grid--01 {
   grid-template-columns: 305px 205px 205px 157px;
-  grid-gap: 16px;
 
   @include s.mq("sp") {
     grid-template-columns:
       percentage(math.div(120px, 440px)) percentage(math.div(100px, 440px))
       percentage(math.div(100px, 440px)) percentage(math.div(96px, 440px));
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
-.gallery__grid02 {
-  display: grid;
+.gallery__grid--02 {
   grid-template-columns: 350px 190px 350px;
-  grid-gap: 16px;
 
   @include s.mq("sp") {
     grid-template-columns:
       percentage(math.div(164px, 440px)) percentage(math.div(102px, 440px))
       percentage(math.div(158px, 440px));
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
-.gallery__grid03 {
-  display: grid;
+.gallery__grid--03 {
   grid-template-columns: 265px 393px 230px;
-  grid-gap: 16px;
 
   @include s.mq("sp") {
     grid-template-columns:
       percentage(math.div(135px, 440px)) percentage(math.div(180px, 440px))
       percentage(math.div(109px, 440px));
-    grid-gap: 8px;
-    grid-template-rows: auto;
   }
 }
 
@@ -483,7 +482,7 @@ message
   position: fixed;
   top: 0;
   right: 0;
-  width: percentage(math.div(1080, 1280));
+  width: calc(100% - 200px);
   height: 100%;
   background: rgb(51, 51, 51, 0.7);
   display: none; /* 初期は非表示 */
@@ -494,7 +493,7 @@ message
   &.is-active {
     display: flex;
   }
-
+ 
   @include s.mq("sp") {
     width: 100%;
   }
@@ -513,6 +512,11 @@ message
   object-fit: cover;
   object-position: center;
   border: solid 10px rgb(255, 255, 255, 0.5);
+
+ &.position-bottom {
+  object-position: bottom;
+ }
+
 }
 
 .gallery__modalBtn {
