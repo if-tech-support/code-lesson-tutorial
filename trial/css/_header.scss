@@ -109,7 +109,7 @@ PCのヘッダー
   }
 }
 
-.header__itemSns {
+.header__item--sns {
   display: flex;
   gap: 22px;
   justify-content: center;
@@ -129,7 +129,7 @@ PCのヘッダー
 /*-------------------------------------------
 レスポンシブのヘッダー
 -------------------------------------------*/
-.hamburger__button {
+.header__hamburger {
   display: inline-block;
   text-decoration: none;
   appearance: none;
@@ -177,15 +177,15 @@ PCのヘッダー
   }
 }
 
-.hamburger__button[aria-expanded="true"] .hamburger__line {
+.header__hamburger[aria-expanded="true"] .hamburger__line {
   background-color: transparent;
 }
 
-.hamburger__button[aria-expanded="true"] .hamburger__line::before {
+.header__hamburger[aria-expanded="true"] .hamburger__line::before {
   transform: translateY(11px) rotate(45deg);
 }
 
-.hamburger__button[aria-expanded="true"] .hamburger__line::after {
+.header__hamburger[aria-expanded="true"] .hamburger__line::after {
   transform: translateY(-11px) rotate(-45deg);
 }
 

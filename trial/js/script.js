@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   jsHamburger.addEventListener("click", toggleMenu);
 
-  const jsMenuLink = document.querySelectorAll(".header__linkSp");
+  const jsMenuLink = document.querySelectorAll(".header__link--sp");
   jsMenuLink.forEach((link) => {
     link.addEventListener("click", () => {
       if (jsGlobalMenu.classList.contains("is-active")) {
