@@ -485,15 +485,21 @@ message
   width: calc(100% - 200px);
   height: 100%;
   background: rgb(51, 51, 51, 0.7);
-  display: none; /* 初期は非表示 */
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
 
   &.is-active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1000;
   }
- 
+
   @include s.mq("sp") {
     width: 100%;
   }
