@@ -491,6 +491,9 @@ popularity
 
 .popularity__item {
   border-top: 1px solid #e8e3d2;
+  display: flex;
+  gap: 20px;
+  padding: 14px 0;
 
   &:last-child {
     border-bottom: 1px solid #e8e3d2;
