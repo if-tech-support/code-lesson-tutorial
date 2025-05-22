@@ -1,6 +1,7 @@
 //Sassでは、割り算に「/」を使うと、CSSの「値を分けるための記号」として誤解される可能性があるので
 //代わりに math.div(分子, 分母) を使うので、mathモジュールをインポートします。
 @use 'sass:math';
+@use 'sass:map';
 
 // 色を変数登録
 $colorBlack: #333a3f;
@@ -20,7 +21,7 @@ $breakpoints: (
 ) !default;
 
 @mixin mq($breakpoint: sp) {
-    @media #{map-get($breakpoints, $breakpoint)} {
+    @media #{map.get($breakpoints, $breakpoint)} {
         @content;
     }
 }

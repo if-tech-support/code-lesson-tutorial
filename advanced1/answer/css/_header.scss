@@ -4,6 +4,7 @@
 @use "setting" as s;
 /*除算用にmathモジュールをインポート*/
 @use "sass:math";
+@use "sass:map";
 
 .header {
     width: 100%;
@@ -24,12 +25,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: percentage(math.div(1220, 1280));
+    width: math.percentage(math.div(1220, 1280));
     height: 100%;
     margin: 0 auto;
 
     @include s.mq("sp") {
-        width: percentage(math.div(360, 420));
+        width: math.percentage(math.div(360, 420));
     }
 }
 
@@ -131,7 +132,7 @@
 
 .header__maskNav {
     margin-top: 80px;
-    margin-left: percentage(math.div(48, 420));
+    margin-left: math.percentage(math.div(48, 420));
     color: s.$colorBlue;
     font-weight: 700;
 }

@@ -1,6 +1,7 @@
 @use "setting" as s;
 /*除算用にmathモジュールをインポート(必要な場合)*/
 @use "sass:math";
+@use "sass:map";
 
 /*-------------------------------------------
 PCのみのスタイル
@@ -65,7 +66,7 @@ message
 -------------------------------------------*/
 .pickUp__inner {
   background-color: s.$colorBack;
-  padding: 69px percentage(math.div(35, 1080)) 130px;
+  padding: 69px math.percentage(math.div(35, 1080)) 130px;
   text-align: center;
 
   @include s.mq("sp") {
@@ -170,14 +171,14 @@ message
 }
 
 .plan__tabTitle {
-  width: percentage(math.div(280, 840));
+  width: math.percentage(math.div(280, 840));
   padding: 8px;
   border-bottom: 1px solid s.$colorBorder;
   cursor: pointer;
   transition: all 0.3s;
 
   @include s.mq("sp") {
-    width: percentage(math.div(136, 440));
+    width: math.percentage(math.div(136, 440));
   }
 
   & > h3 {
@@ -272,12 +273,12 @@ message
 「Feature」レイアウト
 -------------------------------------------*/
 .feature__inner {
-  padding: 65px percentage(math.div(80px, 1080px)) 17px;
+  padding: 65px math.percentage(math.div(80px, 1080px)) 17px;
   text-align: center;
   background-color: s.$colorBack;
 
   @include s.mq("sp") {
-    padding: 52px percentage(math.div(20px, 480px)) 64px;
+    padding: 52px math.percentage(math.div(20px, 480px)) 64px;
   }
 }
 
@@ -325,7 +326,7 @@ message
 }
 
 .feature__img {
-  width: percentage(math.div(500, 920));
+  width: math.percentage(math.div(500, 920));
   aspect-ratio: math.div(500, 350);
 
   @include s.mq("sp") {
@@ -335,7 +336,7 @@ message
 }
 
 .feature__content {
-  width: percentage(math.div(500, 920));
+  width: math.percentage(math.div(500, 920));
   min-height: 280px;
   background-color: #fff;
   margin-top: 133px;
@@ -355,7 +356,7 @@ message
 }
 
 .feature__container {
-  width: percentage(math.div(468, 500));
+  width: math.percentage(math.div(468, 500));
 
   @include s.mq("sp") {
     width: 100%;
@@ -419,8 +420,8 @@ message
 
   @include s.mq("sp") {
     grid-template-columns:
-      percentage(math.div(120px, 440px)) percentage(math.div(100px, 440px))
-      percentage(math.div(100px, 440px)) percentage(math.div(96px, 440px));
+      math.percentage(math.div(120px, 440px)) math.percentage(math.div(100px, 440px))
+      math.percentage(math.div(100px, 440px)) math.percentage(math.div(96px, 440px));
   }
 }
 
@@ -429,8 +430,8 @@ message
 
   @include s.mq("sp") {
     grid-template-columns:
-      percentage(math.div(164px, 440px)) percentage(math.div(102px, 440px))
-      percentage(math.div(158px, 440px));
+      math.percentage(math.div(164px, 440px)) math.percentage(math.div(102px, 440px))
+      math.percentage(math.div(158px, 440px));
   }
 }
 
@@ -439,8 +440,8 @@ message
 
   @include s.mq("sp") {
     grid-template-columns:
-      percentage(math.div(135px, 440px)) percentage(math.div(180px, 440px))
-      percentage(math.div(109px, 440px));
+      math.percentage(math.div(135px, 440px)) math.percentage(math.div(180px, 440px))
+      math.percentage(math.div(109px, 440px));
   }
 }
 
@@ -506,7 +507,7 @@ message
 }
 
 .gallery__modalContainer {
-  width: percentage(math.div(788, 1080));
+  width: math.percentage(math.div(788, 1080));
   max-width: 788px;
   position: relative;
 }
@@ -607,7 +608,7 @@ Contact
 
 .contact__btn {
   display: inline-block;
-  width: percentage(math.div(440, 920));
+  width: math.percentage(math.div(440, 920));
   height: auto;
   background-color: #fff;
   font-size: 20px;
