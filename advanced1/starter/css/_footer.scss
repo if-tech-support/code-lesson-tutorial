@@ -4,6 +4,7 @@ footer
 @use "setting" as s;
 /*除算用にmathモジュールをインポート*/
 @use "sass:math";
+@use "sass:map";
 
 /*ヘッダー背景*/
 .footer__layout {
@@ -19,13 +20,13 @@ footer
 }
 
 .footer__inner {
-    width: percentage(math.div(888, 1280));
+    width: math.percentage(math.div(888, 1280));
     max-width: 888px;
     margin: 0 auto;
     padding-top: 170px;
-    
+
     @include s.mq("sp") {
-        width: percentage(math.div(378, 420));
+        width: math.percentage(math.div(378, 420));
         padding: 73.34px 0 24px;
     }
 }
@@ -53,7 +54,7 @@ footer
     width: 93px;
     height: auto;
     border-radius: 10px;
-    
+
     @include s.mq('sp') {
         width: 106px;
         border-radius: 6px;

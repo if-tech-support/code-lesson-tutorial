@@ -1,5 +1,6 @@
 //除算用にmathモジュールをインポート
 @use 'sass:math';
+@use 'sass:map';
 //Sassでは、割り算に「/」を使うと、CSSの「値を分けるための記号」として誤解される可能性があるので
 //代わりに math.div(分子, 分母) を使うので、mathモジュールをインポートします。
 
@@ -26,13 +27,12 @@ $breakpoints: (
 ) !default;
 
 @mixin mq($breakpoint: sp) {
-    @media #{map-get($breakpoints, $breakpoint)} {
+    @media #{map.get($breakpoints, $breakpoint)} {
         @content;
     }
 }
 
 // 追加回せるスタイリングをmixin登録
 @mixin innerWidth($innerWidth: 920px, $maxWidth: 1080px) {
-    width: percentage(math.div($innerWidth, $maxWidth));
+    width: math.percentage(math.div($innerWidth, $maxWidth));
 }
-

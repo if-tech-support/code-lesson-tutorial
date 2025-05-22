@@ -1,0 +1,16 @@
+{
+  "name": "code-lesson-tutorial",
+  "version": "1.0.0",
+  "description": "コードレッスンのチュートリアルで使用するWebアプリ・サイトを管理するリポジトリです。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch advanced1/answer/css:advanced1/answer/css middle1/answer/css:middle1/answer/css middle2/answer/css:middle2/answer/css middle3/answer/css:middle3/answer/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}
