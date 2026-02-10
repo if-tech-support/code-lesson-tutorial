@@ -1,0 +1,425 @@
+@import "setting";
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $headerHeight;
+  background-color: $colorWhite;
+  z-index: 100;
+
+  @include mq("sp") {
+    height: $headerHeight--sp;
+    min-height: $headerHeight--sp;
+  }
+}
+
+.header__inner {
+  @include innerWidth;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 128px;
+  position: relative;
+
+  @include mq("tab") {
+    padding: 16px;
+  }
+
+  @include mq("sp") {
+    padding: 16px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+.header__inner > * {
+  flex-shrink: 0;
+}
+
+.header__logo {
+  height: 21px;
+  width: 155px;
+  display: block;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  @include mq("sp") {
+    height: 21px;
+    width: 155px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-left: auto;
+
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+
+.header__menu {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__link {
+  font-family: $fontTitle;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorText;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+/*-------------------------------------------
+モバイル用ハンバーガーメニュー
+-------------------------------------------*/
+.header__hamburger {
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101;
+  padding: 0;
+  flex-shrink: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+
+  @include mq("sp") {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    background-color: $colorMain;
+    border-radius: 4px;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    overflow: visible;
+  }
+
+  &--close {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    z-index: 103;
+    background-color: $colorMain;
+    pointer-events: none;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+
+    @include mq("sp") {
+      width: 38px;
+      height: 38px;
+      overflow: visible;
+    }
+
+    &.is-active {
+      @include mq("sp") {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+
+  @include mq("sp") {
+    margin-left: auto;
+  }
+}
+
+.hamburger__line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background-color: $colorWhite;
+  transition: all 0.3s;
+  pointer-events: none;
+
+  @include mq("sp") {
+    background-color: $colorWhite;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $colorWhite;
+    transition: all 0.3s;
+    pointer-events: none;
+
+    @include mq("sp") {
+      background-color: $colorWhite;
+    }
+  }
+
+  &::before {
+    top: -7px;
+  }
+
+  &::after {
+    top: 7px;
+  }
+}
+
+.header__hamburger.is-hidden {
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+// 閉じるボタンは常に×アイコンを表示
+.header__hamburger--close {
+  .hamburger__line {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: $colorWhite;
+    }
+
+    &::after {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: $colorWhite;
+    }
+  }
+
+  @include mq("sp") {
+    background-color: $colorMain;
+    border-radius: 4px;
+    min-width: 38px;
+    min-height: 38px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.header__navSp {
+  display: none;
+  width: 100%;
+  background-color: #63554a;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
+  pointer-events: none;
+
+  @include mq("sp") {
+    display: block;
+    position: fixed;
+    top: $headerHeight--sp;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    height: calc(100vh - #{$headerHeight--sp});
+    max-height: calc(100vh - #{$headerHeight--sp});
+  }
+
+  &.is-active {
+    @include mq("sp") {
+      max-height: calc(100vh - #{$headerHeight--sp});
+      opacity: 1;
+      pointer-events: auto;
+      overflow-y: auto;
+    }
+  }
+}
+
+
+.header__navSpInner {
+  padding: 24px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.header__listSp {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+}
+
+.header__linkSp {
+  font-family: $fontTitle;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorWhite;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $colorMain;
+  }
+}
+
+.header__contentSp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+
+.header__contentCard {
+  background-color: $colorWhite;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 100%;
+  max-width: 321px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.header__siteTitle {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.header__siteTitleText {
+  font-family: 'Baloo', 'Zen Maru Gothic', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #e17100;
+  letter-spacing: 0.08em;
+  line-height: 1;
+}
+
+.header__siteTitleIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.header__shopInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.header__shopInfoSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $colorText;
+}
+
+.header__shopInfoAddress {
+  font-family: $fontMain;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorText;
+  line-height: 1.2;
+}
+
+.header__shopInfoPhone,
+.header__shopInfoEmail {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-family: 'Inter', $fontMain;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorText;
+  line-height: 1.2;
+
+  a {
+    color: $colorText;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $colorMain;
+    }
+  }
+}
+
+.header__shopInfoSchedule {
+  font-family: 'Inter', $fontMain;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorText;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}

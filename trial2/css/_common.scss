@@ -1,0 +1,215 @@
+@import "setting";
+
+/*-------------------------------------------
+共通クラス（例）
+-------------------------------------------*/
+html,
+body {
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  line-height: 1.75;
+  color: $colorText;
+  background-color: $colorWhite;
+  overflow-x: clip;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+//スムーススクロールのレスポンシブ余白設定
+section {
+  scroll-margin-top: $headerHeight;
+
+  @include mq("sp") {
+    scroll-margin-top: $headerHeight--sp;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp-only {
+    display: none !important;
+  }
+}
+
+/*-------------------------------------------
+共通のパーツ
+-------------------------------------------*/
+// セクションのタイトル
+.u-sectionTitle {
+  font-size: 32px;
+  font-family: $fontTitle;
+  font-weight: 700;
+  color: #101828;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-align: center;
+
+  @include mq("sp") {
+    font-size: 24px;
+  }
+}
+
+// ボタン
+.u-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorMain;
+  color: $colorWhite;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: $fontMain;
+  letter-spacing: 0.08em;
+  line-height: 1.75;
+  padding: 16px 48px 16px 48px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+  min-width: 300px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 17.285px;
+    background-image: url('../images/arrow-white.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  @include mq("sp") {
+    font-size: 14px;
+    padding: 12px 40px 12px 40px;
+    min-width: 280px;
+
+    &::after {
+      right: 12px;
+      width: 8px;
+      height: 14px;
+    }
+  }
+}
+
+// 波のセクション区切り
+.u-wave {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.u-waveImg {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 1280 / 100;
+
+  @include mq("sp") {
+    aspect-ratio: 393 / 30.703;
+  }
+}
+
+.u-waveImg--rotate {
+  transform: rotate(180deg);
+}
+
+/*-------------------------------------------
+パンくずリスト
+-------------------------------------------*/
+.breadcrumb {
+  background-color: $colorBack;
+  padding: 16px 0;
+
+  @include mq("sp") {
+    padding: 16px 0;
+  }
+}
+
+.breadcrumb__inner {
+  @include innerWidth;
+}
+
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  row-gap: 0px;
+  flex-wrap: nowrap; // 基本は折り返さない（2層目で段落ち防止）
+
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorText;
+}
+
+// 3層目（deep）のときだけ、必要に応じて折り返す
+.breadcrumb__list--deep {
+  flex-wrap: wrap;
+}
+
+.breadcrumb__link {
+  color: $colorText;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb__separator {
+  color: $colorText;
+  flex-shrink: 0;
+}
+
+// 2層目では改行させない（＝TOPと同じ行を維持）
+.breadcrumb__current {
+  color: $colorText;
+  margin-left: 0;
+}
+
+// 3層目のとき：入らない場合だけタイトルが次の行へ
+.breadcrumb__list--deep .breadcrumb__current {
+  flex: 0 1 auto;        // 必要なら次行へ改行
+  min-width: 0;
+  white-space: nowrap;   // タイトルを1つの塊にして、入らなければ丸ごと次行へ
+  margin-left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

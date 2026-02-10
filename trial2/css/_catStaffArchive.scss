@@ -1,0 +1,184 @@
+@import "setting";
+
+/*-------------------------------------------
+猫スタッフ一覧セクション
+-------------------------------------------*/
+.catStaffArchive {
+  background-color: $colorBack;
+  padding: 64px 0;
+
+  @include mq("sp") {
+    padding: 40px 0;
+  }
+}
+
+.catStaffArchive__inner {
+  @include innerWidth;
+
+  @include mq("sp") {
+    padding: 0 16px;
+  }
+}
+
+.catStaffArchive__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+
+  @include mq("sp") {
+    gap: 24px;
+  }
+}
+
+.catStaffArchive__title {
+  @extend .u-sectionTitle;
+}
+
+.catStaffArchive__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+
+  @include mq("sp") {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.catStaffArchive__item {
+  background-color: $colorWhite;
+  border-radius: 12px;
+  padding: 16px;
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  @include mq("sp") {
+    width: 100%;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catStaffArchive__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.catStaffArchive__image {
+  aspect-ratio: 293 / 293;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.catStaffArchive__content {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.catStaffArchive__nameContent {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catStaffArchive__name {
+  font-family: $fontMain;
+  font-size: 20px;
+  font-weight: 700;
+  color: $colorText;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.catStaffArchive__gender {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  flex-shrink: 0;
+
+  &--female {
+    background-color: #FFE8E8;
+    color: #FF2A34;
+  }
+
+  &--male {
+    background-color: #E8FCFF;
+    color: #6689FF;
+  }
+}
+
+.catStaffArchive__age {
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorText;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+.catStaffArchive__tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.catStaffArchive__tag {
+  background-color: #FEF3C6;
+  border-radius: 12px;
+  padding: 4px 8px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $fontMain;
+  font-size: 14px;
+  font-weight: 400;
+  color: $colorMain;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.catStaffArchive__noPosts {
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorText;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-align: center;
+  padding: 40px 0;
+  width: 100%;
+}
