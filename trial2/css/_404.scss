@@ -1,0 +1,62 @@
+@import "setting";
+
+/*-------------------------------------------
+404ページ
+-------------------------------------------*/
+.error404 {
+  min-height: calc(100vh - #{$headerHeight} - 200px);
+
+  @include mq("sp") {
+    min-height: calc(100vh - #{$headerHeight--sp} - 200px);
+  }
+}
+
+.error404__inner {
+  @include innerWidth;
+  padding: 64px 0;
+
+  @include mq("sp") {
+    padding: 40px 16px;
+  }
+}
+
+.error404__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error404__title {
+  font-family: $fontTitle;
+  font-size: 32px;
+  font-weight: 700;
+  color: $colorMain;
+  line-height: 1;
+  margin: 0;
+
+  @include mq("sp") {
+    font-size: 20px;
+  }
+}
+
+.error404__description {
+  font-family: $fontMain;
+  font-size: 16px;
+  font-weight: 400;
+  color: $colorText;
+  line-height: 1.75;
+  margin: 0;
+
+  @include mq("sp") {
+    font-size: 14px;
+  }
+}
+
+.error404__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

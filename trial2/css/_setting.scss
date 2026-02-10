@@ -1,0 +1,45 @@
+// 色を変数登録（Figmaデザイン準拠）
+$colorText: #333333; // base_black
+$colorMain: #E87D54; // main (オレンジ)
+$colorBack: #FFFBEB; // base_yellow
+$colorBorder: #CCCCCC;
+$colorWhite: #FFFFFF; // base_white
+$colorTextSecondary: #4A5565;
+$colorAccent: #E87D54;
+
+// フォントを登録
+$fontMain: 'Noto Sans JP', sans-serif;
+$fontTitle: 'Zen Maru Gothic', sans-serif;
+$fontSub: 'Noto Sans JP', sans-serif;
+
+// ヘッダーの高さを登録
+$headerHeight: 64px;
+$headerHeight--sp: 64px;
+
+// コンテナの幅
+$containerWidth: 1280px;
+$innerWidth: 1024px; // 1280px - 128px * 2 (padding)
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+    "tab": "screen and (min-width: 768px) and (max-width: 1024px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+// 流用できるスタイリングをmixin登録
+@mixin innerWidth($innerWidth: 1024px, $maxWidth: 1280px) {
+    max-width: $maxWidth;
+    margin: 0 auto;
+    padding: 0 128px;
+
+    @include mq("sp") {
+        padding: 0 20px;
+        width: 100%;
+    }
+}
